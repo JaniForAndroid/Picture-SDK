@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="horizontal">
+
+  <ImageView
+    android:id="@+id/iv_cover"
+    android:layout_width="70dp"
+    android:layout_height="70dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/ic_audio_cover_default"/>
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:text="纳米盒"
+      android:textColor="#333333"
+      android:textSize="15sp"/>
+
+    <TextView
+      android:id="@+id/tv_audio_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_alignLeft="@id/tv_title"
+      android:layout_marginRight="10dp"
+      android:layout_below="@id/tv_title"
+      android:textColor="#666666"
+      android:textSize="12sp"/>
+
+    <ImageView
+      android:id="@+id/iv_close"
+      android:layout_width="42dp"
+      android:layout_height="42dp"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:src="@drawable/ic_close"/>
+
+
+    <ImageView
+      android:id="@+id/iv_next"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginLeft="5dp"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/iv_close"
+      android:src="@drawable/ic_notify_next"/>
+
+    <ImageView
+      android:id="@+id/iv_play_pause"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/iv_next"
+      android:src="@drawable/ic_notify_pause"/>
+
+    <ImageView
+      android:id="@+id/iv_previous"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:layout_marginRight="5dp"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/iv_play_pause"
+      android:src="@drawable/ic_notify_previous"/>
+
+  </RelativeLayout>
+
+</LinearLayout>

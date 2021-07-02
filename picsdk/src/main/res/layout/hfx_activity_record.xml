@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.namibox.hfx.view.PageImageView
+    android:id="@+id/image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+
+  <RelativeLayout
+    android:id="@+id/page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:visibility="gone">
+
+    <ImageView
+      android:id="@+id/page_prev"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="8dp"
+      android:src="@drawable/hfx_icon_left" />
+
+    <ImageView
+      android:id="@+id/page_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:padding="8dp"
+      android:src="@drawable/hfx_icon_right" />
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/countdown_text"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:layout_centerInParent="true"
+    android:background="@drawable/hfx_countdown_bg"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="38sp"
+    android:visibility="gone" />
+
+  <RelativeLayout
+    android:id="@+id/recording_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:paddingBottom="16dp"
+    android:visibility="gone">
+
+    <LinearLayout
+      android:layout_width="56dp"
+      android:layout_height="48dp"
+      android:background="@drawable/hfx_record_time_bg"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <ImageView
+        android:id="@+id/recording_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hfx_volume_level_bg" />
+
+      <TextView
+        android:id="@+id/recording_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/hfx_white"
+        android:textSize="10sp" />
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/recording_stop"
+      android:layout_width="56dp"
+      android:layout_height="48dp"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:background="@drawable/hfx_record_stop_bg"
+      android:gravity="center"
+      android:text="@string/hfx_record_stop"
+      android:textColor="@color/hfx_white"
+      android:textSize="16sp" />
+  </RelativeLayout>
+
+  <FrameLayout
+    android:id="@+id/listening_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone">
+
+    <com.namibox.hfx.view.RoundProgressBar
+      android:id="@+id/listening_progress"
+      android:layout_width="90dp"
+      android:layout_height="90dp" />
+
+    <ImageView
+      android:id="@+id/listening_stop"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:padding="8dp"
+      android:src="@drawable/hfx_ic_action_pause" />
+  </FrameLayout>
+
+  <include
+    android:id="@+id/control_bar"
+    layout="@layout/hfx_layout_record_control"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:visibility="gone" />
+
+  <FrameLayout
+    android:id="@+id/commit_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+</RelativeLayout>

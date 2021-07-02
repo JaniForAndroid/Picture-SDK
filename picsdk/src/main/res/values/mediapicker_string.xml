@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <string name="picker_take_photo">Take photo</string>
+  <string name="picker_record_video">拍摄视频</string>
+  <string name="picker_switch_media">Switch media</string>
+  <string name="picker_no_items">未选择视频</string>
+  <string name="picker_done_capital">下一步</string>
+
+  <plurals name="picker_video_duration_min">
+    <item quantity="one">您选择的视频时长小于 %d 秒</item>
+    <item quantity="other">您选择的视频时长小于 %d 秒</item>
+  </plurals>
+  <plurals name="warning_video_duration_min">
+    <item quantity="one">请拍摄大于 %d 秒的视频</item>
+    <item quantity="other">请拍摄大于 %d 秒的视频</item>
+  </plurals>
+  <plurals name="picker_video_duration_max">
+    <item quantity="one">您选择的视频时长大于 %d 秒</item>
+    <item quantity="other">您选择的视频时长大于 %d 秒</item>
+  </plurals>
+  <plurals name="picker_video_duration_warning">
+    <item quantity="one">Video\'s duration limit is  %d second.</item>
+    <item quantity="other">Video\'s duration limit is  %d seconds.</item>
+  </plurals>
+
+</resources>

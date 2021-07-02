@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_gravity="center_horizontal"
+  android:background="@drawable/dialog_background"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/title"
+    android:textStyle="bold"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_gravity="center_horizontal"
+    android:textColor="#333"
+    android:textSize="18sp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="#ddd" />
+
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:lineSpacingExtra="8dp"
+    android:textColor="#333333"
+    android:textSize="15sp" />
+
+  <ProgressBar
+    android:id="@+id/progressBar"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="30dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp" />
+
+  <View
+    android:id="@+id/divider"
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:background="#ddd" />
+
+  <Button
+    android:id="@+id/button"
+    android:textStyle="bold"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/dialog_btn_bg"
+    android:textAllCaps="false"
+    android:textColor="@color/theme_color"
+    android:textSize="14sp" />
+
+</LinearLayout>

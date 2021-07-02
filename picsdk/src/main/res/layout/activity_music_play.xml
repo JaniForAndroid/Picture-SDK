@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white">
+
+  <include
+    android:id="@+id/action_bar"
+    layout="@layout/layout_action_bar" />
+
+  <TextView
+    android:id="@+id/tv_skip_pic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="16dp"
+    android:text="@string/string_skip"
+    android:textColor="@color/black"
+    android:textSize="15sp"
+    app:layout_constraintBottom_toBottomOf="@id/action_bar"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/action_bar" />
+
+  <TextView
+    android:id="@+id/tvMusicTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/music_ivmusictitle_martop"
+    android:textColor="#00B9FF"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/action_bar"
+    tools:text="中华成语故事动画片" />
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    app:layout_constraintBottom_toTopOf="@id/bottom_layout"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/tvMusicTitle">
+
+    <TextView
+      android:id="@+id/tvPlayConut"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:lineSpacingExtra="10dp"
+      android:textColor="#333333"
+      android:textSize="15sp"
+      tools:text="1365.8万\n1365.8万" />
+  </ScrollView>
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+    <SeekBar
+      android:id="@+id/music_seek_bar"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="@dimen/music_seekbar_marghor"
+      android:layout_marginTop="@dimen/music_seekbar_margintop"
+      android:layout_marginEnd="@dimen/music_seekbar_marghor"
+      android:paddingStart="2dp"
+      android:paddingEnd="2dp"
+      android:progressDrawable="@drawable/pic_seekbar_audiobg"
+      android:splitTrack="false"
+      android:thumb="@drawable/zky_music_thumb"
+      android:thumbOffset="0dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:progress="45"
+      tools:secondaryProgress="65" />
+
+    <View
+      android:id="@+id/bg_sbar"
+      android:layout_width="0dp"
+      android:layout_height="30dp"
+      app:layout_constraintBottom_toBottomOf="@id/music_seek_bar"
+      app:layout_constraintLeft_toLeftOf="@id/music_seek_bar"
+      app:layout_constraintRight_toRightOf="@id/music_seek_bar"
+      app:layout_constraintTop_toTopOf="@id/music_seek_bar" />
+
+    <TextView
+      android:id="@+id/tvSeekUserTime"
+      android:layout_width="90dp"
+      android:layout_height="23dp"
+      android:layout_marginBottom="10dp"
+      android:background="@drawable/pic_bg_seekbar_shape"
+      android:gravity="center"
+      android:textColor="#FFFFFFFF"
+      android:textSize="12sp"
+      android:visibility="invisible"
+      app:layout_constraintBottom_toTopOf="@id/music_seek_bar"
+      app:layout_constraintLeft_toLeftOf="@id/music_seek_bar"
+      tools:text="06:23\/08:44"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/tvCurrentTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="2dp"
+      android:layout_marginTop="5dp"
+      android:textColor="#FF999999"
+      android:textSize="10sp"
+      app:layout_constraintLeft_toLeftOf="@id/music_seek_bar"
+      app:layout_constraintTop_toBottomOf="@id/music_seek_bar"
+      tools:text="00:00" />
+
+    <TextView
+      android:id="@+id/tvTotalTime"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="2dp"
+      android:textColor="#FF999999"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="@id/tvCurrentTime"
+      app:layout_constraintRight_toRightOf="@id/music_seek_bar"
+      app:layout_constraintTop_toTopOf="@id/tvCurrentTime"
+      tools:text="08:23" />
+
+    <ImageView
+      android:id="@+id/ivPlay"
+      android:layout_width="60dp"
+      android:layout_height="60dp"
+      android:layout_marginTop="@dimen/music_ivplay_martop"
+      android:layout_marginBottom="25dp"
+      android:src="@drawable/zky_pause_icon"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/music_seek_bar"
+      tools:src="@drawable/zky_play_icon" />
+
+    <ImageView
+      android:id="@+id/ivPre"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginEnd="@dimen/music_margin_39to73"
+      android:src="@drawable/zky_pre_music"
+      app:layout_constraintBottom_toBottomOf="@id/ivPlay"
+      app:layout_constraintRight_toLeftOf="@id/ivPlay"
+      app:layout_constraintTop_toTopOf="@id/ivPlay" />
+
+    <ImageView
+      android:id="@+id/ivNext"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginStart="@dimen/music_margin_39to73"
+      android:src="@drawable/zky_next_music"
+      app:layout_constraintBottom_toBottomOf="@id/ivPlay"
+      app:layout_constraintLeft_toRightOf="@id/ivPlay"
+      app:layout_constraintTop_toTopOf="@id/ivPlay" />
+
+    <ImageView
+      android:id="@+id/ivMusicList"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:src="@drawable/zky_music_list"
+      app:layout_constraintBottom_toBottomOf="@id/ivNext"
+      app:layout_constraintHorizontal_chainStyle="spread"
+      app:layout_constraintRight_toRightOf="@id/music_seek_bar"
+      app:layout_constraintTop_toTopOf="@id/ivNext" />
+  </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,72 @@
+<resources>
+  <dimen name="toast_size">16sp</dimen>
+
+  <dimen name="music_seekbar_margintop">37.5dp</dimen>
+  <dimen name="music_seekbar_marghor">37.5dp</dimen>
+  <dimen name="music_ivhead_martop">44dp</dimen>
+  <dimen name="music_margin_12to24">12dp</dimen>
+  <dimen name="music_ivbgblur_martop">15dp</dimen>
+  <dimen name="music_ivbgblur_size">200dp</dimen>
+  <dimen name="music_ivmusictitle_martop">20dp</dimen>
+  <dimen name="music_ivfif_marhor">37.5dp</dimen>
+  <dimen name="music_ivplay_martop">40dp</dimen>
+  <dimen name="music_ivalerm_martop">35dp</dimen>
+  <dimen name="music_margin_39to73">39dp</dimen>
+  <dimen name="music_margin_22to79">509.5dp</dimen>
+  <dimen name="music_margin_15to33">15dp</dimen>
+  <dimen name="music_margin_17to33">17.5dp</dimen>
+  <dimen name="music_margin_12to30">12dp</dimen>
+  <dimen name="music_margin_3to9">3dp</dimen>
+  <dimen name="music_margin_3to7">3dp</dimen>
+  <dimen name="music_margin_15to31">15dp</dimen>
+  <dimen name="music_ivbgblur_size1">216dp</dimen>
+
+  <dimen name="actionbar_size">44dp</dimen>
+  <dimen name="toolbar_title_max_width">140dp</dimen>
+  <dimen name="image_size">120dp</dimen>
+  <dimen name="space_size">2dp</dimen>
+  <dimen name="folder_cover_size">72dp</dimen>
+  <dimen name="aiengine_title_size">16sp</dimen>
+  <dimen name="aiengine_time_size">18sp</dimen>
+  <dimen name="aiengine_top_padding">10dp</dimen>
+  <dimen name="loading_width">150dp</dimen>
+  <dimen name="loading_height">120dp</dimen>
+  <dimen name="loading_text_size">14sp</dimen>
+  <item format="float" name="dialog_big_image" type="dimen">0.84</item>
+
+  <dimen name="hfx_lager_photo_size">130dp</dimen>
+  <dimen name="hfx_inner_photo_size">124dp</dimen>
+  <dimen name="hfx_round_progress_width">3dp</dimen>
+  <dimen name="hfx_round_progress_size">56dp</dimen>
+  <dimen name="hfx_round_progress_text_size">18sp</dimen>
+  <dimen name="hfx_section_progress_padding">4dp</dimen>
+  <dimen name="hfx_section_progress_stroke_width">2dp</dimen>
+  <dimen name="hfx_section_progress_divider">2dp</dimen>
+  <dimen name="hfx_section_progress_size">12dp</dimen>
+  <dimen name="hfx_listen_progress_width">8dp</dimen>
+  <dimen name="hfx_actionbar_size">44dp</dimen>
+  <dimen name="hfx_actionbar_size_show">41dp</dimen>
+  <dimen name="hfx_read_menu_size">80dp</dimen>
+  <dimen name="hfx_read_menu_size_show">100dp</dimen>
+  <dimen name="hfx_eval_result_alert_height">410dp</dimen>
+  <dimen name="hfx_eval_result_alert_last_height">260dp</dimen>
+  <dimen name="hfx_eval_result_alert_height_portrait">410dp</dimen>
+  <dimen name="hfx_eval_result_alert_height_land">260dp</dimen>
+  <dimen name="hfx_eval_result_alert_width_portrait">300dp</dimen>
+  <dimen name="hfx_eval_result_alert_width_land">210dp</dimen>
+
+  <dimen name="crop_actionbar_size">44dp</dimen>
+
+  <dimen name="activity_horizontal_margin">16dp</dimen>
+  <dimen name="activity_vertical_margin">16dp</dimen>
+
+  <dimen name="dkplayer_controller_height">46dp</dimen>
+  <dimen name="dkplayer_controller_icon_padding">12dp</dimen>
+  <dimen name="dkplayer_controller_text_size">16sp</dimen>
+  <dimen name="dkplayer_default_spacing">10dp</dimen>
+  <dimen name="dkplayer_controller_seekbar_size_n">14dp</dimen>
+  <dimen name="dkplayer_controller_seekbar_size_s">14dp</dimen>
+  <dimen name="dkplayer_controller_seekbar_max_size">1dp</dimen>
+  <dimen name="play_btn_size">50dp</dimen>
+  <dimen name="player_controller_time_text_size">14sp</dimen>
+</resources>

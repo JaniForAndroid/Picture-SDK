@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <!--<include-->
+  <!--layout="@layout/layout_action_bar"/>-->
+
+  <RelativeLayout
+    android:id="@+id/layout_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="44dp"
+    android:layout_marginTop="35dp"
+    android:background="@color/white"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+      android:id="@+id/iv_action_back"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_alignParentLeft="true"
+      android:layout_marginLeft="15dp"
+      android:contentDescription="@null"
+      android:src="@drawable/icon_back"
+      tools:ignore="RtlHardcoded" />
+
+    <TextView
+      android:id="@+id/tv_action_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerHorizontal="true"
+      android:textColor="@color/common_text_black"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:visibility="gone"
+      tools:ignore="RelativeOverlap"
+      tools:text="标题"
+      tools:visibility="visible" />
+
+    <ImageView
+      android:id="@+id/iv_action_feature"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_alignParentRight="true"
+      android:layout_marginRight="15dp"
+      android:contentDescription="@null"
+      android:visibility="gone"
+      tools:ignore="RtlHardcoded"
+      tools:src="@drawable/icon_detail"
+      tools:visibility="visible" />
+
+    <TextView
+      android:id="@+id/tv_right_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignBottom="@id/tv_action_title"
+      android:layout_alignParentEnd="true"
+      android:layout_marginEnd="15dp"
+      android:textColor="@color/common_text_black"
+      android:textSize="15sp"
+      android:visibility="gone"
+      tools:text="查询原文" />
+
+  </RelativeLayout>
+
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/learning_result_img"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.3"
+    app:layout_constraintWidth_percent="0.8" />
+
+  <TextView
+    android:id="@+id/text1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#333"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.59"
+    tools:text="开始词汇学习" />
+
+  <TextView
+    android:id="@+id/text2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#333"
+    android:textSize="15sp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/text1"
+    tools:text="开始词汇学习" />
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintLeft_toLeftOf="@+id/btn"
+    app:layout_constraintRight_toRightOf="@id/btn"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintVertical_bias="0.710">
+
+    <TextView
+      android:id="@+id/index_text1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:textColor="@color/pic_theme_text_color"
+      android:textSize="15sp"
+      app:layout_constraintHorizontal_chainStyle="spread_inside"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/index2"
+      app:layout_constraintTop_toBottomOf="@id/index1"
+      tools:text="读绘本" />
+
+    <TextView
+      android:id="@+id/index1"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:background="@drawable/index_round_bg"
+      android:gravity="center"
+      android:text="1"
+      android:textColor="#fff"
+      android:textStyle="bold"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintLeft_toLeftOf="@id/index_text1"
+      app:layout_constraintRight_toRightOf="@id/index_text1"
+       />
+
+
+    <TextView
+      android:id="@+id/line1"
+      android:layout_width="0dp"
+      android:layout_height="2dp"
+      android:background="@drawable/index_line_bg"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index1"
+      app:layout_constraintRight_toLeftOf="@id/index2"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index2"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:background="@drawable/index_round_bg"
+      android:enabled="false"
+      android:gravity="center"
+      android:text="2"
+      android:textColor="#fff"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index1"
+      app:layout_constraintRight_toLeftOf="@id/index3"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:enabled="false"
+      android:textColor="@color/pic_theme_text_color"
+      android:textSize="15sp"
+      app:layout_constraintLeft_toLeftOf="@id/index2"
+      app:layout_constraintRight_toRightOf="@id/index2"
+      app:layout_constraintTop_toBottomOf="@id/index2"
+      tools:text="学词汇" />
+
+    <TextView
+      android:id="@+id/line2"
+      android:layout_width="0dp"
+      android:layout_height="2dp"
+      android:background="@drawable/index_line_bg"
+      android:enabled="false"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index2"
+      app:layout_constraintRight_toLeftOf="@id/index3"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index3"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:background="@drawable/index_round_bg"
+      android:enabled="false"
+      android:gravity="center"
+      android:text="3"
+      android:textColor="#fff"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index2"
+      app:layout_constraintRight_toLeftOf="@id/index4"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index_text3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:enabled="false"
+      android:textColor="@color/pic_theme_text_color"
+      android:textSize="15sp"
+      app:layout_constraintLeft_toLeftOf="@id/index3"
+      app:layout_constraintRight_toRightOf="@id/index3"
+      app:layout_constraintTop_toBottomOf="@id/index3"
+      tools:text="看动画" />
+
+    <TextView
+      android:id="@+id/line3"
+      android:layout_width="0dp"
+      android:layout_height="2dp"
+      android:background="@drawable/index_line_bg"
+      android:enabled="false"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index3"
+      app:layout_constraintRight_toLeftOf="@id/index4"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index4"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:background="@drawable/index_round_bg"
+      android:enabled="false"
+      android:gravity="center"
+      android:text="4"
+      android:visibility="gone"
+      android:textColor="#fff"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="@id/index1"
+      app:layout_constraintLeft_toRightOf="@id/index3"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="@id/index1" />
+
+    <TextView
+      android:id="@+id/index_text4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:enabled="false"
+      android:visibility="gone"
+      android:textColor="@color/pic_theme_text_color"
+      android:textSize="15sp"
+      app:layout_constraintLeft_toLeftOf="@id/index4"
+      app:layout_constraintRight_toRightOf="@id/index4"
+      app:layout_constraintTop_toBottomOf="@id/index4"
+      tools:text="听音乐" />
+
+  </android.support.constraint.ConstraintLayout>
+
+  <Button
+    android:id="@+id/btn"
+    android:layout_width="0dp"
+    android:layout_height="42dp"
+    android:background="@drawable/btn_round_bg"
+    android:enabled="false"
+    android:gravity="center"
+    android:textColor="#fff"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.872"
+    app:layout_constraintWidth_percent="0.773"
+    tools:text="开始词汇学习" />
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/animationLayout"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="#7F000000"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/tv_timer"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      android:layout_marginEnd="12dp"
+      android:layout_marginTop="35dp"
+      android:text="3s"
+      android:textColor="#ffffff"
+      android:textSize="14sp"
+      android:background="@drawable/bg_challenge_timer"
+      android:paddingTop="6.5dp"
+      android:paddingBottom="6.5dp"
+      android:paddingStart="17.5dp"
+      android:paddingEnd="17.5dp"
+      android:visibility="gone"
+      />
+
+    <com.airbnb.lottie.LottieAnimationView
+      android:id="@+id/loading_anim"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:visibility="gone"
+      app:lottie_fileName="excellent/data.json"
+      app:lottie_imageAssetsFolder="excellent/images/"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/first_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:text="@string/challenge_tip"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintHorizontal_chainStyle="packed"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/score"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.63" />
+
+    <ImageView
+      android:id="@+id/score"
+      android:layout_width="25dp"
+      android:layout_height="25dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:src="@drawable/icon_score_first"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@id/first_text"
+      app:layout_constraintRight_toLeftOf="@id/first_text2"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.63" />
+
+    <TextView
+      android:id="@+id/first_text2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:gravity="center"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@id/score"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.63" />
+  </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

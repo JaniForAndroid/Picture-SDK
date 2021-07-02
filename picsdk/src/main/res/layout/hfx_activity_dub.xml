@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+
+  <RelativeLayout
+    android:id="@+id/video_layout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="#303030">
+
+    <com.google.android.exoplayer.lib.PlayerView
+      android:id="@+id/player_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:surface_type="texture_view" />
+
+    <ImageView
+      android:id="@+id/playpause"
+      android:layout_width="80dp"
+      android:layout_height="80dp"
+      android:layout_centerInParent="true"
+      android:scaleType="centerInside"
+      android:src="@drawable/new_play_video" />
+
+    <ImageView
+      android:id="@+id/back"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_margin="8dp"
+      android:background="@drawable/video_back_bg"
+      android:padding="8dp"
+      app:srcCompat="@drawable/ic_arrow_back_white" />
+
+  </RelativeLayout>
+
+  <ProgressBar
+    android:id="@+id/videoProgress"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:layout_height="2dp"
+    android:max="100" />
+
+  <com.namibox.hfx.view.NoFlingRecyclerView
+    android:id="@+id/cardRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:background="#f7f7f7" />
+</LinearLayout>
+

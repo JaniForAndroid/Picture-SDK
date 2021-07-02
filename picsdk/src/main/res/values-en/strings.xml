@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="add_text_hint">8个字符以内</string>
+
+  <string name="choose_image">Select Image</string>
+  <string name="preview_image">View  photo</string>
+  <string name="cancel">Cancel</string>
+  <string name="photo_view_fail">View  photo failed</string>
+  <string name="origin_photo">View original photo</string>
+  <string name="common_save">Save</string>
+  <string name="share_photo">Share</string>
+  <string name="download_success">Saved successfully</string>
+  <string name="download_fail">Save failed</string>
+  <string name="retry">重试</string>
+
+  <string name="edit_image">Edit</string>
+  <string name="folder_all">All photos</string>
+  <string name="preview">Preview</string>
+  <string name="select">Select</string>
+  <string name="msg_no_camera">没有系统相机</string>
+  <string name="msg_amount_limit">已经达到最高选择数量</string>
+  <string name="send_image">Done</string>
+  <string name="cannot_load_image">无法加载图片</string>
+  <string name="common_permission_tip">纳米盒需要以上权限\n才可正常使用</string>
+  <string name="common_permission_detail_tip">纳米盒需要<xliff:g>%s</xliff:g>权限</string>
+  <string name="cant_start">无法启动应用</string>
+  <string name="common_sunday">Sunday</string>
+  <string name="common_monday">Monday</string>
+  <string name="common_tuesday">Tuesday</string>
+  <string name="common_wednesday">Wednesday</string>
+  <string name="common_thursday">Thursday</string>
+  <string name="common_friday">Friday</string>
+  <string name="common_saturday">Saturday</string>
+  <string name="common_loading">Loading</string>
+  <string name="common_net_error">The network is abnormal, please check the network settings</string>
+  <string name="common_net_refresh">Touch the screen to reload</string>
+
+  <string name="image_done_num">Done(%1$d/%2$d)</string>
+  <string name="image_preview_num">Preview(%1$d)</string>
+  <string name="image_select">Select</string>
+  <string name="image_preview">Preview</string>
+  <string name="image_process">Processing…</string>
+  <string name="image_not_edit">can\'t edit</string>
+  <string name="image_upload_progress">%1$d of %2$d(%3$s/%4$s)</string>
+  <string name="image_num">%1$d pictures</string>
+  <string name="common_tip">Tip</string>
+  <string name="common_confirm">Confirm</string>
+  <string name="common_cancel">Cancel</string>
+  <string name="common_image_edit_paint">paint</string>
+  <string name="common_image_edit_clip">clip</string>
+  <string name="common_image_edit_mask">mask</string>
+  <string name="common_image_edit_blur">blur</string>
+  <string name="common_image_edit_text">text</string>
+  <string name="common_release_cancel">Release to cancel</string>
+  <string name="common_press_read">Press to speak</string>
+  <string name="common_release_completed">Release to complete, slide up to cancel</string>
+
+  <string name="wk_choose_project">选课</string>
+  <string name="wk_speed">Multiple%1$s</string>
+  <string name="wk_speed_1">Multiple1.0x</string>
+
+  <string name="hfx_sample_text">Example (text in red box):</string>
+  <string name="hfx_tips_title">Dubbing tips</string>
+  <string name="hfx_tips_freeaudio_title">Tip</string>
+  <string name="hfx_tips_worker">
+    ● You can view unfinished works in the \"Creation Zone\"-\"Creating Works\",and you can also follow the review progress of submitted works\n\n● After the work is online, please view it in \"Creation Zone\"-\"My Album\"\n\n● You can also share your album with other children to enjoy
+  </string>
+  <string name="hfx_tips_message">
+    ● Choose a quiet environment\n\n● No misreading or missed reading\n\n● Do not insert ads, keep clean\n\n● Use headset is recommended
+  </string>
+  <string name="hfx_online_tips_message">● Ensure your network condition is ok\n\n● Choose a quiet environment\n\n● No misreading or missed reading\n\n● Do not insert ads, keep clean\n\n●  Use headset is recommended</string>
+  <string name="hfx_tips_freeaudio_message">● Choose a quiet environment\n\n● No misreading or missed reading\n\n● Do not insert ads, keep clean\n\n● The recording time should be controlled from 1 to 30 minutes
+  </string>
+
+  <string name="hfx_title">Story Show</string>
+  <string name="hfx_confirm">Confirm</string>
+  <string name="hfx_commit_title">Congratulations for completing a work!</string>
+  <string name="hfx_work_introduce">Introduction of works</string>
+  <string name="hfx_work_introduce_hint">Enter your description of the work here, between 10 and 200 words</string>
+  <string name="hfx_empty_story_introduce">Please enter the story introduction</string>
+  <string name="hfx_limit_story_introduce">The introduction of the story has too few words</string>
+  <string name="hfx_empty_video_introduce">Please enter the video introduction</string>
+  <string name="hfx_limit_video_introduce">The video introduction has too few words</string>
+  <string name="hfx_delete_work">Delete</string>
+  <string name="hfx_storyshow">
+    An affectionate interpretation, a funny story, and a good memory can all be shared with everyone through the story show column,hurry up and join! ! !
+  </string>
+  <string name="hfx_videoshow">
+Beautiful world, happy life, humorous little video, see a different world through your eyes, the video show column looks forward to the participation of fans!
+  </string>
+  <string name="hfx_my_story">I\'ll tell a story</string>
+  <string name="hfx_my_video">I will show the video</string>
+  <string name="hfx_retry">Retry</string>
+  <string name="hfx_read_menu_jump">Jump</string>
+  <string name="hfx_read_menu_auto">Automatic</string>
+  <string name="hfx_read_menu_brightness">Brightness</string>
+  <string name="hfx_comment_title">After reading the book, let’s post a comment~</string>
+  <string name="hfx_comment_btn">Comment</string>
+  <string name="hfx_error_resource_prepare_fail">Loading failed</string>
+
+
+  <string name="hfx_speaker_info">%1$s comment %2$s read</string>
+  <string name="hfx_score_text">%.1f score</string>
+  <string name="hfx_comment_text">%1$s already commented</string>
+  <string name="hfx_saving">Saving</string>
+  <string name="hfx_error_read">can\'t open</string>
+  <string name="hfx_continue_read_message">%1$d page you saw %1$d last time, do you want to continue reading?</string>
+  <string name="hfx_continue_read">Continue</string>
+  <string name="hfx_restart_read">Restart</string>
+  <string name="hfx_jump">Skip</string>
+  <string name="hfx_jump_page_number_text">%1$d of %2$d</string>
+  <string name="hfx_res_loading">Loading</string>
+  <string name="hfx_image_loading">Loading picture %1$d/%2$d</string>
+  <string name="hfx_audio_loading">Loading original sound [%1$d/%2$d]</string>
+  <string name="hfx_user_audio_loading">Loading dubbing [%1$d/%2$d]</string>
+  <string name="hfx_local_loading">Loading local resources[%1$d/%2$d]</string>
+  <string name="hfx_error_listen">No audio files to preview</string>
+  <string name="hfx_record_retry">Re-Record</string>
+  <string name="hfx_record_retry_confirm">Are you sure you want to re-record this page?</string>
+  <string name="hfx_record_new">Click to record</string>
+  <string name="hfx_record_file_fail">
+The recording file is empty, please check whether the recording permission of this application has been turned off
+  </string>
+  <string name="hfx_record_listen">Try this page</string>
+  <string name="hfx_record_delete">Delete recording</string>
+  <string name="hfx_record_delete_confirm">Are you sure you want to delete the recording on this page?</string>
+  <string name="hfx_record_delete_fail">Recording deletion failed</string>
+  <string name="hfx_record_stop">Stop</string>
+  <string name="hfx_record_submit">Submit</string>
+  <string name="hfx_record_progress">%1$d/%2$d Recorded</string>
+  <string name="hfx_eval_excellent">Performance is very good, keep working hard!</string>
+  <string name="hfx_eval_good">Read it well, it could be better!</string>
+  <string name="hfx_eval_bad">Did not read well, keep practicing!</string>
+  <string name="hfx_eval_poor">Please read carefully, try again!</string>
+  <string name="hfx_eval_no_content_hint">There is no reading content on this page, just for reading</string>
+
+  <string name="hfx_book_type1">Chinese Picture Book</string>
+  <string name="hfx_book_type2">English Picture Book</string>
+  <string name="hfx_book_type3">Comic strip</string>
+  <string name="hfx_book_type4">Story show</string>
+  <string name="hfx_book_type5">Video show</string>
+  <string name="hfx_error_network">Network error</string>
+  <string name="hfx_commit_work">Submit works</string>
+  <string name="hfx_commit_network_message">
+    You are not currently in a WiFi environment and will use mobile network traffic. Do you want to continue?
+  </string>
+  <string name="hfx_volume">%1$d%%</string>
+  <string name="hfx_quit_message">Do you want to exit, do you want to save the changes?</string>
+  <string name="hfx_quit_save">Save</string>
+  <string name="hfx_quit_no_save">Exit</string>
+  <string name="hfx_quiting">Exiting</string>
+  <string name="hfx_my_work">My creation</string>
+  <string name="hfx_error_book_id">Unknown book</string>
+  <string name="hfx_loading">Loading</string>
+  <string name="hfx_loading_fail">Loading failed,please try again</string>
+  <string name="hfx_show_mywork_message">You have already made this book, please check it in "My Works"</string>
+  <string name="hfx_workers_title">The book has the following dubbing, click to enjoy</string>
+  <string name="hfx_workers_btn">I will</string>
+  <string name="hfx_limit_title">%d has been dubbed , Are you sure you want to continue dubbing?</string>
+  <string name="hfx_limit_btn">Continue</string>
+  <string name="hfx_limit_quit">Exit</string>
+  <string name="hfx_default_time">0:00</string>
+  <string name="hfx_eval_commit_text">
+    You can get credits after submitting your work, and you can get extra credits after sharing it with likes and comments!
+  </string>
+  <string name="hfx_guide_play_audio">Click here to listen to the original audio.</string>
+  <string name="hfx_guide_play_record">Click here to listen to the recording.</string>
+  <string name="hfx_guide_record">Click the microphone to start recording; click again to end recording.</string>
+  <string name="hfx_guide_slide_image">The picture can be swiped left and right to switch to the previous or next</string>
+  <string name="hfx_more_no_book">You don’t have a picture book yet, hurry up and buy it~</string>
+  <string name="hfx_more_no_network">Oops, the network is out of business, try refreshing~</string>
+  <string name="hfx_usr_guide">User Guide</string>
+  <string name="hfx_play">Play</string>
+  <string name="hfx_pause">Pause</string>
+  <string name="hfx_completion">Done</string>
+  <string name="hfx_tip">Tip</string>
+  <string name="hfx_exit_tip">Exiting directly will not save the current work. Do you want to exit?</string>
+  <string name="hfx_skip">Skip</string>
+  <string name="hfx_done">Done</string>
+  <string name="hfx_limit_30_minute">You have recorded for 30 minutes, let\'s take a break</string>
+  <string name="hfx_cancel">Cancel</string>
+  <string name="hfx_re_record">
+Re-recording will lose the recorded data. Are you want to re-record?
+  </string>
+  <string name="hfx_limit_1_minute">Your work lasts less than a minute</string>
+  <string name="hfx_frequently">Do not operate frequently</string>
+  <string name="hfx_stop">
+It is playing, stop playing and continue recording?
+  </string>
+  <string name="hfx_limit_10_second">
+The recording is less than ten seconds, it is recommended to record again
+  </string>
+  <string name="hfx_music_None">None</string>
+  <string name="hfx_music_lyric">Lyric</string>
+  <string name="hfx_music_rhythm">Rhythm</string>
+  <string name="hfx_music_anthiqu">Anthiqu</string>
+  <string name="hfx_music_soft">Soft</string>
+  <string name="hfx_music_elegant">Elegant</string>
+  <string name="hfx_music_relieve">Relieve</string>
+  <string name="hfx_music_sad">Sad</string>
+  <string name="hfx_music_cheerful">Cheerful</string>
+  <string name="hfx_init_failed">
+    Microphone initialization failed, other applications are recording or recording permission is disabled,
+    please confirm that there are no above problems and try again
+  </string>
+  <string name="hfx_recording">Recording, please stop and then exit</string>
+  <string name="hfx_never_tip">Not remind</string>
+  <string name="hfx_eval_failed">Evaluation failed</string>
+  <string name="hfx_evaluating">Evaluating，please wait</string>
+  <string name="hfx_record_short">The recording is too short, please try again</string>
+  <string name="hfx_init_failed2">Engine initialization failed, please exit and try again!</string>
+  <string name="hfx_record_low_voice">The recording is too small, please try again</string>
+  <string name="hfx_unit_eval">&#160; Comment</string>
+  <string name="hfx_unit_read">&#160; Read</string>
+  <string name="hfx_continue">Continue</string>
+  <string name="hfx_exit">Exit</string>
+  <string name="hfx_init">Initialization</string>
+  <string name="hfx_loading_res_failed">Failed to load resource</string>
+  <string name="hfx_save_confirm">Do you want to save the changes?</string>
+  <string name="hfx_save">Save</string>
+  <string name="hfx_know">I know</string>
+  <string name="hfx_commit">Commit</string>
+  <string name="hfx_original">Original</string>
+  <string name="hfx_person_album">You have already made this book, please check it</string>
+  <string name="hfx_re_record_page">Are you sure you want to re-record this page?</string>
+  <string name="hfx_record_init_failed">Recorder init failed</string>
+  <string name="hfx_save_uncomplete">Unfinished works can be saved</string>
+  <string name="hfx_cut_limit_10">Less than 10 seconds,recommended to record again</string>
+  <string name="hfx_cut_cancel">Cancel</string>
+  <string name="hfx_cut_confirm">Confirm</string>
+
+  <string name="picker_tip">Tip</string>
+  <string name="picker_exit_tip">Exit will discard your edits to the picture, are you sure to Exit?</string>
+  <string name="picker_confirm">Confirm</string>
+  <string name="picker_cancel">Cancel</string>
+  <string name="picker_give_up">Give up this edit?</string>
+  <string name="picker_give_up1">Give up</string>
+  <string name="picker_keep_change">Do you want to keep the changes?</string>
+  <string name="picker_input_text">Please input text</string>
+  <string name="picker_text_empty">Text cannot be empty</string>
+  <string name="picker_text_limit">The text length exceeds the limit</string>
+  <string name="picker_text_special">Do not input special characters</string>
+  <string name="picker_edit_limit">Cannot edit picture</string>
+
+  <string name="dkplayer_replay">Replay</string>
+  <string name="dkplayer_lock_tip">Please unlock the screen first!</string>
+  <string name="dkplayer_error_message">Something went wrong, please try again later</string>
+  <string name="dkplayer_retry">  Retry  </string>
+  <string name="dkplayer_continue_play">Continue playing</string>
+  <string name="player_wifi_tip">You are currently using the mobile network, and continuing to play will consume traffic</string>
+
+  <string name="player_speed">Speed%1$s</string>
+  <string name="player_speed_1">Speed1.0x</string>
+  <string name="low_volume">The volume is low, please turn up the volume</string>
+  <string name="player_error_tips1">Playback error, the file does not exist</string>
+  <string name="player_error_tips2">Audio download failed, error code:</string>
+  <string name="player_error_tips3">Playback error, unable to download</string>
+  <string name="player_error_tips4">Audio playback failed, please delete the file and try again</string>
+  <string name="player_error_tips5">Playback error, please restart the app and try again</string>
+  <string name="player_error">Playback error</string>
+  <string name="player_forward">Forward</string>
+  <string name="player_back">Backward</string>
+  <string name="player_brightness">Brightness</string>
+  <string name="player_volume">Volume</string>
+  <string name="player_retry">Retry</string>
+  <string name="player_contact_kf">联系客服</string>
+  <string name="player_continue_play">Continue</string>
+  <string name="player_exit">Exit</string>
+  <string name="player_network_tips">Is using a non-WiFi network, playback will generate traffic</string>
+  <string name="player_wk_tips">爱心代表视频观看进度，观看时间越长，爱心越多</string>
+  <string name="player_no_network">There is currently no network, please check and try again</string>
+  <string name="player_message_tips">traffic:%1$s | duration:%2$s</string>
+  <string name="player_exercise">Exercise</string>
+
+  <string name="scan_no_code">QR code not recognized</string>
+  <string name="scan_title">Scan</string>
+  <string name="scan_file">Album</string>
+  <string name="scan_tips">Please scan the QR code / barcode in the viewfinder</string>
+
+  <string name="waiting">Waiting&#8230;</string>
+  <string name="save">Save</string>
+  <string name="ok">OK</string>
+
+  <string name="challenge_tip">挑战成功，点击继续进入下一关哦~</string>
+</resources>

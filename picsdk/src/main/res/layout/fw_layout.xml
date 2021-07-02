@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  >
+
+  <ImageView
+    android:id="@+id/iv_bg"
+    android:layout_width="71dp"
+    android:layout_height="71dp"
+    android:src="@drawable/fw_coming_lesson_bg"
+    tools:src="@drawable/fw_coming_lesson_bg"
+    app:layout_constraintDimensionRatio="1"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    />
+
+  <TextView
+    android:id="@+id/tv_main_tips"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="18sp"
+    android:textColor="#ffffff"
+    android:text="00:00"
+    android:gravity="center"
+    app:layout_constraintStart_toStartOf="@+id/iv_bg"
+    app:layout_constraintEnd_toEndOf="@id/iv_bg"
+    app:layout_constraintTop_toTopOf="@id/iv_bg"
+    app:layout_constraintBottom_toBottomOf="@id/iv_bg"
+    app:layout_constraintVertical_bias="0.67"
+    android:shadowDx="0"
+    android:shadowDy="1"
+    android:shadowRadius="3.0"
+    android:shadowColor="#fffb4c36"
+    android:textStyle="bold"
+    />
+</android.support.constraint.ConstraintLayout>

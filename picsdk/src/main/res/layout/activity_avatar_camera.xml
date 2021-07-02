@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#000"
+  tools:context="com.namibox.imageselector.camera.AvatarCameraActivity">
+
+  <FrameLayout
+    android:id="@+id/cameraContainer"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintDimensionRatio="h,1:1"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+    android:id="@+id/shadow"
+    android:layout_width="0dp"
+    android:layout_height="120dp"
+    android:background="@drawable/ic_shadow_bg"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+
+  <ImageView
+    android:id="@+id/ivClose"
+    android:layout_width="30dp"
+    android:layout_height="44dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="17dp"
+    android:background="@drawable/ic_avatar_close"
+    android:contentDescription="@null"
+    android:padding="6dp"
+    android:src="@drawable/ic_shutup"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/ivSwitch"
+    android:layout_width="30dp"
+    android:layout_height="44dp"
+    android:layout_marginTop="17dp"
+    android:layout_marginRight="20dp"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_camera_switch"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="@+id/ivClose"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/ivTakePic"
+    android:layout_width="74dp"
+    android:layout_height="74dp"
+    android:layout_marginBottom="20dp"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_avatar_takephoto"
+    app:layout_constraintBottom_toBottomOf="@+id/shadow"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+
+  <ImageView
+    android:id="@+id/ivGallery"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_marginRight="63dp"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_avatar_photo_pic"
+    app:layout_constraintBottom_toBottomOf="@+id/ivTakePic"
+    app:layout_constraintRight_toLeftOf="@+id/ivTakePic"
+    app:layout_constraintTop_toTopOf="@+id/ivTakePic" />
+
+  <ImageView
+    android:id="@+id/ivLight"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:layout_marginLeft="63dp"
+    android:contentDescription="@null"
+    android:src="@drawable/ic_avatar_photo_light"
+    app:layout_constraintBottom_toBottomOf="@+id/ivTakePic"
+    app:layout_constraintLeft_toRightOf="@+id/ivTakePic"
+    app:layout_constraintTop_toTopOf="@+id/ivTakePic" />
+
+</android.support.constraint.ConstraintLayout>

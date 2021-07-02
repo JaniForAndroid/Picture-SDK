@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  package="com.example.picsdk">
+
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+  <uses-permission android:name="android.permission.CAMERA" />
+  <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+  <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+  <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <!-- 访问网络，网络定位需要上网-->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+  <application
+    android:allowBackup="true"
+    android:supportsRtl="true"
+    android:largeHeap="true"
+    tools:ignore="AllowBackup,GoogleAppIndexingWarning"
+    android:usesCleartextTraffic="true"
+    >
+
+    <activity
+      android:name="com.example.picsdk.PicGuideActivity"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/ActivityTheme3" />
+
+    <activity
+      android:launchMode="singleTop"
+      android:name="com.example.picsdk.PicLoadingActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/ActivityTheme3"/>
+    <activity
+      android:launchMode="singleTop"
+      android:name="com.example.picsdk.VocabularyActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle.FullScreen"/>
+    <activity
+      android:launchMode="singleTop"
+      android:name="com.example.picsdk.music.MusicPicActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/ActivityTheme3"/>
+    <activity
+      android:name="com.example.picsdk.ResultActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle.FullScreen"/>
+    <activity
+      android:launchMode="singleTop"
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.example.picsdk.ReadBookActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/ActivityTheme3"/>
+    <activity
+      android:launchMode="singleTop"
+      android:configChanges="orientation|screenSize|keyboardHidden|navigation|screenLayout|smallestScreenSize"
+      android:name="com.example.picsdk.VideoActivity"
+      android:screenOrientation="landscape"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+    <activity
+      android:name="com.example.picsdk.ExerciseChallengeActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/ActivityTheme3">
+    </activity>
+
+
+
+    <activity
+      android:name="com.namibox.hfx.ui.RecordActivity"
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:screenOrientation="nosensor"
+      android:theme="@style/HfxRecordTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.namibox.hfx.ui.EvalActivity"
+      android:screenOrientation="nosensor"
+      android:theme="@style/EvaluationTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+    </activity>
+    <!--绘本评测查看-->
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.namibox.hfx.ui.ReadBookEvalActivity"
+      android:screenOrientation="nosensor"
+      android:theme="@style/EvaluationTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+    </activity>
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.namibox.hfx.ui.ReadBookWorkEvalActivity"
+      android:screenOrientation="landscape"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden">
+    </activity>
+
+    <activity
+      android:name="com.namibox.hfx.ui.MyWorkActivity"
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:launchMode="singleTask"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme" />
+    <activity
+      android:name="com.namibox.hfx.ui.StoryRecordActivity"
+      android:launchMode="singleTop"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+    <activity
+      android:name="com.namibox.hfx.ui.IntroActivity"
+      android:label="引导页"
+      android:screenOrientation="portrait"
+      android:theme="@style/Theme.AppCompat.NoActionBar"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:name="com.namibox.hfx.ui.LinkPageAudioActivity"
+      android:label="音频引导页"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:name="com.namibox.hfx.ui.LinkPageVideoActivity"
+      android:label="视频引导页"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:name="com.namibox.hfx.ui.CoverActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:label="选择封面"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+    <activity
+      android:name="com.namibox.hfx.ui.CutVideoActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:name="com.namibox.hfx.ui.SaveAudioActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:name="com.namibox.hfx.ui.SaveVideoActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.namibox.hfx.ui.ReadBookActivity"
+      android:screenOrientation="nosensor"
+      android:theme="@style/HfxReadTheme" />
+
+    <activity
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:label="配音"
+      android:name="com.namibox.dub.DubVideoActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:name="com.namibox.dub.DubSaveVideoActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle" />
+    <activity
+      android:configChanges="orientation|screenSize|keyboardHidden"
+      android:label="配音馆发布页面"
+      android:name="com.namibox.dub.DubSaveVideoNewActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle" />
+    <activity
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:label="配音馆"
+      android:name="com.namibox.dub.DubVideoNewActivity"
+      android:screenOrientation="portrait"
+      android:launchMode="singleTask"
+      android:theme="@style/NamiboxAppTheme.FullScreen"
+      android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+    <activity
+      android:label=""
+      android:launchMode="singleTask"
+      android:name="com.namibox.hfx.ui.HfxPlayAudioActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.NoTitle.FullScreen" />
+
+    <!--imagepicker-->
+    <activity
+      android:name="com.namibox.imageselector.ImageSelectorActivity"
+      android:label="选择图片"
+      android:screenOrientation="portrait"
+      android:theme="@style/ImageStyle" />
+    <activity
+      android:name="com.namibox.imageselector.ImagePreviewActivity"
+      android:label="预览图片"
+      android:screenOrientation="portrait"
+      android:theme="@style/ImageStyle.Preview" />
+
+    <activity
+      android:name="com.namibox.imageselector.ImageEditActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/ImageStyle.Edit" />
+
+    <activity
+      android:name="com.namibox.imageselector.cropper.CropImageActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/CropImageStyle" />
+
+    <activity
+      android:name="com.namibox.imageselector.cropper.AvatarCropActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/NamiboxAppTheme.FullScreen" />
+
+    <activity
+      android:name="com.namibox.qr_code.ScannerActivity"
+      android:configChanges="keyboardHidden|orientation|screenSize"
+      android:screenOrientation="behind"
+      android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+    <activity
+      android:name="vn.tungdx.mediapicker.activities.MediaPickerActivity"
+      android:theme="@style/MediaPickerTheme" />
+
+  </application>
+
+</manifest>

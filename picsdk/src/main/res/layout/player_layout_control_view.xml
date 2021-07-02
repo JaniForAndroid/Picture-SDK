@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <LinearLayout
+    android:id="@+id/bottom_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@drawable/player_control_bar_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+>
+
+    <ImageView
+      android:id="@+id/iv_play"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:padding="14dp"
+      android:src="@drawable/player_selector_play_button" />
+
+    <TextView
+      android:id="@+id/curr_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_marginStart="9dp"
+      android:textSize="@dimen/player_controller_time_text_size"
+      tools:text="00:00" />
+
+    <com.example.exoaudioplayer.video.view.CSeekBar
+      android:id="@+id/seekBar"
+      style="@style/VideoPlayerSeekBarStyle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1" />
+
+    <TextView
+      android:id="@+id/total_time"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/player_controller_time_text_size"
+      android:layout_marginEnd="15dp"
+      tools:text="00:00" />
+
+    <TextView
+      android:id="@+id/tv_play_speed"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textColor="@android:color/white"
+      android:textSize="@dimen/player_controller_time_text_size"
+      android:gravity="center"
+      android:paddingEnd="10dp"
+      android:text="@string/player_speed_1"/>
+
+    <ImageView
+      android:id="@+id/iv_menu"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:padding="6dp"
+      android:visibility="gone"
+      android:src="@drawable/ic_menu"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/tv_choose"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:text="@string/wk_choose_project"
+      android:visibility="gone"
+      android:gravity="center"
+      android:paddingEnd="15dp"
+      android:textColor="#FFFFFFFF"
+      android:textSize="15sp"
+      tools:ignore="HardcodedText" />
+
+    <ImageView
+      android:id="@+id/fullscreen"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:padding="6dp"
+      android:src="@drawable/player_selector_full_screen_button" />
+  </LinearLayout>
+
+  <com.example.exoaudioplayer.video.view.ProgressView
+    android:id="@+id/bottom_progress"
+    android:visibility="gone"
+    android:max="1000"
+    android:layout_gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="1.5dp" />
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="16dp"
+  android:orientation="vertical">
+  <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textColor="#333"
+    android:textAppearance="?android:textAppearanceMedium"
+    android:text="@string/hfx_tips_title" />
+  <TextView
+    android:id="@+id/notice_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="32dp"
+    android:paddingRight="32dp"
+    android:paddingTop="32dp"
+    android:textColor="#0d5302"
+    android:textSize="16sp"
+    android:text="@string/hfx_tips_message" />
+</LinearLayout>

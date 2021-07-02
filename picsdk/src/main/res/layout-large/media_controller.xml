@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <ImageView
+    android:id="@+id/thumbnail_view"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:scaleType="centerCrop"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+  <android.support.constraint.ConstraintLayout
+    android:id="@+id/tool_bar"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:background="@drawable/tool_bar_bg"
+    android:visibility="gone"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:visibility="visible">
+
+    <ImageView
+      android:id="@+id/iv_back"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:layout_marginStart="10dp"
+      android:padding="20dp"
+      android:src="@drawable/ic_action_arrow_back"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/tv_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="5dp"
+      android:textColor="#ffffff"
+      android:textSize="22sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toRightOf="@id/iv_back"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="单个章节名称" />
+
+    <TextView
+      android:id="@+id/tv_exercise"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="30dp"
+      android:textColor="#ffffff"
+      android:textSize="19sp"
+      android:text="巩固练习"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:text="巩固练习" />
+
+    <ImageView
+      android:id="@+id/iv_exercise"
+      android:layout_width="30dp"
+      android:layout_height="30dp"
+      android:layout_marginEnd="10dp"
+      android:src="@drawable/ic_exercise"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintRight_toLeftOf="@id/tv_exercise"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:ignore="ContentDescription" />
+
+  </android.support.constraint.ConstraintLayout>
+
+  <LinearLayout
+    android:id="@+id/control_bar"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:background="@drawable/control_bar_bg"
+    android:gravity="center_vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+    <ImageView
+      android:id="@+id/play_view"
+      android:layout_width="54dp"
+      android:layout_height="54dp"
+      android:padding="15dp"
+      android:src="@drawable/new_play_video"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/play_time_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:textSize="15sp"
+      tools:text="01:24" />
+
+    <com.google.android.view.CSeekBar
+      android:id="@+id/seekbar"
+      style="@style/VideoPlayerSeekBarStyle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:paddingStart="10dp"
+      android:paddingEnd="10dp" />
+
+    <TextView
+      android:id="@+id/play_duration_view"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@android:color/white"
+      android:layout_marginEnd="10dp"
+      android:textSize="15sp"
+      tools:text="30:00" />
+
+    <TextView
+      android:id="@+id/tv_play_speed"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="10dp"
+      android:text="@string/player_speed_1"
+      android:textStyle="bold"
+      android:textColor="#FFFFFFFF"
+      android:textSize="15sp"
+      tools:ignore="HardcodedText" />
+
+    <ImageView
+      android:id="@+id/iv_menu"
+      android:layout_width="44dp"
+      android:layout_height="44dp"
+      android:padding="10dp"
+      android:src="@drawable/ic_menu"
+      android:visibility="gone"
+      tools:ignore="ContentDescription" />
+
+    <TextView
+      android:id="@+id/tv_choose"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="@string/"
+      android:layout_marginEnd="15dp"
+      android:textColor="#FFFFFFFF"
+      android:textSize="15sp"
+      android:visibility="gone"
+      tools:ignore="HardcodedText" />
+
+    <ImageView
+      android:id="@+id/fullScreenView"
+      android:layout_width="24dp"
+      android:layout_height="44dp"
+      android:layout_marginEnd="15dp"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:visibility="gone"
+      android:src="@drawable/enlarge_video"
+      tools:ignore="ContentDescription" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/volume_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_panel_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/volume_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableStart="@drawable/ic_volume_up"
+      android:drawablePadding="8dp"
+      android:gravity="center_vertical"
+      android:text="音量"
+      android:textColor="#fff"
+      android:textSize="15sp"
+      tools:ignore="HardcodedText" />
+
+    <ProgressBar
+      android:id="@+id/volume"
+      style="@style/VolumeProgressStyle"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/brightness_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_panel_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+      android:id="@+id/brightness_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:drawableStart="@drawable/ic_brightness_low"
+      android:drawablePadding="8dp"
+      android:gravity="center_vertical"
+      android:text="亮度"
+      android:textColor="#fff"
+      android:textSize="15sp"
+      tools:ignore="HardcodedText" />
+
+    <ProgressBar
+      android:id="@+id/brightness"
+      style="@style/VolumeProgressStyle"
+      android:layout_width="120dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/seek_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/info_panel_bg"
+    android:drawableStart="@drawable/ic_fast_forward"
+    android:drawablePadding="8dp"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:textColor="#fff"
+    android:textSize="15sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/lock_unlock"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:src="@drawable/ic_lock_open"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="ContentDescription" />
+
+  <com.google.android.exoplayer.lib.ProgressView
+    android:id="@+id/progress_view"
+    android:layout_width="0dp"
+    android:layout_height="1.5dp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent" />
+
+  <TextView
+    android:id="@+id/buffer_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/info_panel_bg"
+    android:padding="12dp"
+    android:text="缓冲中..."
+    android:textColor="#fff"
+    android:textSize="14sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="HardcodedText" />
+
+  <ImageView
+    android:id="@+id/play_pause_view"
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:src="@drawable/work_listitem_video_pause"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

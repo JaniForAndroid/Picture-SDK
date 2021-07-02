@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  <com.namibox.commonlib.view.FixedAspectRatioFrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    app:aspectRatio="0.8">
+
+    <RelativeLayout
+      android:id="@+id/checkLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:padding="2dp">
+      <ImageView
+        android:id="@+id/voiceBgImg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+      <TextView
+        android:id="@+id/voiceBgName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="4dp"
+        android:gravity="center" />
+      <ImageView
+        android:id="@+id/silentBgImg"
+        android:layout_width="40dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        android:layout_above="@+id/voiceBgName"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/hfx_icon_volume_silent" />
+
+    </RelativeLayout>
+  </com.namibox.commonlib.view.FixedAspectRatioFrameLayout>
+
+</LinearLayout>

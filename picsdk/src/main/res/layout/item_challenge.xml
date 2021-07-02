@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="wrap_content"
+  android:layout_height="match_parent"
+  android:layout_marginTop="8dp"
+  android:layout_marginBottom="18dp"
+  android:layout_marginLeft="8dp"
+  android:layout_marginRight="8dp"
+  app:cardCornerRadius="10dp"
+  app:cardElevation="6dp">
+
+  <android.support.constraint.ConstraintLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <View
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintDimensionRatio="138:215"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+      android:id="@+id/iv_item_pic"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:contentDescription="@null"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintHeight_percent="0.475"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.075"
+      tools:src="@color/theme_color"/>
+
+    <View
+      android:id="@+id/item_cover"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@drawable/black_round_corner"
+      app:layout_constraintBottom_toBottomOf="@id/iv_item_pic"
+      app:layout_constraintLeft_toLeftOf="@id/iv_item_pic"
+      app:layout_constraintRight_toRightOf="@id/iv_item_pic"
+      app:layout_constraintTop_toTopOf="@id/iv_item_pic"/>
+
+    <ImageView
+      android:id="@+id/iv_item_lock"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:src="@drawable/icon_lock"
+      app:layout_constraintBottom_toBottomOf="@id/iv_item_pic"
+      app:layout_constraintDimensionRatio="1:1"
+      app:layout_constraintHeight_percent="0.2"
+      app:layout_constraintRight_toRightOf="@id/iv_item_pic"
+      tools:ignore="ContentDescription"/>
+
+    <android.support.constraint.Group
+      android:id="@+id/gp_lock"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="item_cover,iv_item_lock"/>
+
+    <TextView
+      android:id="@+id/tv_item_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/common_text_black"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.622"
+      tools:text="@string/string_book_study"/>
+
+    <TextView
+      android:id="@+id/tv_study_progress"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textColor="@color/common_text_black"
+      android:textSize="12sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.8"
+      tools:text="30%"/>
+
+    <ProgressBar
+      android:id="@+id/progress_study"
+      style="?android:attr/progressBarStyleHorizontal"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:layout_marginTop="6dp"
+      android:max="100"
+      android:progressDrawable="@drawable/hfx_progress_blue"
+      app:layout_constraintDimensionRatio="118:10"
+      app:layout_constraintHeight_percent="0.046"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tv_study_progress"
+      tools:progress="30"/>
+
+    <android.support.constraint.Group
+      android:id="@+id/group_study"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:constraint_referenced_ids="tv_study_progress,progress_study"/>
+
+    <com.willy.ratingbar.ScaleRatingBar
+      android:id="@+id/rating_item"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:paddingTop="2dp"
+      android:paddingBottom="2dp"
+      android:paddingLeft="4dp"
+      android:paddingRight="4dp"
+      android:background="@drawable/gray_round_corner2"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.88"
+      app:srb_drawableEmpty="@drawable/icon_rating_star_bg"
+      app:srb_drawableFilled="@drawable/icon_rating_star"
+      app:srb_isIndicator="true"
+      app:srb_numStars="3"
+      app:srb_scrollable="false"
+      app:srb_starHeight="19dp"
+      app:srb_starPadding="6dp"
+      app:srb_starWidth="19dp"
+      app:srb_stepSize="0.5"/>
+  </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/frameLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+
+  <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+    android:id="@+id/swipyrefreshlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:srl_direction="top">
+
+    <android.support.v7.widget.RecyclerView
+      android:id="@+id/recyclerview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+  </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+  <!--<ProgressBar-->
+  <!--android:visibility="gone"-->
+  <!--android:id="@+id/progress"-->
+  <!--android:layout_width="wrap_content"-->
+  <!--android:layout_height="wrap_content"-->
+  <!--android:layout_gravity="center" />-->
+
+  <!--<TextView-->
+    <!--android:id="@+id/empty_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:text="@string/hfx_no_work"-->
+    <!--android:visibility="gone" />-->
+
+</FrameLayout>

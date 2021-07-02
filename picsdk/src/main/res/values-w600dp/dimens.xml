@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="hfx_lager_photo_size">170dp</dimen>
+  <dimen name="hfx_inner_photo_size">164dp</dimen>
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:id="@+id/playView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="3"
+    android:background="#303030">
+
+    <com.google.android.exoplayer.lib.PlayerView
+      android:id="@+id/player_view"
+      android:focusable="true"
+      app:surface_type="texture_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <ImageView
+      android:id="@+id/playpause"
+      android:layout_centerInParent="true"
+      android:src="@drawable/new_play_video"
+      android:scaleType="centerInside"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  </RelativeLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="2"
+    android:background="@color/hfx_video_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="27dp">
+
+      <TextView
+        android:id="@+id/playStartTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="16dp"
+        android:textColor="@color/theme_color"
+        android:textSize="15dp" />
+
+      <TextView
+        android:id="@+id/cutDurationTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="16dp"
+        android:textColor="@color/hfx_video_toolbar_text"
+        android:textSize="15dp" />
+
+      <TextView
+        android:id="@+id/playEndTimeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingRight="16dp"
+        android:textColor="@color/hfx_red_text"
+        android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+      android:id="@+id/rangeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:orientation="vertical">
+
+    </LinearLayout>
+    <TextView
+      android:layout_width="match_parent"
+      android:layout_height="21dp"
+      android:gravity="center"
+      android:text="请剪裁10秒到5分钟的视频片段"
+      android:textColor="@color/hfx_video_toolbar_text"
+      android:textSize="15dp" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <com.namibox.hfx.view.PressAndTapLinearLayout
+          android:id="@+id/minBackView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:padding="8dp">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hfx_ic_down" />
+
+          <!--<TextView-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="40px"-->
+          <!--android:gravity="center"-->
+          <!--android:text="后退"-->
+          <!--android:textColor="@color/main_blue"-->
+          <!--android:textSize="35px" />-->
+        </com.namibox.hfx.view.PressAndTapLinearLayout>
+
+        <com.namibox.hfx.view.PressAndTapLinearLayout
+          android:id="@+id/minForwardView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:padding="8dp">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hfx_ic_speed" />
+
+          <!--<TextView-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="40px"-->
+          <!--android:gravity="center"-->
+          <!--android:text="前进"-->
+          <!--android:textColor="@color/main_blue"-->
+          <!--android:textSize="35px" />-->
+        </com.namibox.hfx.view.PressAndTapLinearLayout>
+
+        <com.namibox.hfx.view.PressAndTapLinearLayout
+          android:id="@+id/maxBackView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:padding="8dp">
+
+          <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hfx_ic_down_red" />
+
+          <!--<TextView-->
+          <!--android:layout_width="match_parent"-->
+          <!--android:layout_height="40px"-->
+          <!--android:gravity="center"-->
+          <!--android:text="后退"-->
+          <!--android:textColor="@color/red_text"-->
+          <!--android:textSize="35px" />-->
+        </com.namibox.hfx.view.PressAndTapLinearLayout>
+
+        <com.namibox.hfx.view.PressAndTapLinearLayout
+          android:id="@+id/maxForwardView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:padding="8dp">
+
+          <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/hfx_ic_speed_red" />
+        </com.namibox.hfx.view.PressAndTapLinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="剪裁起点微调"
+          android:textColor="@color/hfx_video_toolbar_text" />
+
+        <TextView
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="剪裁终点微调"
+          android:textColor="@color/hfx_video_toolbar_text" />
+      </LinearLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+
+</LinearLayout>

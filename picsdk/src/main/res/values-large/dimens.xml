@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="music_seekbar_margintop">68.5dp</dimen>
+  <dimen name="music_seekbar_marghor">84dp</dimen>
+  <dimen name="music_ivhead_martop">20dp</dimen>
+  <dimen name="music_margin_12to24">24dp</dimen>
+  <dimen name="music_ivbgblur_martop">95dp</dimen>
+  <dimen name="music_ivbgblur_size">300dp</dimen>
+  <dimen name="music_ivmusictitle_martop">35dp</dimen>
+  <dimen name="music_ivfif_marhor">37.5dp</dimen>
+  <dimen name="music_ivplay_martop">40dp</dimen>
+  <dimen name="music_ivalerm_martop">45dp</dimen>
+  <dimen name="music_margin_39to73">73dp</dimen>
+  <dimen name="music_margin_22to79">808dp</dimen>
+  <dimen name="music_margin_15to33">33dp</dimen>
+  <dimen name="music_margin_17to33">33.5dp</dimen>
+  <dimen name="music_margin_12to30">30dp</dimen>
+  <dimen name="music_margin_3to9">9dp</dimen>
+  <dimen name="music_margin_3to7">7dp</dimen>
+  <dimen name="music_margin_15to31">31dp</dimen>
+  <dimen name="music_ivbgblur_size1">316dp</dimen>
+
+  <item name="dialog_big_image" format="float" type="dimen">0.7</item>
+  <dimen name="loading_width">250dp</dimen>
+  <dimen name="loading_height">200dp</dimen>
+  <dimen name="loading_text_size">18sp</dimen>
+</resources>

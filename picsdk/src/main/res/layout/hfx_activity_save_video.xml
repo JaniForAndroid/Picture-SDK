@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hfx_img_background">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+          <RelativeLayout
+            android:layout_width="@dimen/hfx_lager_photo_size"
+            android:layout_height="@dimen/hfx_lager_photo_size"
+            android:layout_gravity="center"
+            android:background="@drawable/hfx_circle_white_transparent">
+
+            <TextView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:text="选择封面" />
+
+            <com.namibox.commonlib.view.CircleImageView
+              android:id="@+id/photoView"
+              android:layout_width="@dimen/hfx_inner_photo_size"
+              android:layout_height="@dimen/hfx_inner_photo_size"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+              android:background="@drawable/hfx_circle_gray_mark"
+              app:border_color="#fff"
+              app:border_width="4dp" />
+
+          </RelativeLayout>
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:background="@drawable/hfx_gray_white_button">
+
+            <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:text="视频标题"
+              android:textSize="14dp" />
+
+            <View
+              android:layout_width="1px"
+              android:layout_height="match_parent"
+              android:layout_margin="8dp"
+              android:background="#cccccc" />
+
+            <EditText
+              android:id="@+id/titleEt"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@null"
+              android:gravity="center_vertical"
+              android:hint="请输入2到16字标题"
+              android:maxLength="16"
+              android:singleLine="true"
+              android:textSize="14dp" />
+          </LinearLayout>
+
+          <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+          <LinearLayout
+            android:id="@+id/categoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="40dp"
+              android:layout_marginLeft="32dp"
+              android:layout_marginRight="32dp"
+              android:padding="8dp"
+              android:background="@drawable/hfx_gray_white_button">
+
+              <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="视频分类"
+                android:textSize="14dp" />
+
+              <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="#cccccc" />
+
+              <TextView
+                android:id="@+id/subtypeTv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:maxLength="16"
+                android:singleLine="true"
+                android:textSize="14dp" />
+            </LinearLayout>
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="30dp" />
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/hfx_gray_white_button"
+            android:orientation="vertical">
+
+            <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:text="视频简介"
+              android:textSize="14dp" />
+
+            <View
+              android:layout_width="match_parent"
+              android:layout_height="1px"
+              android:layout_marginLeft="8dp"
+              android:layout_marginRight="8dp"
+              android:background="#cccccc" />
+
+            <EditText
+              android:id="@+id/introEt"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="8dp"
+              android:background="@null"
+              android:gravity="top|left"
+              android:hint="请输入10到200字的简介"
+              android:maxLength="200"
+              android:minLines="4"
+              android:textSize="14dp" />
+
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </ScrollView>
+
+      <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/hfx_btn_done"
+        android:text="上传作品"
+        android:textColor="@color/hfx_white"
+        android:textSize="20dp" />
+      <LinearLayout
+        android:id="@+id/classLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+          android:layout_width="match_parent"
+          android:layout_height="0.3dp"
+          android:background="#aaa" />
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="45dp">
+          <CheckBox
+            android:id="@+id/classCheckBox"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@color/hfx_white"
+            android:text="同时发布到班级圈"
+            android:textColor="@color/common_text_black"
+            android:textSize="14dp" />
+          <Button
+            android:id="@+id/classubmitBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/theme_color"
+            android:text="上传作品"
+            android:textColor="@color/hfx_white" />
+        </LinearLayout>
+      </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+      android:id="@+id/subTypeLayout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#66000000"
+      android:orientation="vertical"
+      android:visibility="gone">
+
+      <View
+        android:id="@+id/blankSubTypeView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="bottom"
+        android:background="@color/hfx_white" />
+
+    </LinearLayout>
+
+  </FrameLayout>
+</LinearLayout>

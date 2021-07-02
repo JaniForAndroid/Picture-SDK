@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:layout_height="100dp"
+  android:background="#ffffff">
+
+  <ImageView
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:background="@drawable/np_huiben_show"
+    android:contentDescription="@null"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <android.support.constraint.Guideline
+    android:id="@+id/v_guideline1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.02"/>
+
+  <android.support.constraint.Guideline
+    android:id="@+id/v_guideline2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.26"/>
+  <android.support.constraint.Guideline
+    android:id="@+id/v_guideline3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.45"/>
+  <android.support.constraint.Guideline
+    android:id="@+id/v_guideline4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.98"/>
+
+  <android.support.constraint.Guideline
+    android:id="@+id/v_guideline5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.1"/>
+
+  <View
+    android:id="@+id/divider2"
+    android:layout_width="0dp"
+    android:layout_height="0.5dp"
+    android:background="#e5e5e5"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <TextView
+    android:id="@+id/tvScoreLand"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#333333"
+    android:textSize="13sp"
+    app:layout_constraintBottom_toTopOf="@+id/tvExplainLand"
+    app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+    app:layout_constraintRight_toRightOf="@+id/v_guideline2"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_chainStyle="packed"
+    tools:text="91分"/>
+
+  <TextView
+    android:id="@+id/tvExplainLand"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:textColor="#999999"
+    android:textSize="12sp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+    app:layout_constraintRight_toRightOf="@+id/v_guideline2"
+    app:layout_constraintTop_toBottomOf="@+id/tvScoreLand"
+    tools:text="表现非常棒，再接再厉哦！"/>
+
+  <TextView
+    android:id="@+id/tvEvalContentLand"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:gravity="center_vertical"
+    android:textColor="#333333"
+    android:textSize="18sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="@+id/v_guideline1"
+    app:layout_constraintRight_toRightOf="@+id/resultFrame"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:text="@tools:sample/full_names"/>
+
+  <View
+    android:id="@+id/resultFrame"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/tvExplainLand"
+    app:layout_constraintRight_toLeftOf="@+id/ivPlayAudioLand"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <ScrollView
+    android:id="@+id/scroll_view_land"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="@+id/resultFrame"
+    app:layout_constraintLeft_toLeftOf="@+id/resultFrame"
+    app:layout_constraintRight_toRightOf="@+id/resultFrame"
+    app:layout_constraintTop_toTopOf="@+id/resultFrame">
+    <com.zhy.view.flowlayout.FlowLayout
+      android:id="@+id/scoreResultListLand"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      />
+  </ScrollView>
+
+  <ImageView
+    android:id="@+id/ivPlayAudioLand"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_marginLeft="15dp"
+    android:contentDescription="@null"
+    android:src="@drawable/hfx_eval_play_audio_selector"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/resultFrame"
+    app:layout_constraintRight_toLeftOf="@+id/ivRecordLand"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+    android:id="@+id/ivRecordLand"
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:src="@drawable/hfx_ic_eval_record"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/ivPlayAudioLand"
+    app:layout_constraintRight_toLeftOf="@+id/ivPlayRecordLand"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <ImageView
+    android:id="@+id/ivPlayRecordLand"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:contentDescription="@null"
+    android:src="@drawable/hfx_eval_play_record_selector"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toRightOf="@+id/ivRecordLand"
+    app:layout_constraintRight_toRightOf="@+id/v_guideline4"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

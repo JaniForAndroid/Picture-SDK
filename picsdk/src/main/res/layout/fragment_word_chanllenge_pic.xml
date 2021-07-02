@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:layout_marginTop="0dp"
+  android:paddingTop="35dp">
+
+  <TextView
+    android:id="@+id/tv_last"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:gravity="center"
+    android:textColor="#333333"
+    android:textSize="14sp"
+    android:visibility="gone"
+    app:layout_constraintBottom_toBottomOf="@id/view_top_bg"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toLeftOf="@id/view_top_bg"
+    app:layout_constraintTop_toTopOf="@id/view_top_bg"
+    android:text="上一题" />
+
+  <View
+    android:id="@+id/view_top_bg"
+    android:layout_width="0dp"
+    android:layout_height="50dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/exercise_time_bg"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toRightOf="@id/tv_last"
+    app:layout_constraintRight_toLeftOf="@id/right_layout"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/tv_num"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:gravity="center"
+    android:textColor="#333333"
+    android:textSize="18sp"
+    app:layout_constraintBottom_toBottomOf="@id/view_top_bg"
+    app:layout_constraintLeft_toLeftOf="@id/view_top_bg"
+    app:layout_constraintRight_toLeftOf="@id/tv_numMax"
+    app:layout_constraintTop_toTopOf="@id/view_top_bg"
+    tools:text="5" />
+
+  <TextView
+    android:id="@+id/tv_numMax"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#666666"
+    android:textSize="14sp"
+    app:layout_constraintBottom_toBottomOf="@id/view_top_bg"
+    app:layout_constraintLeft_toRightOf="@id/tv_num"
+    app:layout_constraintRight_toLeftOf="@id/progress"
+    app:layout_constraintTop_toTopOf="@id/view_top_bg"
+    tools:text="/12" />
+
+  <RelativeLayout
+    android:id="@+id/right_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="15dp"
+    app:layout_constraintBottom_toBottomOf="@id/view_top_bg"
+    app:layout_constraintLeft_toRightOf="@id/view_top_bg"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="@id/view_top_bg">
+
+    <TextView
+      android:id="@+id/tv_count_down"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_centerInParent="true"
+      android:visibility="gone"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:background="@drawable/sp_gray_radius"
+      android:gravity="center"
+      android:textColor="#666666"
+      android:textSize="14sp"
+      tools:text="60s" />
+
+    <com.example.picsdk.view.progress.CircleProgress
+      android:id="@+id/circle_progress_bar"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginBottom="5dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_centerInParent="true"
+      app:antiAlias="true"
+      app:arcWidth="2dp"
+      app:arcColors="#E5E5E5"
+      app:bgArcColor="#00B9FF"
+      app:bgArcWidth="2dp"
+      app:maxValue="100"
+      app:startAngle="-90"
+      app:sweepAngle="360"
+      app:value="0"
+      app:valueSize="14sp"
+      app:valueColor="#666666"/>
+
+    <TextView
+      android:id="@+id/tv_next"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:gravity="center"
+      android:textColor="#333333"
+      android:textSize="14sp"
+      android:visibility="gone"
+      android:text="下一题" />
+  </RelativeLayout>
+
+  <ProgressBar
+    android:id="@+id/progress"
+    style="?android:progressBarStyleHorizontal"
+    android:layout_width="0dp"
+    android:layout_height="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="15dp"
+    android:max="100"
+    android:progressDrawable="@drawable/wx_match_progress"
+    app:layout_constraintBottom_toBottomOf="@id/view_top_bg"
+    app:layout_constraintLeft_toRightOf="@id/tv_numMax"
+    app:layout_constraintRight_toRightOf="@id/view_top_bg"
+    app:layout_constraintTop_toTopOf="@id/view_top_bg"
+    tools:progress="60" />
+
+  <android.support.constraint.Group
+    android:id="@+id/group_progress"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:constraint_referenced_ids="tv_count_down,progress,view_top_bg" />
+
+  <com.example.picsdk.view.TouchUnEnabledDiscreteScrollView
+    android:id="@+id/recycler_view"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/view_top_bg" />
+</android.support.constraint.ConstraintLayout>

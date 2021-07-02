@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+<com.scwang.smartrefresh.layout.SmartRefreshLayout
+  android:id="@+id/swipeRefreshLayout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:srlAccentColor="@android:color/white"
+  app:srlEnablePreviewInEditMode="true"
+  app:srlHeaderHeight="80dp"
+  app:srlPrimaryColor="#33aaff">
+  <com.namibox.commonlib.view.headers.NamiboxHeader
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fafafa"/>
+  <RelativeLayout
+    android:id="@+id/contentLayout"
+    android:background="@drawable/web_content_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/loading_anim"
+      android:layout_width="100dp"
+      android:layout_height="54dp"
+      tools:src="@drawable/loading_anim"
+      android:layout_centerInParent="true" />
+
+    <include
+      layout="@layout/layout_error_page"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="gone" />
+
+    <View
+      android:id="@+id/top_shadow"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@drawable/top_shadow_bg"
+      android:visibility="gone"
+      android:layout_alignBottom="@+id/toolbar_layout"
+      android:layout_alignTop="@+id/toolbar_layout" />
+
+    <include
+      android:id="@+id/toolbar_layout"
+      layout="@layout/layout_custom_actionbar"
+      android:visibility="gone"
+      tools:visibility="visible" />
+
+    <ImageView
+      android:id="@+id/iv_back_top"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:layout_marginRight="20dp"
+      android:visibility="gone"
+      tools:visibility="visible"
+      android:src="@drawable/ic_back_top"
+      android:layout_alignParentRight="true"
+      android:layout_alignParentBottom="true"
+      android:layout_marginBottom="80dp"/>
+  </RelativeLayout>
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/section_list"
+    android:visibility="invisible"
+    tools:visibility="visible"
+    android:background="#fafafa"
+    android:layout_width="match_parent"
+    android:layout_height="36dp" />
+</RelativeLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <FrameLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#000">
+
+        <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="视频加载中..."
+          android:textColor="#fff" />
+
+        <FrameLayout
+          android:id="@+id/video_fragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"></FrameLayout>
+
+        <ImageView
+          android:id="@+id/back_btn"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_margin="8dp"
+          android:background="@drawable/video_back_bg"
+          android:padding="8dp"
+          app:srcCompat="@drawable/ic_arrow_back_white" />
+      </FrameLayout>
+
+
+      <TextView
+        android:id="@+id/videoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/theme_color"
+        android:textSize="18dp"
+        tools:text="视频标题" />
+
+      <View
+        android:layout_width="20dp"
+        android:layout_height="4dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/theme_color" />
+
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/hfx_gray_white_button"
+        android:orientation="vertical">
+
+        <EditText
+          android:id="@+id/introEt"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="8dp"
+          android:background="@null"
+          android:gravity="top|left"
+          android:hint="小朋友们,快来分享下你的心得体会吧~"
+          android:maxLength="200"
+          android:minLines="8"
+          android:textSize="14dp" />
+
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="32dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/saveBtn"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_gravity="bottom"
+      android:layout_marginRight="8dp"
+      android:layout_weight="1"
+      android:background="@drawable/hfx_btn_done_border"
+      android:text="保存到相册"
+      android:textColor="@color/theme_color"
+      android:textSize="18dp" />
+
+    <Button
+      android:id="@+id/submitBtn"
+      android:layout_width="0dp"
+      android:layout_height="40dp"
+      android:layout_gravity="bottom"
+      android:layout_marginLeft="8dp"
+      android:layout_weight="1"
+      android:background="@drawable/hfx_btn_done"
+      android:text="提交"
+      android:textColor="@color/hfx_white"
+      android:textSize="18dp" />
+
+  </LinearLayout>
+
+
+</LinearLayout>

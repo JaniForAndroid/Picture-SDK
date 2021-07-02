@@ -1,0 +1,3 @@
+include ':app'
+include ':picsdk'
+rootProject.name = "Picture SDK"

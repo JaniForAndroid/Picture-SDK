@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/itemScoreRoot"
+  android:layout_width="40dp"
+  android:layout_height="40dp">
+
+  <View
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_gravity="center"
+    android:background="@drawable/hfx_eval_item_bg"/>
+
+  <ImageView
+    android:id="@+id/ivEvalItemSelectBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:visibility="gone"
+    android:background="@drawable/hfx_eval_selected"
+    android:contentDescription="@null"/>
+
+  <ImageView
+    android:id="@+id/ivItemRecord"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_gravity="center"
+    android:contentDescription="@null"
+    android:src="@drawable/hfx_eval_item_record"/>
+
+  <TextView
+    android:id="@+id/tvEvalScore"
+    android:layout_width="28dp"
+    android:layout_height="28dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:textSize="14sp"
+    tools:text="78"/>
+
+</FrameLayout>

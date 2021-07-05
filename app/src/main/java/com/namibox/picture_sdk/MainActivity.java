@@ -148,6 +148,49 @@ public class MainActivity extends AppCompatActivity {
       toast("请先获取token");
       return;
     }
+    String cellphone = "18819439438";//16602115911
+    if (!TextUtils.isEmpty(et_phone.getText())) {
+      cellphone = et_phone.getText().toString().trim();
+    }
+
+    int productId = 3467;
+    if (!TextUtils.isEmpty(et_product_id.getText())) {
+      String productIdStr = et_product_id.getText().toString().trim();
+      try {
+        productId = Integer.parseInt(productIdStr);
+      } catch (NumberFormatException e) {
+        e.printStackTrace();
+        Log.e(TAG, "获取productId报错：" + e.toString());
+      }
+    }
+
+    int contentId = 112674;
+    if (!TextUtils.isEmpty(et_content_id.getText())) {
+      String contentIdStr = et_content_id.getText().toString().trim();
+      try {
+        contentId = Integer.parseInt(contentIdStr);
+      } catch (NumberFormatException e) {
+        e.printStackTrace();
+        Log.e(TAG, "获取contentId报错：" + e.toString());
+      }
+    }
+
+    int partnerId = 512;
+    if (!TextUtils.isEmpty(et_partner_id.getText())) {
+      String partnerIdStr = et_partner_id.getText().toString().trim();
+      try {
+        partnerId = Integer.parseInt(partnerIdStr);
+      } catch (NumberFormatException e) {
+        e.printStackTrace();
+        Log.e(TAG, "获取partnerId报错：" + e.toString());
+      }
+    }
+
+    registerModel.setProduct_id(productId);
+    registerModel.setContent_id(contentId);
+    registerModel.setPartner_id(partnerId);
+    registerModel.setCellphone(cellphone);
+
     new SDKDemoHelper().login(MainActivity.this, registerModel,
         new FakeLoginCallback() {
           @Override

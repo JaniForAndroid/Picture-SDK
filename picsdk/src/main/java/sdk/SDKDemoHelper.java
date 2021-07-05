@@ -17,7 +17,9 @@ import com.namibox.commonlib.event.PicRefreshUserInfo;
 import com.namibox.tools.DeviceInfoUtil;
 import com.namibox.util.AppUtil;
 import com.namibox.util.Logger;
+import com.namibox.util.NetworkUtil;
 import com.namibox.util.PreferenceUtil;
+import com.namibox.util.Utils;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
@@ -72,9 +74,14 @@ public class SDKDemoHelper implements LifecycleObserver {
                   String userPhone = userInfo.get("phonenum").getAsString();
                   PreferenceUtil.setPhone(activity, userPhone);
                 }
+                if (userInfo.has("changetime")) {
+                  long expireTime = Utils.parseTimeString(userInfo.get("changetime").getAsString());
+                  PreferenceUtil.setSharePref(activity, PreferenceUtil.PREF_EXPIRE_TIME, expireTime);
+                }
                 if (userInfo.has("sessionid")) {
                   String userSession = userInfo.get("sessionid").getAsString();
                   PreferenceUtil.setSessionId(activity, userSession);
+                  NetworkUtil.syncCookie(activity, AppUtil.getBaseUrl());
                 }
               }
               if (data.has("code")) {

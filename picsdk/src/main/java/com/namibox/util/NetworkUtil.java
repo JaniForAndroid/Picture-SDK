@@ -118,7 +118,11 @@ public class NetworkUtil {
     String sessionid = PreferenceUtil.getSessionId(context);
     String expirestime = PreferenceUtil.getSessionTime(context);
     if (TextUtils.isEmpty(sessionid)) {
+      Logger.e("syncCookie", "sessionid 为空");
       return;
+    }
+    if (TextUtils.isEmpty(expirestime)) {
+      Logger.e("syncCookie", "expirestime 为空");
     }
     syncCookie(context, url, sessionid, expirestime);
   }

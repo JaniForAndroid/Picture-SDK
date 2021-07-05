@@ -324,9 +324,15 @@ public class NBPictureSDK implements LifecycleObserver {
                   String userPhone = userInfo.get("phonenum").getAsString();
                   PreferenceUtil.setPhone(activity, userPhone);
                 }
+                if (userInfo.has("changetime")) {
+                  long expireTime = Utils.parseTimeString(userInfo.get("changetime").getAsString());
+                  PreferenceUtil.setSharePref(activity, PreferenceUtil.PREF_EXPIRE_TIME, expireTime);
+                }
+
                 if (userInfo.has("sessionid")) {
                   String userSession = userInfo.get("sessionid").getAsString();
                   PreferenceUtil.setSessionId(activity, userSession);
+                  NetworkUtil.syncCookie(activity, AppUtil.getBaseUrl());
                 }
               }
               if (data.has("code")) {

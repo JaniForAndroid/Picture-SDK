@@ -24,6 +24,7 @@ import io.reactivex.schedulers.Schedulers;
 import java.util.ArrayList;
 import java.util.List;
 import org.greenrobot.eventbus.EventBus;
+import org.w3c.dom.Text;
 import sdk.callback.AccessTokenCallback;
 import sdk.callback.FakeLoginCallback;
 import sdk.callback.GetPictureInfoCallback;
@@ -145,6 +146,7 @@ public class SDKDemoHelper implements LifecycleObserver {
           Logger.d(TAG, "getAccessToken 结果：" + jsonObject);
           JsonObject result = (JsonObject) jsonObject;
           String retcode = result.get("retcode").getAsString();
+          String description = result.get("description").getAsString();
           if (TextUtils.equals(retcode, "SUCC")) {
             String token = "";
             if (result.has("data")) {
@@ -160,7 +162,11 @@ public class SDKDemoHelper implements LifecycleObserver {
           } else {
             Log.e(TAG, "access token报错");
             if (callback != null) {
-              callback.onError("access token 报错");
+              if (TextUtils.isEmpty(description)) {
+                callback.onError("access token 报错");
+              } else {
+                callback.onError(description);
+              }
             }
           }
         }, throwable -> {

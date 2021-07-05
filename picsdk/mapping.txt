@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: 8b47fd5
+# pg_map_id: cce512a
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -13842,6 +13842,7 @@ com.namibox.util.PreferenceUtil -> com.namibox.util.j:
     1:1:boolean isHttpDnsEnable(android.content.Context):600:600 -> l
     1:1:boolean isSSLEnable(android.content.Context):612:612 -> m
     1:1:boolean isStethoEnable(android.content.Context):608:608 -> n
+    1:1:void setSSLEnable(android.content.Context):616:616 -> o
 com.namibox.util.Spanny -> com.namibox.util.k:
     int flag -> a
     1:1:void <init>():40:40 -> <init>
@@ -15298,17 +15299,17 @@ sdk.NBPictureSDK -> sdk.NBPictureSDK:
     1:10:void cleanCache(android.content.Context,sdk.callback.CleanCacheCallback):254:263 -> cleanCache
     1:1:void enterPicture(android.app.Activity,sdk.model.RegisterModel):203:203 -> enterPicture
     1:4:void init(android.app.Application,boolean):80:83 -> init
-    1:2:void initExceptionHandler():397:398 -> initExceptionHandler
-    1:4:void initFileDownload(android.app.Application):371:374 -> initFileDownload
-    1:16:void initLog(android.app.Application):378:393 -> initLog
-    1:15:void initNetwork(android.app.Application):353:367 -> initNetwork
+    1:2:void initExceptionHandler():398:399 -> initExceptionHandler
+    1:4:void initFileDownload(android.app.Application):372:375 -> initFileDownload
+    1:16:void initLog(android.app.Application):379:394 -> initLog
+    1:16:void initNetwork(android.app.Application):353:368 -> initNetwork
     1:4:void lambda$authToken$0(io.reactivex.disposables.Disposable):134:137 -> lambda$authToken$0
     1:45:void lambda$authToken$1(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):140:184 -> lambda$authToken$1
     1:2:void lambda$authToken$2(sdk.callback.RegisterSDKInterface,java.lang.Throwable):187:188 -> lambda$authToken$2
     1:2:java.lang.Boolean lambda$cleanCache$5(android.content.Context):257:258 -> lambda$cleanCache$5
     1:8:void lambda$enterPicture$3(sdk.model.RegisterModel,android.app.Activity):204:211 -> lambda$enterPicture$3
     1:1:void lambda$enterPicture$4():212:212 -> lambda$enterPicture$4
-    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):399:403 -> lambda$initExceptionHandler$10
+    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):400:404 -> lambda$initExceptionHandler$10
     1:4:void lambda$login$6(io.reactivex.disposables.Disposable):300:303 -> lambda$login$6
     1:39:void lambda$login$7(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):306:344 -> lambda$login$7
     1:2:void lambda$login$8(sdk.callback.RegisterSDKInterface,java.lang.Throwable):347:348 -> lambda$login$8
@@ -15335,40 +15336,40 @@ sdk.NBPictureSDK$2 -> sdk.NBPictureSDK$b:
     1:3:void onError(java.lang.Throwable):273:275 -> onError
     1:1:void onNext(java.lang.Object):263:263 -> onNext
 sdk.NBPictureSDK$3 -> sdk.NBPictureSDK$c:
-    1:1:void <init>(com.orhanobut.logger.FormatStrategy):387:387 -> <init>
-    1:1:boolean isLoggable(int,java.lang.String):390:390 -> isLoggable
+    1:1:void <init>(com.orhanobut.logger.FormatStrategy):388:388 -> <init>
+    1:1:boolean isLoggable(int,java.lang.String):391:391 -> isLoggable
 sdk.SDKDemoHelper -> sdk.SDKDemoHelper:
-    1:1:void <init>():35:35 -> <init>
-    1:39:void getAccessToken(java.lang.String,java.lang.String,long,java.lang.String,sdk.callback.AccessTokenCallback):133:171 -> getAccessToken
-    1:61:void getPictureBookList(android.app.Activity,java.lang.String,sdk.callback.GetPictureInfoCallback):175:235 -> getPictureBookList
-    1:30:void getPictureDetail(android.app.Activity,java.lang.String,java.lang.String,sdk.callback.GetPictureInfoCallback):239:268 -> getPictureDetail
-    1:19:void lambda$getAccessToken$4(sdk.callback.AccessTokenCallback,com.google.gson.JsonElement):145:163 -> lambda$getAccessToken$4
-    1:3:void lambda$getAccessToken$5(sdk.callback.AccessTokenCallback,java.lang.Throwable):167:169 -> lambda$getAccessToken$5
-    1:11:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):182:192 -> lambda$getPictureBookList$6
-    12:22:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):191:201 -> lambda$getPictureBookList$6
-    23:33:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):200:210 -> lambda$getPictureBookList$6
-    34:44:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):209:219 -> lambda$getPictureBookList$6
-    45:58:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):218:231 -> lambda$getPictureBookList$6
-    1:1:void lambda$getPictureBookList$7(java.lang.Throwable):234:234 -> lambda$getPictureBookList$7
-    1:11:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):246:256 -> lambda$getPictureDetail$8
-    12:20:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):255:263 -> lambda$getPictureDetail$8
-    1:1:void lambda$getPictureDetail$9(java.lang.Throwable):266:266 -> lambda$getPictureDetail$9
-    1:47:void lambda$login$0(android.app.Activity,sdk.callback.FakeLoginCallback,com.google.gson.JsonElement):53:99 -> lambda$login$0
-    1:3:void lambda$login$1(sdk.callback.FakeLoginCallback,java.lang.Throwable):103:105 -> lambda$login$1
-    1:8:void lambda$logout$2(android.app.Activity,com.google.gson.JsonElement):116:123 -> lambda$logout$2
-    1:2:void lambda$logout$3(android.app.Activity,java.lang.Throwable):126:127 -> lambda$logout$3
-    1:68:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.FakeLoginCallback):40:107 -> login
-    1:18:void logout(android.app.Activity):111:128 -> logout
+    1:1:void <init>():36:36 -> <init>
+    1:44:void getAccessToken(java.lang.String,java.lang.String,long,java.lang.String,sdk.callback.AccessTokenCallback):134:177 -> getAccessToken
+    1:61:void getPictureBookList(android.app.Activity,java.lang.String,sdk.callback.GetPictureInfoCallback):181:241 -> getPictureBookList
+    1:30:void getPictureDetail(android.app.Activity,java.lang.String,java.lang.String,sdk.callback.GetPictureInfoCallback):245:274 -> getPictureDetail
+    1:23:void lambda$getAccessToken$4(sdk.callback.AccessTokenCallback,com.google.gson.JsonElement):146:168 -> lambda$getAccessToken$4
+    1:3:void lambda$getAccessToken$5(sdk.callback.AccessTokenCallback,java.lang.Throwable):173:175 -> lambda$getAccessToken$5
+    1:11:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):188:198 -> lambda$getPictureBookList$6
+    12:22:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):197:207 -> lambda$getPictureBookList$6
+    23:33:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):206:216 -> lambda$getPictureBookList$6
+    34:44:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):215:225 -> lambda$getPictureBookList$6
+    45:58:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):224:237 -> lambda$getPictureBookList$6
+    1:1:void lambda$getPictureBookList$7(java.lang.Throwable):240:240 -> lambda$getPictureBookList$7
+    1:11:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):252:262 -> lambda$getPictureDetail$8
+    12:20:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):261:269 -> lambda$getPictureDetail$8
+    1:1:void lambda$getPictureDetail$9(java.lang.Throwable):272:272 -> lambda$getPictureDetail$9
+    1:47:void lambda$login$0(android.app.Activity,sdk.callback.FakeLoginCallback,com.google.gson.JsonElement):54:100 -> lambda$login$0
+    1:3:void lambda$login$1(sdk.callback.FakeLoginCallback,java.lang.Throwable):104:106 -> lambda$login$1
+    1:8:void lambda$logout$2(android.app.Activity,com.google.gson.JsonElement):117:124 -> lambda$logout$2
+    1:2:void lambda$logout$3(android.app.Activity,java.lang.Throwable):127:128 -> lambda$logout$3
+    1:68:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.FakeLoginCallback):41:108 -> login
+    1:18:void logout(android.app.Activity):112:129 -> logout
 sdk.SDKDemoHelper$1 -> sdk.SDKDemoHelper$a:
-    1:1:void <init>(sdk.SDKDemoHelper):191:191 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):197:197 -> <init>
 sdk.SDKDemoHelper$2 -> sdk.SDKDemoHelper$b:
-    1:1:void <init>(sdk.SDKDemoHelper):200:200 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):206:206 -> <init>
 sdk.SDKDemoHelper$3 -> sdk.SDKDemoHelper$c:
-    1:1:void <init>(sdk.SDKDemoHelper):209:209 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):215:215 -> <init>
 sdk.SDKDemoHelper$4 -> sdk.SDKDemoHelper$d:
-    1:1:void <init>(sdk.SDKDemoHelper):218:218 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):224:224 -> <init>
 sdk.SDKDemoHelper$5 -> sdk.SDKDemoHelper$e:
-    1:1:void <init>(sdk.SDKDemoHelper):255:255 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):261:261 -> <init>
 sdk.model.DubbingResultBean -> sdk.model.DubbingResultBean:
     1:6:void <init>(int,int,int,int,java.lang.String):42:47 -> <init>
     1:1:int getAnswer_num():91:91 -> getAnswer_num

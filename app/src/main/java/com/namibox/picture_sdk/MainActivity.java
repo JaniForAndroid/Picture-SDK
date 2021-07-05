@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
       return;
     }
 
-    String cellphone = "16602115911";
+    String cellphone = "18819439438";//16602115911
     if (!TextUtils.isEmpty(et_phone.getText())) {
       cellphone = et_phone.getText().toString().trim();
     }
@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity {
       }
     }
 
-    int partnerId = 26;
+    int partnerId = 512;
     if (!TextUtils.isEmpty(et_partner_id.getText())) {
       String partnerIdStr = et_partner_id.getText().toString().trim();
       try {
@@ -183,15 +183,15 @@ public class MainActivity extends AppCompatActivity {
   }
 
   public void getAccessToken(View view) {
-    String appCode = "418558986";
+    String appCode = "424965437";// 418558986
     if (!TextUtils.isEmpty(et_appcode.getText())) {
       appCode = et_appcode.getText().toString().trim();
     }
 
-    String cellphone = "16602115911";
-    if (!TextUtils.isEmpty(et_phone.getText())) {
-      cellphone = et_phone.getText().toString().trim();
-    }
+    String cellphone = "18819439438";//16602115911
+//    if (!TextUtils.isEmpty(et_phone.getText())) {
+//      cellphone = et_phone.getText().toString().trim();
+//    }
     int productId = 3467;
     if (!TextUtils.isEmpty(et_product_id.getText())) {
       String productIdStr = et_product_id.getText().toString().trim();
@@ -212,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "获取contentId报错：" + e.toString());
       }
     }
-    int partnerId = 26;
+    int partnerId = 512;
     if (!TextUtils.isEmpty(et_partner_id.getText())) {
       String partnerIdStr = et_partner_id.getText().toString().trim();
       try {
@@ -223,7 +223,8 @@ public class MainActivity extends AppCompatActivity {
       }
     }
 
-    String appSecret = "bbc810f7-95c6-41c3-9519-124bfa7cbf7f";
+//    String appSecret = "bbc810f7-95c6-41c3-9519-124bfa7cbf7f";
+    String appSecret = "bae6fb72-f7fb-4409-8042-2cf434767169";
     long timeStamp = System.currentTimeMillis() / 1000;
     String chk = MD5Util.md5(appCode + "||" + (timeStamp + 256) + "||" + appSecret);
     Log.d(TAG, "chk:" + chk);

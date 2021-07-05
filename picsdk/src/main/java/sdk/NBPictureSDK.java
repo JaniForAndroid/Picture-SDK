@@ -356,6 +356,7 @@ public class NBPictureSDK implements LifecycleObserver {
       } else {
         PreferenceUtil.setEnv(application, "pbook.namibox.com");
       }
+      PreferenceUtil.setSSLEnable(application);
     } else {
       PreferenceUtil.setEnv(application, "pbook.namibox.com");
     }

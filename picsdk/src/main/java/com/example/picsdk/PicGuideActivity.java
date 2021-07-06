@@ -104,11 +104,11 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_guide);
-    CHALLENGE_STUDY = getString(R.string.book_booklearn_title);
-    CHALLENGE_WORD = getString(R.string.book_wordchallenge_title);
-    CHALLENGE_READ = getString(R.string.book_readunderstand_title);
-    CHALLENGE_PLAY = getString(R.string.book_dubbing_title);
-    CHALLENGE_PIC = getString(R.string.book_pic_eval_title);
+//    CHALLENGE_STUDY = getString(R.string.book_booklearn_title);
+//    CHALLENGE_WORD = getString(R.string.book_wordchallenge_title);
+//    CHALLENGE_READ = getString(R.string.book_readunderstand_title);
+//    CHALLENGE_PLAY = getString(R.string.book_dubbing_title);
+//    CHALLENGE_PIC = getString(R.string.book_pic_eval_title);
     initExoAudioPlayer();
     initView();
     if (PicturePreferenceUtil.getLongLoginUserId(this) == -1L &&

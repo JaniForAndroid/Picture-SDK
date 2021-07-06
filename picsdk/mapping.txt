@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: 0619274
+# pg_map_id: e9e6339
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -4060,7 +4060,6 @@ com.example.picsdk.util.AppPicUtil -> com.example.picsdk.j.a:
     1:6:java.lang.String getPicWorkBaseUrl(android.content.Context):468:473 -> c
     1:3:void gotoReadChallenge(android.content.Context):359:361 -> d
     1:3:void gotoWordChallenge(android.content.Context):350:352 -> e
-    1:5:void init(android.content.Context):66:70 -> f
 com.example.picsdk.util.AppPicUtil$1 -> com.example.picsdk.j.a$a:
     1:1:void <init>():159:159 -> <init>
 com.example.picsdk.util.BarUtil -> com.example.picsdk.j.b:
@@ -15312,7 +15311,7 @@ sdk.NBPictureSDK -> sdk.NBPictureSDK:
     1:45:void lambda$authToken$1(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):141:185 -> lambda$authToken$1
     1:2:void lambda$authToken$2(sdk.callback.RegisterSDKInterface,java.lang.Throwable):188:189 -> lambda$authToken$2
     1:2:java.lang.Boolean lambda$cleanCache$5(android.content.Context):259:260 -> lambda$cleanCache$5
-    1:9:void lambda$enterPicture$3(android.app.Activity,sdk.model.RegisterModel):205:213 -> lambda$enterPicture$3
+    1:9:void lambda$enterPicture$3(sdk.model.RegisterModel,android.app.Activity):205:213 -> lambda$enterPicture$3
     1:1:void lambda$enterPicture$4():214:214 -> lambda$enterPicture$4
     1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):408:412 -> lambda$initExceptionHandler$10
     1:4:void lambda$login$6(io.reactivex.disposables.Disposable):302:305 -> lambda$login$6

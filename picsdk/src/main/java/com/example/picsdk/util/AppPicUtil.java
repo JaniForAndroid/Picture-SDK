@@ -63,11 +63,11 @@ public class AppPicUtil {
   private static long startTime = 0L;
 
   public static void init(Context context) {
-    CHALLENGE_STUDY = context.getString(R.string.book_booklearn_title);
-    CHALLENGE_WORD = context.getString(R.string.book_wordchallenge_title);
-    CHALLENGE_READ = context.getString(R.string.book_readunderstand_title);
-    CHALLENGE_PLAY = context.getString(R.string.book_dubbing_title);
-    CHALLENGE_PIC = context.getString(R.string.book_pic_eval_title);
+//    CHALLENGE_STUDY = context.getString(R.string.book_booklearn_title);
+//    CHALLENGE_WORD = context.getString(R.string.book_wordchallenge_title);
+//    CHALLENGE_READ = context.getString(R.string.book_readunderstand_title);
+//    CHALLENGE_PLAY = context.getString(R.string.book_dubbing_title);
+//    CHALLENGE_PIC = context.getString(R.string.book_pic_eval_title);
   }
 
   public static long getStartTime() {

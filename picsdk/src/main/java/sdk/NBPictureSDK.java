@@ -205,7 +205,7 @@ public class NBPictureSDK implements LifecycleObserver {
           if (!EventBus.getDefault().isRegistered(NBPictureSDK.this)) {
             EventBus.getDefault().register(NBPictureSDK.this);
           }
-          AppPicUtil.init(activity);
+//          AppPicUtil.init(activity);
           String url = AppUtil.getBaseUrl() + "/api/guide/" + registerModel.content_id;
           Logger.d(TAG, "enterPicture，guide url:" + url);
           Intent intent = new Intent(activity, PicGuideActivity.class);

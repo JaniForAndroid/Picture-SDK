@@ -2,6 +2,7 @@ package com.namibox.util;
 
 import android.content.Context;
 import android.content.res.Configuration;
+import java.util.Locale;
 
 /**
  * author : feng
@@ -11,12 +12,18 @@ public class LanguageUtil {
 
   public static String getLanguage(Context context) {
     Configuration configuration = context.getResources().getConfiguration();
-    String language = configuration.locale.toLanguageTag();
-    if (language.equals("en-US")) {
+    String language = configuration.locale.getLanguage();
+    String country = configuration.locale.getCountry().toLowerCase();
+    String countryDisplayName = configuration.locale.getDisplayCountry();
+    if ("en".equals(language)) {
       return "en";
     }
-    if (language.equals("zh-TW")) {
-      return "zh-hk";
+    if ("zh".equals(language)) {
+      if ("tw".equals(country) || "hk".equals(country)|| "mo".equals(country) || "中國".equals(countryDisplayName)) {
+        return "zh-hk";
+      } else {
+        return "zh";
+      }
     }
     return "zh";
   }

@@ -40,7 +40,7 @@ allprojects {
 }
 
 ext{
-    picturesdk_version = '1.20'
+    picturesdk_version = '1.21'
 }
 
 task clean(type: Delete) {

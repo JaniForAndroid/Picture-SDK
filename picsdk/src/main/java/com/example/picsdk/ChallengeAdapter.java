@@ -10,6 +10,7 @@ import android.support.annotation.NonNull;
 import android.support.constraint.Group;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -110,25 +111,40 @@ public class ChallengeAdapter extends RecyclerView.Adapter<ChallengeViewHolder> 
       holder.rating_item.setVisibility(View.VISIBLE);
 
       if (PicturePreferenceUtil.getLongLoginUserId(context) == -1L) {
-        switch (challenge.task_type) {
-          case CHALLENGE_WORD:
-            holder.rating_item.setRating(PreferenceUtil
-                .getSharePref(context,
-                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0));
-            break;
-          case CHALLENGE_READ:
-            holder.rating_item.setRating(PreferenceUtil
-                .getSharePref(context,
-                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0));
-            break;
-          case CHALLENGE_PLAY:
-            holder.rating_item.setRating(PreferenceUtil
-                .getSharePref(context,
-                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_PLAY + "star", 0));
-            break;
-          default:
-            break;
+
+        if (TextUtils.equals(challenge.task_type, CHALLENGE_WORD)) {
+          holder.rating_item.setRating(PreferenceUtil
+              .getSharePref(context,
+                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0));
+        } else if (TextUtils.equals(challenge.task_type, CHALLENGE_READ)) {
+          holder.rating_item.setRating(PreferenceUtil
+              .getSharePref(context,
+                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0));
+        } else if (TextUtils.equals(challenge.task_type, CHALLENGE_PLAY)) {
+          holder.rating_item.setRating(PreferenceUtil
+              .getSharePref(context,
+                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_PLAY + "star", 0));
         }
+
+//        switch (challenge.task_type) {
+//          case CHALLENGE_WORD:
+//            holder.rating_item.setRating(PreferenceUtil
+//                .getSharePref(context,
+//                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0));
+//            break;
+//          case CHALLENGE_READ:
+//            holder.rating_item.setRating(PreferenceUtil
+//                .getSharePref(context,
+//                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0));
+//            break;
+//          case CHALLENGE_PLAY:
+//            holder.rating_item.setRating(PreferenceUtil
+//                .getSharePref(context,
+//                    BookManager.getInstance().getMilesson_item_id() + CHALLENGE_PLAY + "star", 0));
+//            break;
+//          default:
+//            break;
+//        }
       } else {
         holder.rating_item.setRating(challenge.star);
       }
@@ -136,29 +152,48 @@ public class ChallengeAdapter extends RecyclerView.Adapter<ChallengeViewHolder> 
 
     int lock = challenge.is_locked;
     if (PicturePreferenceUtil.getLongLoginUserId(context) == -1L) {
-      switch (challenge.task_type) {
-        case CHALLENGE_WORD:
-          if (PreferenceUtil
-              .getSharePref(context, BookManager.getInstance().getMilesson_item_id() + "progress",
-                  0) == 3) {
-            lock = 0;
-          }
-          break;
-        case CHALLENGE_READ:
-          if (PreferenceUtil.getSharePref(context,
-              BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0) >= 1) {
-            lock = 0;
-          }
-          break;
-        case CHALLENGE_PLAY:
-          if (PreferenceUtil.getSharePref(context,
-              BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0) >= 1) {
-            lock = 0;
-          }
-          break;
-        default:
-          break;
+
+      if (TextUtils.equals(challenge.task_type, CHALLENGE_WORD)) {
+        if (PreferenceUtil
+            .getSharePref(context, BookManager.getInstance().getMilesson_item_id() + "progress",
+                0) == 3) {
+          lock = 0;
+        }
+      } else if (TextUtils.equals(challenge.task_type, CHALLENGE_READ)) {
+        if (PreferenceUtil.getSharePref(context,
+            BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0) >= 1) {
+          lock = 0;
+        }
+      } else if (TextUtils.equals(challenge.task_type, CHALLENGE_PLAY)) {
+        if (PreferenceUtil.getSharePref(context,
+            BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0) >= 1) {
+          lock = 0;
+        }
       }
+
+//      switch (challenge.task_type) {
+//        case CHALLENGE_WORD:
+//          if (PreferenceUtil
+//              .getSharePref(context, BookManager.getInstance().getMilesson_item_id() + "progress",
+//                  0) == 3) {
+//            lock = 0;
+//          }
+//          break;
+//        case CHALLENGE_READ:
+//          if (PreferenceUtil.getSharePref(context,
+//              BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0) >= 1) {
+//            lock = 0;
+//          }
+//          break;
+//        case CHALLENGE_PLAY:
+//          if (PreferenceUtil.getSharePref(context,
+//              BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0) >= 1) {
+//            lock = 0;
+//          }
+//          break;
+//        default:
+//          break;
+//      }
     }
     holder.gp_lock.setVisibility(challenge.is_buy == 0 || lock > 0 ? View.VISIBLE : View.GONE);
   }

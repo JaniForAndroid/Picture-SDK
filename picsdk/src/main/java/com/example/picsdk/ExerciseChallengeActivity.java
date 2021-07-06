@@ -215,16 +215,23 @@ public class ExerciseChallengeActivity extends BaseActivity {
     List<ProductItem.Challenge> challenges = bookManager.getChallenges();
     if (challenges != null && !challenges.isEmpty()) {
       String nextChallenge = null;
-      switch (mExerciseType) {
-        case AppPicUtil.CHALLENGE_WORD:
-          nextChallenge = AppPicUtil.CHALLENGE_READ;
-          break;
-        case AppPicUtil.CHALLENGE_READ:
-          nextChallenge = bookManager.getChallenges().get(bookManager.getChallenges().size() - 1).task_type;
-          break;
-        default:
-          break;
+
+      if (TextUtils.equals(mExerciseType, AppPicUtil.CHALLENGE_WORD)) {
+        nextChallenge = AppPicUtil.CHALLENGE_READ;
+      } else if (TextUtils.equals(mExerciseType, AppPicUtil.CHALLENGE_READ)) {
+        nextChallenge = bookManager.getChallenges().get(bookManager.getChallenges().size() - 1).task_type;
       }
+
+//      switch (mExerciseType) {
+//        case AppPicUtil.CHALLENGE_WORD:
+//          nextChallenge = AppPicUtil.CHALLENGE_READ;
+//          break;
+//        case AppPicUtil.CHALLENGE_READ:
+//          nextChallenge = bookManager.getChallenges().get(bookManager.getChallenges().size() - 1).task_type;
+//          break;
+//        default:
+//          break;
+//      }
       for (ProductItem.Challenge challenge : challenges) {
         if (TextUtils.equals(nextChallenge, challenge.task_type)) {
           if (TextUtils.equals(nextChallenge, AppPicUtil.CHALLENGE_PLAY)) {

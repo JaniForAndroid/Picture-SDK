@@ -612,13 +612,13 @@ public class ResultActivity extends BaseActivity {
 
   private String linkConvert(String type) {
     if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
-      return "读绘本";
+      return getString(R.string.string_read_book);
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
-      return "学词汇";
+      return getString(R.string.string_study_word);
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_MUSIC)) {
-      return "听音乐";
+      return getString(R.string.string_listen_music);
     } else {
-      return "看动画";
+      return getString(R.string.string_look_video);
     }
   }
 

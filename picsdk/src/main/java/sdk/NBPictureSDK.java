@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import cn.dreamtobe.filedownloader.OkHttp3Connection;
 import com.example.picsdk.PicGuideActivity;
+import com.example.picsdk.util.AppPicUtil;
 import com.google.gson.JsonObject;
 import com.liulishuo.filedownloader.FileDownloader;
 import com.namibox.commonlib.common.ApiHandler;
@@ -204,6 +205,7 @@ public class NBPictureSDK implements LifecycleObserver {
           if (!EventBus.getDefault().isRegistered(NBPictureSDK.this)) {
             EventBus.getDefault().register(NBPictureSDK.this);
           }
+          AppPicUtil.init(activity);
           String url = AppUtil.getBaseUrl() + "/api/guide/" + registerModel.content_id;
           Logger.d(TAG, "enterPicture，guide url:" + url);
           Intent intent = new Intent(activity, PicGuideActivity.class);

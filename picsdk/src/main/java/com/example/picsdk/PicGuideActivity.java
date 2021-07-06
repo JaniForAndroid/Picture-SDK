@@ -19,7 +19,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -70,11 +69,11 @@ import org.greenrobot.eventbus.ThreadMode;
  */
 public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.OnItemClickListener {
 
-  public final static String CHALLENGE_STUDY = "绘本学习";
-  public final static String CHALLENGE_WORD = "词汇挑战";
-  public final static String CHALLENGE_READ = "阅读理解";
-  public final static String CHALLENGE_PLAY = "趣味配音";
-  public final static String CHALLENGE_PIC = "评测绘本";
+  public static String CHALLENGE_STUDY = "绘本学习";
+  public static String CHALLENGE_WORD = "词汇挑战";
+  public static String CHALLENGE_READ = "阅读理解";
+  public static String CHALLENGE_PLAY = "趣味配音";
+  public static String CHALLENGE_PIC = "评测绘本";
 
   private TextView tv_name_en;
   private TextView tv_name_cn;
@@ -105,6 +104,11 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
   protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_guide);
+    CHALLENGE_STUDY = getString(R.string.book_booklearn_title);
+    CHALLENGE_WORD = getString(R.string.book_wordchallenge_title);
+    CHALLENGE_READ = getString(R.string.book_readunderstand_title);
+    CHALLENGE_PLAY = getString(R.string.book_dubbing_title);
+    CHALLENGE_PIC = getString(R.string.book_pic_eval_title);
     initExoAudioPlayer();
     initView();
     if (PicturePreferenceUtil.getLongLoginUserId(this) == -1L &&
@@ -173,7 +177,8 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
 
   public void initDialog() {
     showDialog("提示", getString(R.string.book_registeralertcontent_title),
-        "退出", v -> finish(), "继续使用", v -> { });
+        "退出", v -> finish(), "继续使用", v -> {
+        });
   }
 
 //  @Subscribe(threadMode = ThreadMode.MAIN)
@@ -302,6 +307,7 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
     introduction = productItem.introduction;
     //底部按钮
     bottom = productItem.bottom;
+    bottom.is_free = 1;
     for (Challenge challenge : challenges) {
       challenge.is_buy = bottom.is_buy | bottom.is_free;
     }
@@ -365,33 +371,54 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
     //local prefence
     int lock = challenge.is_locked;
     if (PicturePreferenceUtil.getLongLoginUserId(this) == -1L) {
-      switch (challenge.task_type) {
-        case CHALLENGE_WORD:
-          if (PreferenceUtil
-              .getSharePref(this, BookManager.getInstance().getMilesson_item_id() + "progress", 0)
-              == 3) {
-            lock = 0;
-          }
-          break;
-        case CHALLENGE_READ:
-          if (PreferenceUtil
-              .getSharePref(this,
-                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0)
-              >= 1) {
-            lock = 0;
-          }
-          break;
-        case CHALLENGE_PLAY:
-          if (PreferenceUtil
-              .getSharePref(this,
-                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0)
-              >= 1) {
-            lock = 0;
-          }
-          break;
-        default:
-          break;
+      if (TextUtils.equals(challenge.task_type, CHALLENGE_WORD)) {
+        if (PreferenceUtil
+            .getSharePref(this, BookManager.getInstance().getMilesson_item_id() + "progress", 0)
+            == 3) {
+          lock = 0;
+        }
+      } else if (TextUtils.equals(challenge.task_type, CHALLENGE_READ)) {
+        if (PreferenceUtil
+            .getSharePref(this,
+                BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0)
+            >= 1) {
+          lock = 0;
+        }
+      } else if (TextUtils.equals(challenge.task_type, CHALLENGE_PLAY)) {
+        if (PreferenceUtil
+            .getSharePref(this,
+                BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0)
+            >= 1) {
+          lock = 0;
+        }
       }
+//      switch (challenge.task_type) {
+//        case CHALLENGE_WORD:
+//          if (PreferenceUtil
+//              .getSharePref(this, BookManager.getInstance().getMilesson_item_id() + "progress", 0)
+//              == 3) {
+//            lock = 0;
+//          }
+//          break;
+//        case CHALLENGE_READ:
+//          if (PreferenceUtil
+//              .getSharePref(this,
+//                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_WORD + "star", 0)
+//              >= 1) {
+//            lock = 0;
+//          }
+//          break;
+//        case CHALLENGE_PLAY:
+//          if (PreferenceUtil
+//              .getSharePref(this,
+//                  BookManager.getInstance().getMilesson_item_id() + CHALLENGE_READ + "star", 0)
+//              >= 1) {
+//            lock = 0;
+//          }
+//          break;
+//        default:
+//          break;
+//      }
     }
 
     if (lock == 1) {
@@ -400,41 +427,68 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
       return;
     }
     playSound(clickID);
-    switch (challenge.task_type) {
-      case CHALLENGE_STUDY:
-        goLoading();
-        break;
-      case CHALLENGE_WORD:
-        if (NetworkUtil.isNetworkConnected(this)) {
-          gotoWordChallenge();
-        } else {
-          toast(getString(R.string.common_check_network_tips));
-        }
-        break;
-      case CHALLENGE_READ:
-        if (NetworkUtil.isNetworkConnected(this)) {
-          gotoReadChallenge();
-        } else {
-          toast(getString(R.string.common_check_network_tips));
-        }
-        break;
-      case CHALLENGE_PLAY:
-        if (NetworkUtil.isNetworkConnected(this)) {
-          gotoPlayChallenge(challenge.url);
-        } else {
-          toast(getString(R.string.common_check_network_tips));
-        }
-        break;
-      case CHALLENGE_PIC:
-        if (NetworkUtil.isNetworkConnected(this)) {
-          gotoPicChallenge(challenge);
-        } else {
-          toast(getString(R.string.common_check_network_tips));
-        }
-        break;
-      default:
-        break;
+    if (TextUtils.equals(challenge.task_type, CHALLENGE_STUDY)) {
+      goLoading();
+    } else if (TextUtils.equals(challenge.task_type, CHALLENGE_WORD)) {
+      if (NetworkUtil.isNetworkConnected(this)) {
+        gotoWordChallenge();
+      } else {
+        toast(getString(R.string.common_check_network_tips));
+      }
+    } else if (TextUtils.equals(challenge.task_type, CHALLENGE_READ)) {
+      if (NetworkUtil.isNetworkConnected(this)) {
+        gotoReadChallenge();
+      } else {
+        toast(getString(R.string.common_check_network_tips));
+      }
+    } else if (TextUtils.equals(challenge.task_type, CHALLENGE_PLAY)) {
+      if (NetworkUtil.isNetworkConnected(this)) {
+        gotoPlayChallenge(challenge.url);
+      } else {
+        toast(getString(R.string.common_check_network_tips));
+      }
+    } else if (TextUtils.equals(challenge.task_type, CHALLENGE_PIC)) {
+      if (NetworkUtil.isNetworkConnected(this)) {
+        gotoPicChallenge(challenge);
+      } else {
+        toast(getString(R.string.common_check_network_tips));
+      }
     }
+//    switch (challenge.task_type) {
+//      case CHALLENGE_STUDY:
+//        goLoading();
+//        break;
+//      case CHALLENGE_WORD:
+//        if (NetworkUtil.isNetworkConnected(this)) {
+//          gotoWordChallenge();
+//        } else {
+//          toast(getString(R.string.common_check_network_tips));
+//        }
+//        break;
+//      case CHALLENGE_READ:
+//        if (NetworkUtil.isNetworkConnected(this)) {
+//          gotoReadChallenge();
+//        } else {
+//          toast(getString(R.string.common_check_network_tips));
+//        }
+//        break;
+//      case CHALLENGE_PLAY:
+//        if (NetworkUtil.isNetworkConnected(this)) {
+//          gotoPlayChallenge(challenge.url);
+//        } else {
+//          toast(getString(R.string.common_check_network_tips));
+//        }
+//        break;
+//      case CHALLENGE_PIC:
+//        if (NetworkUtil.isNetworkConnected(this)) {
+//          gotoPicChallenge(challenge);
+//        } else {
+//          toast(getString(R.string.common_check_network_tips));
+//        }
+//        break;
+//      default:
+//        break;
+//    }
   }
 
   public void goLoading() {

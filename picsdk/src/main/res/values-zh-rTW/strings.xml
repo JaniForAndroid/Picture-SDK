@@ -341,5 +341,10 @@
   <string name="book_video_time">時長</string>
   <string name="book_dubscoreresult_title">本次綜合得分 </string>
   <string name="common_camera">相機</string>
+  <string name="book_booklearn_title">繪本學習</string>
+  <string name="book_wordchallenge_title">詞彙挑戰</string>
+  <string name="book_readunderstand_title">閱讀理解</string>
+  <string name="book_dubbing_title">趣味配音</string>
+  <string name="book_pic_eval_title">评测繪本</string>
 
 </resources>

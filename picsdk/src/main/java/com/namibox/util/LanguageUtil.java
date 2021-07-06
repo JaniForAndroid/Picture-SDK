@@ -11,9 +11,12 @@ public class LanguageUtil {
 
   public static String getLanguage(Context context) {
     Configuration configuration = context.getResources().getConfiguration();
-    String language = configuration.locale.getLanguage();
-    if (language.equals("en")) {
+    String language = configuration.locale.toLanguageTag();
+    if (language.equals("en-US")) {
       return "en";
+    }
+    if (language.equals("zh-TW")) {
+      return "zh-hk";
     }
     return "zh";
   }

@@ -12,13 +12,12 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.picsdk.base.BaseFragment;
 import com.example.picsdk.event.RefreshStoreInfo;
@@ -33,17 +32,14 @@ import com.namibox.commonlib.common.ApiHandler;
 import com.namibox.util.Logger;
 import com.namibox.util.NetworkUtil;
 import com.namibox.util.Utils;
-
 import io.reactivex.Observable;
 import io.reactivex.Observer;
-import java.util.concurrent.TimeUnit;
-import org.greenrobot.eventbus.EventBus;
-
-import java.util.List;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+import org.greenrobot.eventbus.EventBus;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,7 +51,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
   private ExerciseChallengeActivity mActivity;
   private ConstraintLayout aniLayout;
   private TextView first_text2, tv_again, tv_more_effort;
-  private TextView first_text,tv_timer;
+  private TextView first_text, tv_timer;
   private ImageView score, iv_total;
   private TextView tv_total;
   private ImageView best_icon;
@@ -93,22 +89,26 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
   public void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     mActivity = (ExerciseChallengeActivity) activity;
-    if (mActivity != null)
+    if (mActivity != null) {
       mActivity.setActionTitle("");
+    }
     initSound();
 
     bookManager = BookManager.getInstance();
     //判断当前作业是否需要提交
     if (bookManager != null) {
-      isHomeworkSubmit = bookManager.isHomeWork() && bookManager.getTypeList() != null && bookManager.getTypeList().size() == bookManager.getIndex() + 1;
-      isHomeworkHaveNext = bookManager.isHomeWork() && bookManager.getTypeList() != null && bookManager.getTypeList().size() > bookManager.getIndex() + 1;
-      isHomeworkWatchHaveNext = bookManager.isHomeWorkWatch() && bookManager.getTypeList() != null && bookManager.getTypeList().size() > bookManager.getIndex() + 1;
+      isHomeworkSubmit = bookManager.isHomeWork() && bookManager.getTypeList() != null
+          && bookManager.getTypeList().size() == bookManager.getIndex() + 1;
+      isHomeworkHaveNext = bookManager.isHomeWork() && bookManager.getTypeList() != null
+          && bookManager.getTypeList().size() > bookManager.getIndex() + 1;
+      isHomeworkWatchHaveNext = bookManager.isHomeWorkWatch() && bookManager.getTypeList() != null
+          && bookManager.getTypeList().size() > bookManager.getIndex() + 1;
     }
   }
 
   @Override
   public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                           Bundle savedInstanceState) {
+      Bundle savedInstanceState) {
     // Inflate the layout for this fragment
     return inflater.inflate(R.layout.fragment_exercise_challenge_result, container, false);
   }
@@ -173,8 +173,9 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
       if (timerDis != null && !timerDis.isDisposed()) {
         timerDis.dispose();
       }
-      if (isHideBaoxiang)
+      if (isHideBaoxiang) {
         aniLayout.setVisibility(View.GONE);
+      }
     });
     int correctCount = 0;
     List<Exercise> exerciseList = mActivity.getData().data.exercises;
@@ -196,8 +197,9 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
           exercise.answerCorrect = false;
         }
         mActivity.request();
-      } else
+      } else {
         toast(getString(R.string.common_check_network_tips));
+      }
     });
 
     if (isHomeworkSubmit) {
@@ -229,8 +231,9 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
         }
 
         mActivity.enterNextChallenge();
-      } else
+      } else {
         toast(getString(R.string.common_check_network_tips));
+      }
     });
 
 //    if (getActivity().getPackageName().equals("com.jinxin.appstudent")) {
@@ -277,8 +280,9 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
     initScore(score, view);
     syncUpData();
 
-    if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L)
+    if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L) {
       AppPicUtil.saveLoaclReading(BookManager.getInstance(), getActivity());
+    }
   }
 
   public void initScore(int scores, View view) {
@@ -357,7 +361,8 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
   private void showNoInternetDialog() {
     String msg = getString(R.string.book_dubnonereturnalert_title);
     mActivity.showDialog("提示", msg,
-        "退出", view -> getActivity().finish(), getString(R.string.common_network_reconnect), v -> syncUpData());
+        "退出", view -> getActivity().finish(), getString(R.string.common_network_reconnect),
+        v -> syncUpData());
   }
 
   private void syncUp() {
@@ -367,17 +372,25 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
     }
     String url = host + "/api/report_word_progress";
     JsonObject jsonBody = getSyncBody();
-    switch (mActivity.mExerciseType) {
-      case AppPicUtil.CHALLENGE_WORD:
-        url = host + "/api/report_word_progress";
-        break;
-      case AppPicUtil.CHALLENGE_READ:
-        url = host + "/api/report_readingunderstand_progress";
-        break;
-      case AppPicUtil.CHALLENGE_PLAY:
-        url = host + "/api/report_fundubbing_progress";
-        break;
+    if (TextUtils.equals(mActivity.mExerciseType, AppPicUtil.CHALLENGE_WORD)) {
+      url = host + "/api/report_word_progress";
+    } else if (TextUtils.equals(mActivity.mExerciseType, AppPicUtil.CHALLENGE_READ)) {
+      url = host + "/api/report_readingunderstand_progress";
+    } else if (TextUtils.equals(mActivity.mExerciseType, AppPicUtil.CHALLENGE_PLAY)) {
+      url = host + "/api/report_fundubbing_progress";
     }
+
+//    switch (mActivity.mExerciseType) {
+//      case AppPicUtil.CHALLENGE_WORD:
+//        url = host + "/api/report_word_progress";
+//        break;
+//      case AppPicUtil.CHALLENGE_READ:
+//        url = host + "/api/report_readingunderstand_progress";
+//        break;
+//      case AppPicUtil.CHALLENGE_PLAY:
+//        url = host + "/api/report_fundubbing_progress";
+//        break;
+//    }
 
     Disposable disposable = ApiHandler.getBaseApi().commonJsonElementPost(url, jsonBody)
         .subscribeOn(Schedulers.io())
@@ -387,15 +400,18 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
           String retcode = jsonObject.get("retcode").getAsString();
           if (retcode != null && retcode.equals("SUCC") || retcode.equals("success")) {
             if (jsonObject.has("data")) {
-              Logger.d(TAG, "挑战上报数据结果："+jsonObject);
-              int first_win_points = jsonObject.get("data").getAsJsonObject().get("first_win_points").getAsInt();
+              Logger.d(TAG, "挑战上报数据结果：" + jsonObject);
+              int first_win_points = jsonObject.get("data").getAsJsonObject()
+                  .get("first_win_points").getAsInt();
               if (first_win_points != 0) {
                 showAnimation();
               }
-              int total_score = jsonObject.get("data").getAsJsonObject().get("total_points").getAsInt();
+              int total_score = jsonObject.get("data").getAsJsonObject().get("total_points")
+                  .getAsInt();
               tv_total.setText(total_score + "");
 //              first_text2.setText(Utils.format("+%d", first_win_points));
-              boolean isHistoryBest = jsonObject.get("data").getAsJsonObject().get("is_history_best").getAsBoolean();
+              boolean isHistoryBest = jsonObject.get("data").getAsJsonObject()
+                  .get("is_history_best").getAsBoolean();
               if (isHistoryBest) {
                 best_icon.setVisibility(View.VISIBLE);
                 new Handler().postDelayed(() -> playSound(bestId), 700);
@@ -407,7 +423,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
           EventBus.getDefault().post(new RefreshStoreInfo());
 //          EventBus.getDefault().post(new RefreshGuideInfo());
         }, throwable -> {
-          Logger.e("syncUp", "上报数据报错："+throwable.toString());
+          Logger.e("syncUp", "上报数据报错：" + throwable.toString());
 //          toast("上报数据失败");
         });
     compositeDisposable.add(disposable);
@@ -418,63 +434,119 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
     if (getActivity().getPackageName().equals("com.jinxin.appstudent")) {
       jsonObject.addProperty("match_id", bookManager.getMatch_id());
     }
-    switch (mActivity.mExerciseType) {
-      case AppPicUtil.CHALLENGE_WORD:
-        jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
-        jsonObject.addProperty("milesson_id", mActivity.milesson_id);
-        jsonObject.addProperty("duration", mActivity.getData().data.duration);
 
-        JsonArray jsonArray = new JsonArray();
-        for (Exercise exercise : mActivity.getData().data.exercises) {
-          JsonObject json = new JsonObject();
-          json.addProperty("is_correct", exercise.answerCorrect);
-          json.addProperty("exercise_id", exercise.id);
-          json.addProperty("user_answer", exercise.user_answer);
-          jsonArray.add(json);
+    if (TextUtils.equals(mActivity.mExerciseType, AppPicUtil.CHALLENGE_WORD)) {
+      jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
+      jsonObject.addProperty("milesson_id", mActivity.milesson_id);
+      jsonObject.addProperty("duration", mActivity.getData().data.duration);
+
+      JsonArray jsonArray = new JsonArray();
+      for (Exercise exercise : mActivity.getData().data.exercises) {
+        JsonObject json = new JsonObject();
+        json.addProperty("is_correct", exercise.answerCorrect);
+        json.addProperty("exercise_id", exercise.id);
+        json.addProperty("user_answer", exercise.user_answer);
+        jsonArray.add(json);
+      }
+      jsonObject.add("exercises", jsonArray);
+      jsonObject.addProperty("eid", mActivity.getData().data.eid);
+      return jsonObject;
+    } else if (TextUtils.equals(mActivity.mExerciseType, AppPicUtil.CHALLENGE_READ)) {
+      jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
+      jsonObject.addProperty("milesson_id", mActivity.milesson_id);
+      jsonObject.addProperty("duration", mActivity.getData().data.duration);
+
+      JsonArray jsonArray1 = new JsonArray();
+      for (Exercise exercise : mActivity.getData().data.exercises) {
+        JsonObject json = new JsonObject();
+        json.addProperty("is_correct", exercise.answerCorrect);
+        json.addProperty("exercise_id", exercise.id);
+
+        switch (exercise.type) {
+          case "选择题":
+            json.addProperty("user_answer", exercise.user_answer);
+            break;
+          case "词汇挑战":
+            json.addProperty("user_answer", exercise.user_answer);
+            break;
+          case "朗读题":
+            break;
+          case "填空题":
+            break;
+          case "排序题":
+            JsonArray jsonArray2 = new JsonArray();
+            for (String sequence : exercise.userAnsweList) {
+              jsonArray2.add(sequence);
+            }
+            json.add("user_answer", jsonArray2);
+            break;
+          default:
+            break;
         }
-        jsonObject.add("exercises", jsonArray);
-        jsonObject.addProperty("eid", mActivity.getData().data.eid);
-        return jsonObject;
-      case AppPicUtil.CHALLENGE_READ:
-        jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
-        jsonObject.addProperty("milesson_id", mActivity.milesson_id);
-        jsonObject.addProperty("duration", mActivity.getData().data.duration);
-
-        JsonArray jsonArray1 = new JsonArray();
-        for (Exercise exercise : mActivity.getData().data.exercises) {
-          JsonObject json = new JsonObject();
-          json.addProperty("is_correct", exercise.answerCorrect);
-          json.addProperty("exercise_id", exercise.id);
-
-          switch (exercise.type) {
-            case "选择题":
-              json.addProperty("user_answer", exercise.user_answer);
-              break;
-            case "词汇挑战":
-              json.addProperty("user_answer", exercise.user_answer);
-              break;
-            case "朗读题":
-              break;
-            case "填空题":
-              break;
-            case "排序题":
-              JsonArray jsonArray2 = new JsonArray();
-              for (String sequence : exercise.userAnsweList) {
-                jsonArray2.add(sequence);
-              }
-              json.add("user_answer", jsonArray2);
-              break;
-            default:
-              break;
-          }
-          jsonArray1.add(json);
-        }
-        jsonObject.add("exercises", jsonArray1);
-        jsonObject.addProperty("eid", mActivity.getData().data.eid);
-        return jsonObject;
-      case AppPicUtil.CHALLENGE_PLAY:
-        break;
+        jsonArray1.add(json);
+      }
+      jsonObject.add("exercises", jsonArray1);
+      jsonObject.addProperty("eid", mActivity.getData().data.eid);
+      return jsonObject;
     }
+
+//    switch (mActivity.mExerciseType) {
+//      case AppPicUtil.CHALLENGE_WORD:
+//        jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
+//        jsonObject.addProperty("milesson_id", mActivity.milesson_id);
+//        jsonObject.addProperty("duration", mActivity.getData().data.duration);
+//
+//        JsonArray jsonArray = new JsonArray();
+//        for (Exercise exercise : mActivity.getData().data.exercises) {
+//          JsonObject json = new JsonObject();
+//          json.addProperty("is_correct", exercise.answerCorrect);
+//          json.addProperty("exercise_id", exercise.id);
+//          json.addProperty("user_answer", exercise.user_answer);
+//          jsonArray.add(json);
+//        }
+//        jsonObject.add("exercises", jsonArray);
+//        jsonObject.addProperty("eid", mActivity.getData().data.eid);
+//        return jsonObject;
+//      case AppPicUtil.CHALLENGE_READ:
+//        jsonObject.addProperty("item_id", mActivity.getData().data.item_id);
+//        jsonObject.addProperty("milesson_id", mActivity.milesson_id);
+//        jsonObject.addProperty("duration", mActivity.getData().data.duration);
+//
+//        JsonArray jsonArray1 = new JsonArray();
+//        for (Exercise exercise : mActivity.getData().data.exercises) {
+//          JsonObject json = new JsonObject();
+//          json.addProperty("is_correct", exercise.answerCorrect);
+//          json.addProperty("exercise_id", exercise.id);
+//
+//          switch (exercise.type) {
+//            case "选择题":
+//              json.addProperty("user_answer", exercise.user_answer);
+//              break;
+//            case "词汇挑战":
+//              json.addProperty("user_answer", exercise.user_answer);
+//              break;
+//            case "朗读题":
+//              break;
+//            case "填空题":
+//              break;
+//            case "排序题":
+//              JsonArray jsonArray2 = new JsonArray();
+//              for (String sequence : exercise.userAnsweList) {
+//                jsonArray2.add(sequence);
+//              }
+//              json.add("user_answer", jsonArray2);
+//              break;
+//            default:
+//              break;
+//          }
+//          jsonArray1.add(json);
+//        }
+//        jsonObject.add("exercises", jsonArray1);
+//        jsonObject.addProperty("eid", mActivity.getData().data.eid);
+//        return jsonObject;
+//      case AppPicUtil.CHALLENGE_PLAY:
+//        break;
+//    }
     return jsonObject;
   }
 
@@ -493,7 +565,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
     } else if (starCount <= 2) {
       loadingAnimView.setImageAssetsFolder("good/images");
       loadingAnimView.setAnimation("good/data.json");
-    }else if (starCount <= 3) {
+    } else if (starCount <= 3) {
       loadingAnimView.setImageAssetsFolder("excellent/images");
       loadingAnimView.setAnimation("excellent/data.json");
     }
@@ -525,7 +597,8 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
   }
 
   Disposable timerDis;
-  private void animTimer(){
+
+  private void animTimer() {
     tv_timer.setVisibility(View.VISIBLE);
 
     Observable.interval(1, TimeUnit.SECONDS)
@@ -541,7 +614,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
 
           @Override
           public void onNext(@NonNull Long s) {
-            tv_timer.setText((2-s)+"s");
+            tv_timer.setText((2 - s) + "s");
             if (s == 2) {
               aniLayout.setVisibility(View.GONE);
               tv_timer.setVisibility(View.GONE);

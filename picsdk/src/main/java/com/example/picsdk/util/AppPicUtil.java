@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.text.TextUtils;
 import com.example.picsdk.ExerciseChallengeActivity;
 import com.example.picsdk.PicLoadingActivity;
+import com.example.picsdk.R;
 import com.example.picsdk.VideoActivity;
 import com.example.picsdk.learn.BookManager;
 import com.example.picsdk.model.MyStore;
@@ -53,13 +54,21 @@ import org.greenrobot.eventbus.EventBus;
 public class AppPicUtil {
 
   private static final String BOOKS_DIR = "books_dir";
-  public final static String CHALLENGE_STUDY = "绘本学习";
-  public final static String CHALLENGE_WORD = "词汇挑战";
-  public final static String CHALLENGE_READ = "阅读理解";
-  public final static String CHALLENGE_PLAY = "趣味配音";
-  public final static String CHALLENGE_PIC = "评测绘本";
+  public static String CHALLENGE_STUDY = "绘本学习";
+  public static String CHALLENGE_WORD = "词汇挑战";
+  public static String CHALLENGE_READ = "阅读理解";
+  public static String CHALLENGE_PLAY = "趣味配音";
+  public static String CHALLENGE_PIC = "评测绘本";
 
   private static long startTime = 0L;
+
+  public static void init(Context context) {
+    CHALLENGE_STUDY = context.getString(R.string.book_booklearn_title);
+    CHALLENGE_WORD = context.getString(R.string.book_wordchallenge_title);
+    CHALLENGE_READ = context.getString(R.string.book_readunderstand_title);
+    CHALLENGE_PLAY = context.getString(R.string.book_dubbing_title);
+    CHALLENGE_PIC = context.getString(R.string.book_pic_eval_title);
+  }
 
   public static long getStartTime() {
     return startTime;
@@ -237,52 +246,89 @@ public class AppPicUtil {
         && bookManager.getTypeList().get(index) != null) {
       nextType = bookManager.getTypeList().get(index).text;
     }
-
-    switch (nextType) {
-      case CHALLENGE_STUDY:
-        AppPicUtil.gotoLoading(false, activity);
-        break;
-      case CHALLENGE_WORD:
-        AppPicUtil.gotoWordChallenge(activity);
-        break;
-      case CHALLENGE_READ:
-        AppPicUtil.gotoReadChallenge(activity);
-        break;
-      case CHALLENGE_PLAY:
-        if (bookManager != null && bookManager.getChallenges().size() > 3) {
-          if (bookManager.isHomeWorkWatch()) {
-            String type = bookManager.getTypeList().get(bookManager.getIndex()).text;
-            int id = bookManager.getTypeList().get(bookManager.getIndex()).id;
-            String url =
-                getPicBaseUrl(activity) + "/api/user/pbook/" + id + "/data?stu_hw_id=" + bookManager
-                    .getStu_hw_id();
-            Disposable disposable = ApiHandler.getBaseApi().commonJsonGet(url)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(jsonObject -> {
-                  String retcode = jsonObject.get("retcode").getAsString();
-                  if (retcode != null && retcode.equals("success")) {
-                    JsonObject data = jsonObject.get("data").getAsJsonObject();
-                    WatchPic mWatchPic = new Gson().fromJson(data, WatchPic.class);
-                    Intent intent = new Intent(activity, VideoActivity.class);
-                    intent.putExtra("video", mWatchPic.url);
-                    intent.putExtra("title", mWatchPic.title);
-                    intent.putExtra("isHideSkip", true);
-                    activity.startActivity(intent);
-                  }
-                }, throwable -> {
-                  Logger.e(throwable, throwable.toString());
-                });
-            new CompositeDisposable().add(disposable);
-          } else {
-            AppPicUtil
-                .gotoPlayChallenge(bookManager.getChallenges().get(3).url, bookManager, activity);
-          }
+    if (TextUtils.equals(nextType, CHALLENGE_STUDY)) {
+      AppPicUtil.gotoLoading(false, activity);
+    } else if (TextUtils.equals(nextType, CHALLENGE_WORD)) {
+      AppPicUtil.gotoWordChallenge(activity);
+    } else if (TextUtils.equals(nextType, CHALLENGE_READ)) {
+      AppPicUtil.gotoReadChallenge(activity);
+    } else if (TextUtils.equals(nextType, CHALLENGE_PLAY)) {
+      if (bookManager != null && bookManager.getChallenges().size() > 3) {
+        if (bookManager.isHomeWorkWatch()) {
+          String type = bookManager.getTypeList().get(bookManager.getIndex()).text;
+          int id = bookManager.getTypeList().get(bookManager.getIndex()).id;
+          String url =
+              getPicBaseUrl(activity) + "/api/user/pbook/" + id + "/data?stu_hw_id=" + bookManager
+                  .getStu_hw_id();
+          Disposable disposable = ApiHandler.getBaseApi().commonJsonGet(url)
+              .subscribeOn(Schedulers.io())
+              .observeOn(AndroidSchedulers.mainThread())
+              .subscribe(jsonObject -> {
+                String retcode = jsonObject.get("retcode").getAsString();
+                if (retcode != null && retcode.equals("success")) {
+                  JsonObject data = jsonObject.get("data").getAsJsonObject();
+                  WatchPic mWatchPic = new Gson().fromJson(data, WatchPic.class);
+                  Intent intent = new Intent(activity, VideoActivity.class);
+                  intent.putExtra("video", mWatchPic.url);
+                  intent.putExtra("title", mWatchPic.title);
+                  intent.putExtra("isHideSkip", true);
+                  activity.startActivity(intent);
+                }
+              }, throwable -> {
+                Logger.e(throwable, throwable.toString());
+              });
+          new CompositeDisposable().add(disposable);
+        } else {
+          AppPicUtil
+              .gotoPlayChallenge(bookManager.getChallenges().get(3).url, bookManager, activity);
         }
-        break;
-      default:
-        break;
+      }
     }
+//    switch (nextType) {
+//      case CHALLENGE_STUDY:
+//        AppPicUtil.gotoLoading(false, activity);
+//        break;
+//      case CHALLENGE_WORD:
+//        AppPicUtil.gotoWordChallenge(activity);
+//        break;
+//      case CHALLENGE_READ:
+//        AppPicUtil.gotoReadChallenge(activity);
+//        break;
+//      case CHALLENGE_PLAY:
+//        if (bookManager != null && bookManager.getChallenges().size() > 3) {
+//          if (bookManager.isHomeWorkWatch()) {
+//            String type = bookManager.getTypeList().get(bookManager.getIndex()).text;
+//            int id = bookManager.getTypeList().get(bookManager.getIndex()).id;
+//            String url =
+//                getPicBaseUrl(activity) + "/api/user/pbook/" + id + "/data?stu_hw_id=" + bookManager
+//                    .getStu_hw_id();
+//            Disposable disposable = ApiHandler.getBaseApi().commonJsonGet(url)
+//                .subscribeOn(Schedulers.io())
+//                .observeOn(AndroidSchedulers.mainThread())
+//                .subscribe(jsonObject -> {
+//                  String retcode = jsonObject.get("retcode").getAsString();
+//                  if (retcode != null && retcode.equals("success")) {
+//                    JsonObject data = jsonObject.get("data").getAsJsonObject();
+//                    WatchPic mWatchPic = new Gson().fromJson(data, WatchPic.class);
+//                    Intent intent = new Intent(activity, VideoActivity.class);
+//                    intent.putExtra("video", mWatchPic.url);
+//                    intent.putExtra("title", mWatchPic.title);
+//                    intent.putExtra("isHideSkip", true);
+//                    activity.startActivity(intent);
+//                  }
+//                }, throwable -> {
+//                  Logger.e(throwable, throwable.toString());
+//                });
+//            new CompositeDisposable().add(disposable);
+//          } else {
+//            AppPicUtil
+//                .gotoPlayChallenge(bookManager.getChallenges().get(3).url, bookManager, activity);
+//          }
+//        }
+//        break;
+//      default:
+//        break;
+//    }
 
   }
 

@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: 2b790cd
+# pg_map_id: 0619274
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -2544,24 +2544,22 @@ com.example.exoaudioplayer.video.view.ProgressView$1 -> com.example.exoaudioplay
 com.example.picsdk.ChallengeAdapter -> com.example.picsdk.a:
     java.util.List challenges -> a
     com.example.picsdk.ChallengeAdapter$OnItemClickListener onItemClickListener -> b
-    1:1:void <init>():33:33 -> <init>
-    1:1:void setOnItemClickListener(com.example.picsdk.ChallengeAdapter$OnItemClickListener):39:39 -> a
-    2:3:void setChallenges(java.util.List):43:44 -> a
-    4:5:com.example.picsdk.ChallengeAdapter$ChallengeViewHolder onCreateViewHolder(android.view.ViewGroup,int):51:52 -> a
-    6:71:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):57:122 -> a
-    72:72:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):121:121 -> a
-    73:80:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):120:127 -> a
-    81:81:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):126:126 -> a
-    82:82:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):125:125 -> a
-    83:85:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):115:117 -> a
-    86:86:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):116:116 -> a
-    87:121:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):115:149 -> a
-    122:129:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):148:155 -> a
-    130:130:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):154:154 -> a
-    131:153:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):141:163 -> a
-    1:1:int getItemCount():168:168 -> getItemCount
-    1:1:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):33:33 -> onBindViewHolder
-    1:1:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):33:33 -> onCreateViewHolder
+    1:1:void <init>():34:34 -> <init>
+    1:1:void setOnItemClickListener(com.example.picsdk.ChallengeAdapter$OnItemClickListener):40:40 -> a
+    2:3:void setChallenges(java.util.List):44:45 -> a
+    4:5:com.example.picsdk.ChallengeAdapter$ChallengeViewHolder onCreateViewHolder(android.view.ViewGroup,int):52:53 -> a
+    6:66:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):58:118 -> a
+    67:67:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):117:117 -> a
+    68:74:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):116:122 -> a
+    75:75:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):121:121 -> a
+    76:82:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):120:126 -> a
+    83:83:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):125:125 -> a
+    84:124:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):124:164 -> a
+    125:131:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):163:169 -> a
+    132:162:void onBindViewHolder(com.example.picsdk.ChallengeAdapter$ChallengeViewHolder,int):168:198 -> a
+    1:1:int getItemCount():203:203 -> getItemCount
+    1:1:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):34:34 -> onBindViewHolder
+    1:1:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):34:34 -> onCreateViewHolder
 com.example.picsdk.ChallengeAdapter$ChallengeViewHolder -> com.example.picsdk.a$a:
     android.widget.TextView tv_item_title -> b
     android.widget.TextView tv_study_progress -> d
@@ -2570,8 +2568,8 @@ com.example.picsdk.ChallengeAdapter$ChallengeViewHolder -> com.example.picsdk.a$
     android.widget.ImageView iv_item_pic -> a
     com.willy.ratingbar.ScaleRatingBar rating_item -> f
     android.support.constraint.Group group_study -> c
-    1:9:void <init>(android.view.View,com.example.picsdk.ChallengeAdapter$OnItemClickListener):182:190 -> <init>
-    1:1:void lambda$new$0(com.example.picsdk.ChallengeAdapter$OnItemClickListener,android.view.View):192:192 -> a
+    1:9:void <init>(android.view.View,com.example.picsdk.ChallengeAdapter$OnItemClickListener):217:225 -> <init>
+    1:1:void lambda$new$0(com.example.picsdk.ChallengeAdapter$OnItemClickListener,android.view.View):227:227 -> a
 com.example.picsdk.ChallengeAdapter$OnItemClickListener -> com.example.picsdk.a$b:
     void onItemClick(int) -> a
 com.example.picsdk.ExerciseChallengeActivity -> com.example.picsdk.ExerciseChallengeActivity:
@@ -2588,12 +2586,12 @@ com.example.picsdk.ExerciseChallengeActivity -> com.example.picsdk.ExerciseChall
     java.lang.String host -> D
     com.example.picsdk.model.WatchPic mWatchPic -> E
     1:1:void <init>():41:41 -> <init>
-    1:7:void enterChallengeResult():275:281 -> A
-    1:27:void enterNextChallenge():215:241 -> B
-    1:2:void enterNextChallenge2():245:246 -> C
-    1:5:java.lang.String getAnswerTime():312:316 -> D
+    1:7:void enterChallengeResult():282:288 -> A
+    1:34:void enterNextChallenge():215:248 -> B
+    1:2:void enterNextChallenge2():252:253 -> C
+    1:5:java.lang.String getAnswerTime():319:323 -> D
     1:1:com.example.picsdk.model.ExerciseChallenge getData():111:111 -> E
-    1:1:java.lang.String getExerciseType():271:271 -> F
+    1:1:java.lang.String getExerciseType():278:278 -> F
     1:17:void getWatchDetail():152:168 -> G
     1:1:com.example.picsdk.model.WatchPic getWatchPic():172:172 -> H
     1:19:void initData():115:133 -> I
@@ -2601,19 +2599,19 @@ com.example.picsdk.ExerciseChallengeActivity -> com.example.picsdk.ExerciseChall
     1:36:void request():176:211 -> K
     1:1:com.example.picsdk.learn.BookManager access$000(com.example.picsdk.ExerciseChallengeActivity):41:41 -> a
     2:3:void lambda$getWatchDetail$1(java.lang.Throwable):165:166 -> a
-    4:6:void lambda$onBackPressed$5(android.view.View):292:294 -> a
-    7:15:void setCurrentExercise(com.example.picsdk.model.Exercise):320:328 -> a
+    4:6:void lambda$onBackPressed$5(android.view.View):299:301 -> a
+    7:15:void setCurrentExercise(com.example.picsdk.model.Exercise):327:335 -> a
     1:4:void lambda$getWatchDetail$0(com.google.gson.JsonObject):159:162 -> b
     5:6:void lambda$request$3(java.lang.Throwable):208:209 -> b
-    7:7:void lambda$enterChallenge$4(int):265:265 -> b
+    7:7:void lambda$enterChallenge$4(int):272:272 -> b
     1:17:void lambda$request$2(com.google.gson.JsonObject):189:205 -> c
     18:27:void lambda$request$2(com.google.gson.JsonObject):194:203 -> c
-    1:3:void gotoReadChallenge(java.lang.String):250:252 -> j
-    1:14:void onBackPressed():286:299 -> onBackPressed
+    1:3:void gotoReadChallenge(java.lang.String):257:259 -> j
+    1:14:void onBackPressed():293:306 -> onBackPressed
     1:22:void onCreate(android.os.Bundle):72:93 -> onCreate
     1:7:void onDestroy():60:66 -> onDestroy
-    1:4:void onRightTextClick():305:308 -> y
-    1:12:void enterChallenge():256:267 -> z
+    1:4:void onRightTextClick():312:315 -> y
+    1:12:void enterChallenge():263:274 -> z
 com.example.picsdk.ExerciseChallengeActivity$1 -> com.example.picsdk.ExerciseChallengeActivity$a:
     com.example.picsdk.ExerciseChallengeActivity this$0 -> a
     1:1:void <init>(com.example.picsdk.ExerciseChallengeActivity):101:101 -> <init>
@@ -2920,65 +2918,63 @@ com.example.picsdk.ExerciseChallengeResultFragment -> com.example.picsdk.c:
     android.widget.TextView tv_timer -> k
     int failedID -> r
     int clickID -> p
-    1:1:void <init>():81:81 -> <init>
-    2:416:void <init>():68:482 -> <init>
-    1:1:int access$000(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> a
-    2:2:void access$100(com.example.picsdk.ExerciseChallengeResultFragment,int):51:51 -> a
+    1:1:void <init>():77:77 -> <init>
+    2:492:void <init>():64:554 -> <init>
+    1:1:int access$000(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> a
+    2:2:void access$100(com.example.picsdk.ExerciseChallengeResultFragment,int):47:47 -> a
     3:3:void playSound(int):141:141 -> a
-    4:132:void initView(android.view.View):153:281 -> a
-    133:140:void lambda$initView$2(java.util.List,android.view.View):193:200 -> a
-    141:171:void initScore(int,android.view.View):285:315 -> a
-    172:177:void lambda$submitWork$4(com.google.gson.JsonElement):333:338 -> a
-    178:178:void lambda$submitWork$5(java.lang.Throwable):343:343 -> a
-    1:1:int access$200(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> b
+    4:135:void initView(android.view.View):153:284 -> a
+    136:143:void lambda$initView$2(java.util.List,android.view.View):194:201 -> a
+    144:174:void initScore(int,android.view.View):289:319 -> a
+    175:180:void lambda$submitWork$4(com.google.gson.JsonElement):337:342 -> a
+    181:181:void lambda$submitWork$5(java.lang.Throwable):347:347 -> a
+    1:1:int access$200(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> b
     2:2:void lambda$initView$0(android.view.View):168:168 -> b
-    3:24:void lambda$syncUp$9(com.google.gson.JsonElement):386:407 -> b
-    25:25:void lambda$syncUp$10(java.lang.Throwable):410:410 -> b
-    1:1:void access$300(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> c
+    3:27:void lambda$syncUp$9(com.google.gson.JsonElement):399:423 -> b
+    28:28:void lambda$syncUp$10(java.lang.Throwable):426:426 -> b
+    1:1:void access$300(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> c
     2:9:void lambda$initView$1(android.view.View):170:177 -> c
-    10:14:void animTimer():529:533 -> c
-    1:1:android.widget.TextView access$400(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> d
-    2:27:void lambda$initView$3(android.view.View):208:233 -> d
-    28:65:com.google.gson.JsonObject getSyncBody():417:454 -> d
-    66:88:com.google.gson.JsonObject getSyncBody():451:473 -> d
-    89:102:com.google.gson.JsonObject getSyncBody():423:436 -> d
-    1:1:android.widget.TextView access$500(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> e
+    10:14:void animTimer():602:606 -> c
+    1:1:android.widget.TextView access$400(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> d
+    2:27:void lambda$initView$3(android.view.View):210:235 -> d
+    28:65:com.google.gson.JsonObject getSyncBody():433:470 -> d
+    66:88:com.google.gson.JsonObject getSyncBody():467:489 -> d
+    1:1:android.widget.TextView access$500(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> e
     2:6:void initSound():132:136 -> e
-    7:16:void lambda$showAnimation$11(android.view.View):514:523 -> e
-    1:1:android.support.constraint.ConstraintLayout access$600(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> f
-    2:2:void lambda$showNoInternetDialog$6(android.view.View):360:360 -> f
-    3:3:void lambda$null$8():401:401 -> f
-    1:3:com.example.picsdk.ExerciseChallengeResultFragment newInstance():86:88 -> g
-    4:4:void lambda$showNoInternetDialog$7(android.view.View):360:360 -> g
-    1:29:void showAnimation():485:513 -> h
-    1:3:void showNoInternetDialog():358:360 -> i
-    4:4:void showNoInternetDialog():359:359 -> i
-    1:22:void submitWork():325:346 -> j
-    1:15:void syncUp():364:378 -> k
-    16:57:void syncUp():372:413 -> k
-    1:4:void syncUpData():350:353 -> l
-    1:12:void onCreate(android.os.Bundle):94:105 -> onCreate
+    7:16:void lambda$showAnimation$11(android.view.View):586:595 -> e
+    1:1:android.support.constraint.ConstraintLayout access$600(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> f
+    2:2:void lambda$showNoInternetDialog$6(android.view.View):364:364 -> f
+    3:3:void lambda$null$8():417:417 -> f
+    1:3:com.example.picsdk.ExerciseChallengeResultFragment newInstance():82:84 -> g
+    4:4:void lambda$showNoInternetDialog$7(android.view.View):365:365 -> g
+    1:29:void showAnimation():557:585 -> h
+    1:3:void showNoInternetDialog():362:364 -> i
+    4:4:void showNoInternetDialog():363:363 -> i
+    1:22:void submitWork():329:350 -> j
+    1:61:void syncUp():369:429 -> k
+    1:4:void syncUpData():354:357 -> l
+    1:16:void onCreate(android.os.Bundle):90:105 -> onCreate
     1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):113:113 -> onCreateView
-    1:3:void onDestroy():568:570 -> onDestroy
+    1:3:void onDestroy():641:643 -> onDestroy
     1:10:void onViewCreated(android.view.View,android.os.Bundle):118:127 -> onViewCreated
 com.example.picsdk.ExerciseChallengeResultFragment$1 -> com.example.picsdk.c$a:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):308:308 -> <init>
-    1:1:void run():311:311 -> run
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):312:312 -> <init>
+    1:1:void run():315:315 -> run
 com.example.picsdk.ExerciseChallengeResultFragment$2 -> com.example.picsdk.c$b:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):315:315 -> <init>
-    1:1:void run():318:318 -> run
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):319:319 -> <init>
+    1:1:void run():322:322 -> run
 com.example.picsdk.ExerciseChallengeResultFragment$3 -> com.example.picsdk.c$c:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):502:502 -> <init>
-    1:4:void onAnimationEnd(android.animation.Animator):505:508 -> onAnimationEnd
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):574:574 -> <init>
+    1:4:void onAnimationEnd(android.animation.Animator):577:580 -> onAnimationEnd
 com.example.picsdk.ExerciseChallengeResultFragment$4 -> com.example.picsdk.c$d:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):533:533 -> <init>
-    1:6:void onNext(java.lang.Long):544:549 -> a
-    1:1:void onNext(java.lang.Object):533:533 -> onNext
-    1:4:void onSubscribe(io.reactivex.disposables.Disposable):536:539 -> onSubscribe
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):606:606 -> <init>
+    1:6:void onNext(java.lang.Long):617:622 -> a
+    1:1:void onNext(java.lang.Object):606:606 -> onNext
+    1:4:void onSubscribe(io.reactivex.disposables.Disposable):609:612 -> onSubscribe
 com.example.picsdk.ExerciseChallengeWelcomeFragment -> com.example.picsdk.d:
     android.os.Handler handler -> g
     android.widget.ProgressBar progressBar -> f
@@ -2993,94 +2989,96 @@ com.example.picsdk.ExerciseChallengeWelcomeFragment$1 -> com.example.picsdk.d$a:
     1:1:void <init>(com.example.picsdk.ExerciseChallengeWelcomeFragment):55:55 -> <init>
     1:9:void handleMessage(android.os.Message):57:65 -> handleMessage
 com.example.picsdk.PicGuideActivity -> com.example.picsdk.PicGuideActivity:
-    int buyID -> N
-    com.example.picsdk.learn.BookManager bookManager -> D
     com.example.picsdk.model.ProductItem$Bottom bottom -> H
-    int soundID -> L
-    android.widget.ImageView iv_lock -> w
     int clickID -> M
-    boolean isForeground -> I
-    android.media.SoundPool soundPool -> K
     boolean isFirstLogin -> J
-    android.widget.TextView tv_name_cn -> u
     android.widget.TextView tv_name_en -> t
-    android.support.constraint.Group gp_summary -> A
-    com.example.picsdk.ChallengeAdapter challengeAdapter -> B
-    com.example.picsdk.model.ProductItem$Introduction introduction -> E
-    com.example.picsdk.view.CommonDialog netWorkDialog -> O
-    android.widget.TextView[] tv_nums -> x
-    java.util.List challenges -> F
+    java.lang.String CHALLENGE_WORD -> S
+    java.lang.String CHALLENGE_PLAY -> U
     android.widget.TextView[] tv_units -> y
     com.example.exoaudioplayer.aduio.base.AbstractAudioPlayer exoAudioPlayer -> P
+    android.content.BroadcastReceiver connectionReceiver -> Q
+    int buyID -> N
+    com.example.picsdk.learn.BookManager bookManager -> D
+    int soundID -> L
+    android.widget.ImageView iv_lock -> w
+    boolean isForeground -> I
+    android.media.SoundPool soundPool -> K
+    android.widget.TextView tv_name_cn -> u
+    android.support.constraint.Group gp_summary -> A
+    com.example.picsdk.ChallengeAdapter challengeAdapter -> B
+    java.lang.String CHALLENGE_STUDY -> R
+    com.example.picsdk.model.ProductItem$Introduction introduction -> E
+    java.lang.String CHALLENGE_READ -> T
+    com.example.picsdk.view.CommonDialog netWorkDialog -> O
+    java.lang.String CHALLENGE_PIC -> V
+    android.widget.TextView[] tv_nums -> x
+    java.util.List challenges -> F
     android.widget.TextView[] tv_descs -> z
     com.example.picsdk.view.AspectRatioImageView iv_cover -> v
     com.example.picsdk.model.ProductItem$BookLearning bookLearning -> G
-    android.content.BroadcastReceiver connectionReceiver -> Q
     android.widget.Button bt_purchase -> C
-    1:1:void <clinit>():101:101 -> <clinit>
-    1:53:void <init>():71:123 -> <init>
-    1:31:void goLoading():441:471 -> A
-    1:3:void gotoReadChallenge():489:491 -> B
-    1:3:void gotoWordChallenge():483:485 -> C
-    1:15:void initData():232:246 -> D
-    1:1:void initDialog():175:175 -> E
-    1:3:void initExoAudioPlayer():141:143 -> F
-    1:4:void initSound():157:160 -> G
-    1:44:void initView():185:228 -> H
-    1:1:void lambda$goLoading$7():471:471 -> I
-    1:1:com.example.picsdk.view.CommonDialog access$000(com.example.picsdk.PicGuideActivity):71:71 -> a
-    2:2:void access$100(com.example.picsdk.PicGuideActivity,boolean):71:71 -> a
-    3:3:void lambda$initDialog$0(android.view.View):176:176 -> a
-    4:4:void lambda$initData$5(java.lang.Throwable):244:244 -> a
-    5:27:void onItemClick(int):357:379 -> a
-    28:37:void onItemClick(int):378:387 -> a
-    38:38:void onItemClick(int):386:386 -> a
-    39:101:void onItemClick(int):370:432 -> a
-    102:105:void onItemClick(int):408:411 -> a
-    106:106:void onItemClick(int):405:405 -> a
-    107:116:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge):512:521 -> a
-    117:133:void showBookProfile(java.lang.String,java.lang.String,java.lang.String):551:567 -> a
+    1:1:void <clinit>():100:100 -> <clinit>
+    1:58:void <init>():70:127 -> <init>
+    1:31:void goLoading():495:525 -> A
+    1:3:void gotoReadChallenge():543:545 -> B
+    1:3:void gotoWordChallenge():537:539 -> C
+    1:15:void initData():237:251 -> D
+    1:1:void initDialog():179:179 -> E
+    1:3:void initExoAudioPlayer():145:147 -> F
+    1:4:void initSound():161:164 -> G
+    1:44:void initView():190:233 -> H
+    1:1:void lambda$goLoading$7():525:525 -> I
+    1:1:com.example.picsdk.view.CommonDialog access$000(com.example.picsdk.PicGuideActivity):70:70 -> a
+    2:2:void access$100(com.example.picsdk.PicGuideActivity,boolean):70:70 -> a
+    3:3:void lambda$initDialog$0(android.view.View):180:180 -> a
+    4:4:void lambda$initData$5(java.lang.Throwable):249:249 -> a
+    5:25:void onItemClick(int):363:383 -> a
+    26:34:void onItemClick(int):382:390 -> a
+    35:100:void onItemClick(int):389:454 -> a
+    101:110:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge):566:575 -> a
+    111:127:void showBookProfile(java.lang.String,java.lang.String,java.lang.String):605:621 -> a
     void lambda$initDialog$1(android.view.View) -> b
-    1:1:void playSound(int):164:164 -> b
-    2:4:void lambda$initData$4(com.google.gson.JsonObject):239:241 -> b
-    5:7:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge):526:526 -> b
-    10:27:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge):529:546 -> b
-    1:2:void lambda$initView$2(android.view.View):187:188 -> c
-    3:67:void parseData(com.google.gson.JsonObject):250:314 -> c
-    68:68:void parseData(com.google.gson.JsonObject):311:311 -> c
-    1:9:void lambda$initView$3(android.view.View):197:205 -> d
-    1:3:void lambda$parseData$6(android.view.View):315:317 -> e
-    1:3:void gotoLoading(boolean):477:479 -> f
-    1:13:void gotoPlayChallenge(java.lang.String):495:507 -> j
-    1:15:void onCreate(android.os.Bundle):106:120 -> onCreate
-    1:21:void onDestroy():589:609 -> onDestroy
-    1:3:void onPause():582:584 -> onPause
-    1:6:void onResume():572:577 -> onResume
-    1:2:void saveLocalReadingEvent(com.namibox.commonlib.event.SaveLocalReadingEvent):326:327 -> saveLocalReadingEvent
-    1:1:void showWarnLoginEvent(com.example.picsdk.event.ShowWarnLoginEvent):347:347 -> showWarnLoginEvent
-    1:11:void eventClickPush():332:342 -> z
+    1:1:void playSound(int):168:168 -> b
+    2:4:void lambda$initData$4(com.google.gson.JsonObject):244:246 -> b
+    5:7:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge):580:580 -> b
+    10:27:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge):583:600 -> b
+    1:2:void lambda$initView$2(android.view.View):192:193 -> c
+    3:68:void parseData(com.google.gson.JsonObject):255:320 -> c
+    69:69:void parseData(com.google.gson.JsonObject):317:317 -> c
+    1:9:void lambda$initView$3(android.view.View):202:210 -> d
+    1:3:void lambda$parseData$6(android.view.View):321:323 -> e
+    1:3:void gotoLoading(boolean):531:533 -> f
+    1:13:void gotoPlayChallenge(java.lang.String):549:561 -> j
+    1:20:void onCreate(android.os.Bundle):105:124 -> onCreate
+    1:21:void onDestroy():643:663 -> onDestroy
+    1:3:void onPause():636:638 -> onPause
+    1:6:void onResume():626:631 -> onResume
+    1:2:void saveLocalReadingEvent(com.namibox.commonlib.event.SaveLocalReadingEvent):332:333 -> saveLocalReadingEvent
+    1:1:void showWarnLoginEvent(com.example.picsdk.event.ShowWarnLoginEvent):353:353 -> showWarnLoginEvent
+    1:11:void eventClickPush():338:348 -> z
 com.example.picsdk.PicGuideActivity$1 -> com.example.picsdk.PicGuideActivity$a:
     com.example.picsdk.PicGuideActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.PicGuideActivity):123:123 -> <init>
-    1:8:void onReceive(android.content.Context,android.content.Intent):127:134 -> onReceive
+    1:1:void <init>(com.example.picsdk.PicGuideActivity):127:127 -> <init>
+    1:8:void onReceive(android.content.Context,android.content.Intent):131:138 -> onReceive
 com.example.picsdk.PicGuideActivity$2 -> com.example.picsdk.PicGuideActivity$b:
-    1:1:void <init>(com.example.picsdk.PicGuideActivity):143:143 -> <init>
+    1:1:void <init>(com.example.picsdk.PicGuideActivity):147:147 -> <init>
     void playUpdate(long,long,long) -> a
-    1:1:void playStateChange(boolean,int):150:150 -> a
+    1:1:void playStateChange(boolean,int):154:154 -> a
 com.example.picsdk.PicGuideActivity$3 -> com.example.picsdk.PicGuideActivity$c:
     com.example.picsdk.PicGuideActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.PicGuideActivity):450:450 -> <init>
+    1:1:void <init>(com.example.picsdk.PicGuideActivity):504:504 -> <init>
     void onMessagelick() -> a
-    1:3:void onPositiveClick():453:455 -> b
-    1:1:void onNegtiveClick():461:461 -> c
-    1:1:void lambda$onPositiveClick$0():455:455 -> d
+    1:3:void onPositiveClick():507:509 -> b
+    1:1:void onNegtiveClick():515:515 -> c
+    1:1:void lambda$onPositiveClick$0():509:509 -> d
 com.example.picsdk.PicGuideActivity$4 -> com.example.picsdk.PicGuideActivity$4:
     java.lang.String val$title -> a
     java.lang.String val$brief -> c
     java.lang.String val$topic -> b
-    1:1:void <init>(com.example.picsdk.PicGuideActivity,java.lang.String,java.lang.String,java.lang.String):553:553 -> <init>
-    1:1:void lambda$convertView$0(com.othershe.nicedialog.BaseNiceDialog,android.view.View):557:557 -> a
-    1:8:void convertView(com.othershe.nicedialog.ViewHolder,com.othershe.nicedialog.BaseNiceDialog):556:563 -> convertView
+    1:1:void <init>(com.example.picsdk.PicGuideActivity,java.lang.String,java.lang.String,java.lang.String):607:607 -> <init>
+    1:1:void lambda$convertView$0(com.othershe.nicedialog.BaseNiceDialog,android.view.View):611:611 -> a
+    1:8:void convertView(com.othershe.nicedialog.ViewHolder,com.othershe.nicedialog.BaseNiceDialog):610:617 -> convertView
 com.example.picsdk.PicLoadingActivity -> com.example.picsdk.PicLoadingActivity:
     boolean isShowDialog -> P
     int completedCount -> K
@@ -3443,7 +3441,7 @@ com.example.picsdk.ResultActivity -> com.example.picsdk.ResultActivity:
     1:1:void access$700(com.example.picsdk.ResultActivity):57:57 -> f
     2:9:void syncUpData(int):464:471 -> f
     1:3:java.lang.String btnConvert(java.lang.String):638:640 -> j
-    1:5:java.lang.String linkConvert(java.lang.String):614:618 -> k
+    1:8:java.lang.String linkConvert(java.lang.String):614:621 -> k
     1:5:void showStudyTime(java.lang.String):565:569 -> l
     1:8:java.lang.String tipConvert(java.lang.String):626:633 -> m
     1:2:void onBackPressed():757:758 -> onBackPressed
@@ -4024,43 +4022,47 @@ com.example.picsdk.music.MusicPicActivity$4$1 -> com.example.picsdk.music.MusicP
 com.example.picsdk.music.OnAudioClickListener -> com.example.picsdk.music.b:
     void onAudioPlay(com.namibox.greendao.entity.AudioInfo) -> a
 com.example.picsdk.util.AppPicUtil -> com.example.picsdk.j.a:
-    long startTime -> a
-    1:1:long getStartTime():65:65 -> a
-    2:2:java.io.File getBookResource(android.content.Context,java.lang.String,long):73:73 -> a
-    3:11:java.io.File getBookCacheDir(android.content.Context,long):77:85 -> a
-    12:20:void TagEventEnterPush(boolean,java.lang.String,java.lang.String,java.lang.String):92:100 -> a
-    21:45:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):105:129 -> a
-    46:52:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):128:134 -> a
-    53:56:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):133:136 -> a
-    57:73:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):135:151 -> a
-    74:82:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):150:158 -> a
-    83:113:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):157:187 -> a
-    114:120:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):186:192 -> a
-    121:124:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):191:194 -> a
-    125:132:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):193:200 -> a
-    133:137:void randomList(java.util.List):206:210 -> a
-    138:145:boolean isForeground(android.content.Context,java.lang.String):215:222 -> a
-    146:146:boolean isForeground(android.app.Activity):230:230 -> a
-    147:192:void jumpChallenge(int,com.namibox.commonlib.activity.AbsFoundationActivity):234:279 -> a
-    193:193:void jumpChallenge(int,com.namibox.commonlib.activity.AbsFoundationActivity):246:246 -> a
-    194:194:void jumpChallenge(int,com.namibox.commonlib.activity.AbsFoundationActivity):243:243 -> a
-    195:203:void lambda$jumpChallenge$0(com.namibox.commonlib.activity.AbsFoundationActivity,com.google.gson.JsonObject):263:271 -> a
-    204:204:void lambda$jumpChallenge$1(java.lang.Throwable):274:274 -> a
-    205:207:void gotoLoading(boolean,android.content.Context):294:296 -> a
-    208:246:void gotoPlayChallenge(java.lang.String,com.example.picsdk.learn.BookManager,com.namibox.commonlib.activity.AbsFoundationActivity):323:361 -> a
-    247:256:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,com.example.picsdk.learn.BookManager):367:376 -> a
-    257:262:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,com.example.picsdk.learn.BookManager):375:380 -> a
-    263:283:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,java.lang.String):386:406 -> a
-    284:289:java.lang.String getPicBaseUrl(android.content.Context):412:417 -> a
-    290:290:void gotoWorkResult(java.lang.String,long):432:432 -> a
-    291:294:java.lang.String formatTime(long):464:467 -> a
-    1:1:void setStartTime(long):69:69 -> b
-    2:7:java.lang.String getPicOssUrl(android.content.Context):442:447 -> b
-    1:6:java.lang.String getPicWorkBaseUrl(android.content.Context):422:427 -> c
-    1:3:void gotoReadChallenge(android.content.Context):313:315 -> d
-    1:3:void gotoWordChallenge(android.content.Context):304:306 -> e
+    long startTime -> f
+    java.lang.String CHALLENGE_STUDY -> a
+    java.lang.String CHALLENGE_READ -> c
+    java.lang.String CHALLENGE_WORD -> b
+    java.lang.String CHALLENGE_PIC -> e
+    java.lang.String CHALLENGE_PLAY -> d
+    1:1:long getStartTime():74:74 -> a
+    2:2:java.io.File getBookResource(android.content.Context,java.lang.String,long):82:82 -> a
+    3:11:java.io.File getBookCacheDir(android.content.Context,long):86:94 -> a
+    12:20:void TagEventEnterPush(boolean,java.lang.String,java.lang.String,java.lang.String):101:109 -> a
+    21:45:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):114:138 -> a
+    46:52:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):137:143 -> a
+    53:56:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):142:145 -> a
+    57:73:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):144:160 -> a
+    74:82:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):159:167 -> a
+    83:113:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):166:196 -> a
+    114:120:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):195:201 -> a
+    121:124:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):200:203 -> a
+    125:132:void saveLoaclReading(com.example.picsdk.learn.BookManager,android.content.Context):202:209 -> a
+    133:137:void randomList(java.util.List):215:219 -> a
+    138:145:boolean isForeground(android.content.Context,java.lang.String):224:231 -> a
+    146:146:boolean isForeground(android.app.Activity):239:239 -> a
+    147:187:void jumpChallenge(int,com.namibox.commonlib.activity.AbsFoundationActivity):243:283 -> a
+    188:196:void lambda$jumpChallenge$0(com.namibox.commonlib.activity.AbsFoundationActivity,com.google.gson.JsonObject):267:275 -> a
+    197:197:void lambda$jumpChallenge$1(java.lang.Throwable):278:278 -> a
+    198:200:void gotoLoading(boolean,android.content.Context):340:342 -> a
+    201:239:void gotoPlayChallenge(java.lang.String,com.example.picsdk.learn.BookManager,com.namibox.commonlib.activity.AbsFoundationActivity):369:407 -> a
+    240:249:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,com.example.picsdk.learn.BookManager):413:422 -> a
+    250:255:void gotoPicChallenge(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,com.example.picsdk.learn.BookManager):421:426 -> a
+    256:276:void saveExtInfo(com.example.picsdk.model.ProductItem$Challenge,com.namibox.commonlib.activity.AbsFoundationActivity,java.lang.String):432:452 -> a
+    277:282:java.lang.String getPicBaseUrl(android.content.Context):458:463 -> a
+    283:283:void gotoWorkResult(java.lang.String,long):478:478 -> a
+    284:287:java.lang.String formatTime(long):510:513 -> a
+    1:1:void setStartTime(long):78:78 -> b
+    2:7:java.lang.String getPicOssUrl(android.content.Context):488:493 -> b
+    1:6:java.lang.String getPicWorkBaseUrl(android.content.Context):468:473 -> c
+    1:3:void gotoReadChallenge(android.content.Context):359:361 -> d
+    1:3:void gotoWordChallenge(android.content.Context):350:352 -> e
+    1:5:void init(android.content.Context):66:70 -> f
 com.example.picsdk.util.AppPicUtil$1 -> com.example.picsdk.j.a$a:
-    1:1:void <init>():150:150 -> <init>
+    1:1:void <init>():159:159 -> <init>
 com.example.picsdk.util.BarUtil -> com.example.picsdk.j.b:
     1:1:void setStatusBarLightMode(android.app.Activity,boolean):27:27 -> a
     2:12:void setStatusBarLightMode(android.view.Window,boolean):31:41 -> a
@@ -13725,7 +13727,7 @@ com.namibox.util.IniReader -> com.namibox.util.e:
     22:22:java.util.Map get(java.lang.String):129:129 -> a
     1:13:void parseLine(java.lang.String):63:75 -> b
 com.namibox.util.LanguageUtil -> com.namibox.util.f:
-    1:3:java.lang.String getLanguage(android.content.Context):13:15 -> a
+    1:6:java.lang.String getLanguage(android.content.Context):13:18 -> a
 com.namibox.util.Logger -> com.namibox.util.g:
     1:1:void d(java.lang.String):21:21 -> a
     2:3:void d(java.lang.String,java.lang.String):25:26 -> a
@@ -15290,36 +15292,36 @@ io.microshow.rxffmpeg.RxFFmpegSubscriber -> io.microshow.rxffmpeg.c:
 sdk.DubbingResultEvent -> sdk.DubbingResultEvent:
     1:2:void <init>(sdk.model.DubbingResultBean):10:11 -> <init>
 sdk.NBPictureSDK -> sdk.NBPictureSDK:
-    1:1:void <init>():53:53 -> <init>
-    1:7:void DubbingResultReceiver(sdk.DubbingResultEvent):243:249 -> DubbingResultReceiver
-    1:1:void access$000(sdk.NBPictureSDK,android.app.Activity,sdk.model.RegisterModel):53:53 -> access$000
-    1:1:java.lang.ref.WeakReference access$100(sdk.NBPictureSDK):53:53 -> access$100
-    1:1:void access$200(sdk.NBPictureSDK,sdk.callback.RegisterSDKInterface,java.lang.Throwable,java.lang.String):53:53 -> access$200
-    1:19:void analyzeAuthCode(java.lang.String,sdk.callback.AnalyzeAuthCallback):217:235 -> analyzeAuthCode
-    20:20:void analyzeAuthCode(java.lang.String,sdk.callback.AnalyzeAuthCallback):220:220 -> analyzeAuthCode
-    1:69:void authToken(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface):121:189 -> authToken
-    1:5:void callbackError(sdk.callback.RegisterSDKInterface,java.lang.Throwable,java.lang.String):194:198 -> callbackError
-    1:10:void cleanCache(android.content.Context,sdk.callback.CleanCacheCallback):254:263 -> cleanCache
-    1:1:void enterPicture(android.app.Activity,sdk.model.RegisterModel):203:203 -> enterPicture
-    1:4:void init(android.app.Application,boolean):80:83 -> init
-    1:2:void initExceptionHandler():404:405 -> initExceptionHandler
-    1:4:void initFileDownload(android.app.Application):378:381 -> initFileDownload
-    1:16:void initLog(android.app.Application):385:400 -> initLog
-    1:16:void initNetwork(android.app.Application):359:374 -> initNetwork
-    1:4:void lambda$authToken$0(io.reactivex.disposables.Disposable):134:137 -> lambda$authToken$0
-    1:45:void lambda$authToken$1(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):140:184 -> lambda$authToken$1
-    1:2:void lambda$authToken$2(sdk.callback.RegisterSDKInterface,java.lang.Throwable):187:188 -> lambda$authToken$2
-    1:2:java.lang.Boolean lambda$cleanCache$5(android.content.Context):257:258 -> lambda$cleanCache$5
-    1:8:void lambda$enterPicture$3(sdk.model.RegisterModel,android.app.Activity):204:211 -> lambda$enterPicture$3
-    1:1:void lambda$enterPicture$4():212:212 -> lambda$enterPicture$4
-    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):406:410 -> lambda$initExceptionHandler$10
-    1:4:void lambda$login$6(io.reactivex.disposables.Disposable):300:303 -> lambda$login$6
-    1:45:void lambda$login$7(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):306:350 -> lambda$login$7
-    1:2:void lambda$login$8(sdk.callback.RegisterSDKInterface,java.lang.Throwable):353:354 -> lambda$login$8
-    1:69:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):287:355 -> login
-    1:10:void onDestroy():63:72 -> onDestroy
-    1:23:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):94:116 -> register
-    24:26:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):95:97 -> register
+    1:1:void <init>():54:54 -> <init>
+    1:7:void DubbingResultReceiver(sdk.DubbingResultEvent):245:251 -> DubbingResultReceiver
+    1:1:void access$000(sdk.NBPictureSDK,android.app.Activity,sdk.model.RegisterModel):54:54 -> access$000
+    1:1:java.lang.ref.WeakReference access$100(sdk.NBPictureSDK):54:54 -> access$100
+    1:1:void access$200(sdk.NBPictureSDK,sdk.callback.RegisterSDKInterface,java.lang.Throwable,java.lang.String):54:54 -> access$200
+    1:19:void analyzeAuthCode(java.lang.String,sdk.callback.AnalyzeAuthCallback):219:237 -> analyzeAuthCode
+    20:20:void analyzeAuthCode(java.lang.String,sdk.callback.AnalyzeAuthCallback):222:222 -> analyzeAuthCode
+    1:69:void authToken(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface):122:190 -> authToken
+    1:5:void callbackError(sdk.callback.RegisterSDKInterface,java.lang.Throwable,java.lang.String):195:199 -> callbackError
+    1:10:void cleanCache(android.content.Context,sdk.callback.CleanCacheCallback):256:265 -> cleanCache
+    1:1:void enterPicture(android.app.Activity,sdk.model.RegisterModel):204:204 -> enterPicture
+    1:4:void init(android.app.Application,boolean):81:84 -> init
+    1:2:void initExceptionHandler():406:407 -> initExceptionHandler
+    1:4:void initFileDownload(android.app.Application):380:383 -> initFileDownload
+    1:16:void initLog(android.app.Application):387:402 -> initLog
+    1:16:void initNetwork(android.app.Application):361:376 -> initNetwork
+    1:4:void lambda$authToken$0(io.reactivex.disposables.Disposable):135:138 -> lambda$authToken$0
+    1:45:void lambda$authToken$1(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):141:185 -> lambda$authToken$1
+    1:2:void lambda$authToken$2(sdk.callback.RegisterSDKInterface,java.lang.Throwable):188:189 -> lambda$authToken$2
+    1:2:java.lang.Boolean lambda$cleanCache$5(android.content.Context):259:260 -> lambda$cleanCache$5
+    1:9:void lambda$enterPicture$3(android.app.Activity,sdk.model.RegisterModel):205:213 -> lambda$enterPicture$3
+    1:1:void lambda$enterPicture$4():214:214 -> lambda$enterPicture$4
+    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):408:412 -> lambda$initExceptionHandler$10
+    1:4:void lambda$login$6(io.reactivex.disposables.Disposable):302:305 -> lambda$login$6
+    1:45:void lambda$login$7(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):308:352 -> lambda$login$7
+    1:2:void lambda$login$8(sdk.callback.RegisterSDKInterface,java.lang.Throwable):355:356 -> lambda$login$8
+    1:69:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):289:357 -> login
+    1:10:void onDestroy():64:73 -> onDestroy
+    1:23:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):95:117 -> register
+    24:26:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):96:98 -> register
 sdk.NBPictureSDK$1 -> sdk.NBPictureSDK$a:
     java.lang.String val$finalDes -> f
     sdk.callback.RegisterSDKInterface val$registerSDKInterface -> d
@@ -15328,19 +15330,19 @@ sdk.NBPictureSDK$1 -> sdk.NBPictureSDK$a:
     android.app.Activity val$activity -> a
     boolean val$canLogin -> c
     java.lang.String val$code -> e
-    1:1:void <init>(sdk.NBPictureSDK,android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,java.lang.String,java.lang.String):153:153 -> <init>
-    1:4:void onLogin():164:167 -> onLogin
-    1:1:void onOtherError(java.lang.String):173:173 -> onOtherError
-    1:3:void onSuccess():156:158 -> onSuccess
+    1:1:void <init>(sdk.NBPictureSDK,android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,java.lang.String,java.lang.String):154:154 -> <init>
+    1:4:void onLogin():165:168 -> onLogin
+    1:1:void onOtherError(java.lang.String):174:174 -> onOtherError
+    1:3:void onSuccess():157:159 -> onSuccess
 sdk.NBPictureSDK$2 -> sdk.NBPictureSDK$b:
     sdk.callback.CleanCacheCallback val$cacheCallback -> a
-    1:1:void <init>(sdk.callback.CleanCacheCallback):263:263 -> <init>
-    1:2:void onNext(java.lang.Boolean):266:267 -> a
-    1:3:void onError(java.lang.Throwable):273:275 -> onError
-    1:1:void onNext(java.lang.Object):263:263 -> onNext
+    1:1:void <init>(sdk.callback.CleanCacheCallback):265:265 -> <init>
+    1:2:void onNext(java.lang.Boolean):268:269 -> a
+    1:3:void onError(java.lang.Throwable):275:277 -> onError
+    1:1:void onNext(java.lang.Object):265:265 -> onNext
 sdk.NBPictureSDK$3 -> sdk.NBPictureSDK$c:
-    1:1:void <init>(com.orhanobut.logger.FormatStrategy):394:394 -> <init>
-    1:1:boolean isLoggable(int,java.lang.String):397:397 -> isLoggable
+    1:1:void <init>(com.orhanobut.logger.FormatStrategy):396:396 -> <init>
+    1:1:boolean isLoggable(int,java.lang.String):399:399 -> isLoggable
 sdk.SDKDemoHelper -> sdk.SDKDemoHelper:
     1:1:void <init>():38:38 -> <init>
     1:44:void getAccessToken(java.lang.String,java.lang.String,long,java.lang.String,sdk.callback.AccessTokenCallback):141:184 -> getAccessToken

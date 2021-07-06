@@ -48,7 +48,7 @@ public class ExerciseChallengeWelcomeFragment extends BaseFragment {
     ExerciseChallengeActivity exerciseChallengeActivity = (ExerciseChallengeActivity) activity;
     if (TextUtils.equals(exerciseChallengeActivity.getExerciseType(), AppPicUtil.CHALLENGE_READ)) {
       ivType.setImageResource(R.drawable.cover_read_understand_1);
-      tvTitle.setText("根据绘本内容 选择正确的答案");
+      tvTitle.setText(getString(R.string.book_progress_cover_title2));
     }
   }
 

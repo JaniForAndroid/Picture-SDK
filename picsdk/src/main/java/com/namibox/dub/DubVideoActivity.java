@@ -223,14 +223,18 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
       }
     });
     initAudioUtilWith16k();
-    showDeterminateProgress("请稍候", "视频加载中...", "取消", new OnClickListener() {
+    String msg = getString(R.string.player_loading);
+    if (getResources() != null) {
+      msg = getResources().getString(R.string.player_loading);
+    }
+    showDeterminateProgress("请稍候", msg, "取消", new OnClickListener() {
       @Override
       public void onClick(View view) {
         if (downDisposable != null && !downDisposable.isDisposed()) {
           downDisposable.dispose();
           showErrorDialog("资源未下载完成", true);
         } else if (!chishengInited) {
-          showErrorDialog("测评引擎初始化失败", true);
+          showErrorDialog(getString(R.string.book_dubevainitfailed_tips), true);
         }
       }
     });
@@ -705,7 +709,7 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
         initView();
       }
     } else {
-      toast("测评引擎初始化失败");
+      toast(getString(R.string.book_dubevainitfailed_tips));
       chishengInited = true;
       useChisheng = false;
       if (downLoadFinish) {
@@ -720,7 +724,7 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
       scoreMap.put(recordAudioIndex, result.score);
     } else {
       if (recordTimeMs <= 1000) {
-        toast("录音时间太短了");
+        toast(getString(R.string.base_recordtimeshort_tips));
       }
       if (DubFileUtil.getWavFileById(this, itemId, recordAudioIndex).exists()) {
         DubFileUtil.getWavFileById(this, itemId, recordAudioIndex).delete();
@@ -1184,7 +1188,7 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
         notifyAdapterStateChange(recordAudioIndex, STATUS_INIT_AUDIO);
       } else {
         if (recordTimeMs <= 1000) {
-          toast("录音时间太短了");
+          toast(getString(R.string.base_recordtimeshort_tips));
         }
         notifyAdapterStateChange(recordAudioIndex, STATUS_INIT);
       }
@@ -1495,7 +1499,7 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
     }
     String msg = "";
     if (checkRecordFile()) {
-      msg = "退出后再次进入需要重新开始挑战";
+      msg = getString(R.string.book_dubchallengereturn_title);
     } else {
       msg = "你还没录完哦,确认退出吗?";
     }

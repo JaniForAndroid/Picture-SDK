@@ -2472,7 +2472,7 @@ public class EvalActivity extends BaseCommitActivity implements OnClickListener 
         String user_id = Utils.getLoginUserId(getApplicationContext());
         HfxPreferenceUtil
             .setRecordBookInWork(getApplicationContext(), user_id, bookId, true);
-        toast("提交成功！");
+        toast(getString(R.string.common_submitsucc_title));
         finish();
       } else if (HfxFileUtil.AUDIO_WORK.equals(workType)) {
         mp3File.delete();
@@ -2534,7 +2534,7 @@ public class EvalActivity extends BaseCommitActivity implements OnClickListener 
         } else {
           isCommiting = false;
           FileUtil.deleteDir(HfxFileUtil.getUserWorkDir(this, videoId));
-          showErrorDialog("视频文件丢失", true);
+          showErrorDialog(getString(R.string.book_dubmixaudiopatherr_tips), true);
         }
       }
     }
@@ -2567,7 +2567,7 @@ public class EvalActivity extends BaseCommitActivity implements OnClickListener 
           public void onError(Throwable e) {
             isCommiting = false;
             hideDeterminateProgress();
-            showTipsDialog("很抱歉", "作品提交失败,请重试");
+            showTipsDialog("很抱歉", getString(R.string.common_submitfaile_title));
 //            worksUploadResult(false, "apifail");
           }
 
@@ -2585,7 +2585,7 @@ public class EvalActivity extends BaseCommitActivity implements OnClickListener 
               login();
               finish();
             } else {
-              showTipsDialog("很抱歉", "作品提交失败,请重试");
+              showTipsDialog("很抱歉", getString(R.string.common_submitfaile_title));
               isCommiting = false;
 //              worksUploadResult(false, "apifail");
             }

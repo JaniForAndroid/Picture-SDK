@@ -55,7 +55,7 @@
       android:background="@drawable/info_panel_bg"
       android:drawableTop="@drawable/ic_retry"
       android:gravity="center"
-      android:text="重试"
+      android:text="@string/retry"
       android:textColor="#fff"
       tools:ignore="HardcodedText" />
 
@@ -70,7 +70,7 @@
       android:padding="8dp"
       android:background="@drawable/info_panel_bg"
       android:gravity="center"
-      android:text="联系客服"
+      android:text="@string/player_contact_kf"
       android:textColor="#fff"
       android:textSize="10dp"
       tools:ignore="HardcodedText" />
@@ -97,7 +97,7 @@
       android:layout_centerHorizontal="true"
       android:padding="8dp"
       android:background="@drawable/info_panel_bg"
-      android:text="保存"
+      android:text="@string/common_save"
       android:textColor="#fff"
       android:textSize="14sp"
       android:visibility="visible" />
@@ -117,7 +117,7 @@
       android:layout_height="wrap_content"
       android:layout_above="@+id/tv_video_info"
       android:layout_centerHorizontal="true"
-      android:text="正在使用非WiFi网络，播放将产生流量"
+      android:text="@string/player_network_tips"
       android:textColor="#cccccc"
       android:textSize="15sp" />
 
@@ -147,7 +147,7 @@
         android:paddingRight="3dp"
         android:background="@drawable/video_continue_play"
         android:gravity="center"
-        android:text="继续播放"
+        android:text="@string/dkplayer_continue_play"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
       <TextView
@@ -158,7 +158,7 @@
         android:padding="5dp"
         android:background="@drawable/video_continue_play"
         android:gravity="center"
-        android:text="退出"
+        android:text="@string/hfx_exit"
         android:textColor="@android:color/white"
         android:textSize="14sp" />
     </LinearLayout>

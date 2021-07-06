@@ -32,7 +32,7 @@
       android:layout_height="wrap_content"
       android:layout_alignBottom="@id/loading_anim"
       android:layout_centerHorizontal="true"
-      android:text="页面加载中…"
+      android:text="@string/common_loading"
       android:textColor="#FFFFFF"
       android:textSize="@dimen/loading_text_size"
       android:visibility="gone"

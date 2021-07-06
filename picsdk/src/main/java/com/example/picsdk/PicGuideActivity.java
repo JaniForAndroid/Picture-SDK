@@ -172,7 +172,7 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
   }
 
   public void initDialog() {
-    showDialog("提示", "您还未注册登录，学习数据将无法保存，请先完成注册登录。",
+    showDialog("提示", getString(R.string.book_registeralertcontent_title),
         "退出", v -> finish(), "继续使用", v -> { });
   }
 
@@ -200,7 +200,7 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
           eventClickPush();
           handleAction(bottom.action);
         } else if (bookLearning.is_locked > 0) {
-          toast("学完前面的内容，才能打开哦");
+          toast(getResources().getString(R.string.book_guidesteploack_title));
         } else {
           goLoading();
         }
@@ -395,7 +395,7 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
     }
 
     if (lock == 1) {
-      toast("学完前面的内容，才能打开哦");
+      toast(getString(R.string.book_guidesteploack_title));
       playSound(soundID);
       return;
     }
@@ -408,28 +408,28 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
         if (NetworkUtil.isNetworkConnected(this)) {
           gotoWordChallenge();
         } else {
-          toast("您的网络状况较差，请检查网络连接。");
+          toast(getString(R.string.common_check_network_tips));
         }
         break;
       case CHALLENGE_READ:
         if (NetworkUtil.isNetworkConnected(this)) {
           gotoReadChallenge();
         } else {
-          toast("您的网络状况较差，请检查网络连接。");
+          toast(getString(R.string.common_check_network_tips));
         }
         break;
       case CHALLENGE_PLAY:
         if (NetworkUtil.isNetworkConnected(this)) {
           gotoPlayChallenge(challenge.url);
         } else {
-          toast("您的网络状况较差，请检查网络连接。");
+          toast(getString(R.string.common_check_network_tips));
         }
         break;
       case CHALLENGE_PIC:
         if (NetworkUtil.isNetworkConnected(this)) {
           gotoPicChallenge(challenge);
         } else {
-          toast("您的网络状况较差，请检查网络连接。");
+          toast(getString(R.string.common_check_network_tips));
         }
         break;
       default:
@@ -441,9 +441,9 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
     String typeName = AppUtil.getNetWorkType(this);
     if (typeName.equalsIgnoreCase("4G")) {
       netWorkDialog = new CommonDialog(this);
-      netWorkDialog.setMessage("当前网络无Wi-Fi，继续使用可能会产生相关流量费用，确认使用流量下载？")
+      netWorkDialog.setMessage(getString(R.string.book_dubnotwifialert_title))
 //                .setImageResId(R.mipmap.ic_launcher)
-          .setTitle("网络提醒")
+          .setTitle(getString(R.string.common_network_title))
           .setPositive("确认")
           .setNegtive("取消")
 //                .setSingle(true)

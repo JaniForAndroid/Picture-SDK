@@ -15,7 +15,6 @@ import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.text.TextUtils;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -54,7 +53,6 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import org.greenrobot.eventbus.EventBus;
 import org.reactivestreams.Publisher;
-import pl.droidsonroids.gif.GifDrawable;
 
 public class ResultActivity extends BaseActivity {
 
@@ -65,7 +63,7 @@ public class ResultActivity extends BaseActivity {
   public static final int STEP4 = 4;
 
   ImageView image;
-  TextView text1,tv_timer;
+  TextView text1, tv_timer;
   TextView text2;
   TextView index1;
   TextView index2;
@@ -266,7 +264,7 @@ public class ResultActivity extends BaseActivity {
         break;
       case STEP2:
         text1.setText(tipConvert(type2));
-        btn.setText("就差一步完成学习");
+        btn.setText(getString(R.string.book_steplastprogress_title));
         btn.setTag(type3);
         index1.setEnabled(true);
         index_text1.setEnabled(true);
@@ -297,9 +295,9 @@ public class ResultActivity extends BaseActivity {
         }
         break;
       case STEP3:
-        text1.setText("恭喜你完成了学习");
+        text1.setText(getString(R.string.book_steplearnprogress_title) + "学习");
         showStudyTime(bookManager.getWordNumber());
-        btn.setText("接下来开始挑战吧");
+        btn.setText(getString(R.string.book_stepbeginchallenge_title));
         index1.setEnabled(true);
         index_text1.setEnabled(true);
         index2.setEnabled(true);
@@ -318,7 +316,7 @@ public class ResultActivity extends BaseActivity {
           if (isHomeworkWatchHaveNext) {
             btn.setText("下一步");
           } else {
-            btn.setText("完成");
+            btn.setText(getString(R.string.send_image));
           }
         }
 
@@ -326,16 +324,16 @@ public class ResultActivity extends BaseActivity {
           line3.setEnabled(false);
           index_text4.setEnabled(false);
           index4.setEnabled(false);
-          btn.setText("就差一步完成学习");
+          btn.setText(getString(R.string.book_steplastprogress_title));
           btn.setTag(type4);
           text1.setText("");
           text2.setText("");
         }
         break;
       case STEP4:
-        text1.setText("恭喜你完成了学习");
+        text1.setText(getString(R.string.book_steplearnprogress_title) + "学习");
         showStudyTime(bookManager.getWordNumber());
-        btn.setText("接下来开始挑战吧");
+        btn.setText(getString(R.string.book_stepbeginchallenge_title));
         index1.setEnabled(true);
         index_text1.setEnabled(true);
         index2.setEnabled(true);
@@ -357,7 +355,7 @@ public class ResultActivity extends BaseActivity {
           if (isHomeworkWatchHaveNext) {
             btn.setText("下一步");
           } else {
-            btn.setText("完成");
+            btn.setText(getString(R.string.send_image));
           }
         }
         break;
@@ -475,12 +473,13 @@ public class ResultActivity extends BaseActivity {
   }
 
   private void showNoInternetDialog(int type) {
-    showDialog("提示", "您的网络状况较差，请检查网络连接。若选择退出，将无法保存答题成绩。", "退出", new View.OnClickListener() {
+    String msg = getString(R.string.common_check_network_tips)+"若选择退出，将无法保存答题成绩。";
+    showDialog("提示", msg, "退出", new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         finish();
       }
-    }, "重新连接", new View.OnClickListener() {
+    }, getString(R.string.common_network_reconnect), new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         syncUpData(type);
@@ -489,12 +488,13 @@ public class ResultActivity extends BaseActivity {
   }
 
   private void showNoInternetDialogOSToken() {
-    showDialog("提示", "您的网络状况较差，请检查网络连接。若选择退出，将无法保存答题成绩。", "退出", new View.OnClickListener() {
+    String msg = getString(R.string.book_dubnonereturnalert_title);
+    showDialog("提示", msg, "退出", new View.OnClickListener() {
       @Override
       public void onClick(View view) {
         finish();
       }
-    }, "重新连接", new View.OnClickListener() {
+    }, getString(R.string.common_network_reconnect), new View.OnClickListener() {
       @Override
       public void onClick(View v) {
         getOsstoken();
@@ -565,7 +565,8 @@ public class ResultActivity extends BaseActivity {
     long endTime = System.currentTimeMillis();
     long time = endTime - AppPicUtil.getStartTime();
     int minute = ((int) time) / 1000 / 60;
-    text2.setText(Utils.format("耗时%d分钟完成，阅读了%s个单词", minute > 0 ? minute : 1, words));
+//    text2.setText(Utils.format("耗时%d分钟完成，阅读了%s个单词", minute > 0 ? minute : 1, words));
+    text2.setText(getString(R.string.book_stepbooklearnresult_title,minute > 0 ? minute : 1, words));
   }
 
   private JsonObject getSyncBody(int type) {
@@ -623,13 +624,13 @@ public class ResultActivity extends BaseActivity {
 
   private String tipConvert(String type) {
     if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
-      return "恭喜你完成了阅读";
+      return getString(R.string.book_steplearnprogress_title) + "阅读";
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
-      return "恭喜你完成了词汇学习";
+      return getString(R.string.book_steplearnprogress_title) + "词汇学习";
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_MUSIC)) {
-      return "恭喜你完成了听音乐";
+      return getString(R.string.book_steplearnprogress_title) + "听音乐";
     } else {
-      return "恭喜你完成了看动画";
+      return getString(R.string.book_steplearnprogress_title) + "看动画";
     }
   }
 
@@ -648,59 +649,49 @@ public class ResultActivity extends BaseActivity {
     String text = btn.getText().toString();
     if (!TextUtils.isEmpty(text)) {
       Intent intent = null;
-      switch (text) {
-        case "开始阅读":
+      if (TextUtils.equals(text, "开始阅读")) {
+        intent = new Intent(this, ReadBookActivity.class);
+      } else if (TextUtils.equals(text, "开始词汇学习")) {
+        intent = new Intent(this, VocabularyActivity.class);
+      } else if (TextUtils.equals(text, "开始看动画")) {
+        intent = new Intent(this, VideoActivity.class);
+      } else if (TextUtils.equals(text, getString(R.string.book_steplastprogress_title))) {
+        String type = (String) btn.getTag();
+        if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
           intent = new Intent(this, ReadBookActivity.class);
-          break;
-        case "开始词汇学习":
+        } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
           intent = new Intent(this, VocabularyActivity.class);
-          break;
-        case "开始看动画":
-          intent = new Intent(this, VideoActivity.class);
-          break;
-        case "就差一步完成学习":
-          String type = (String) btn.getTag();
-          if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
-            intent = new Intent(this, ReadBookActivity.class);
-          } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
-            intent = new Intent(this, VocabularyActivity.class);
-          } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_VIDEO)) {
-            if (NetworkUtil.isNetworkConnected(this)) {
-              intent = new Intent(this, VideoActivity.class);
-            } else {
-              toast("您的网络状况较差，请检查网络连接。");
-              return;
-            }
-          } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_MUSIC)) {
-            intent = new Intent(this, MusicPicActivity.class);
-          }
-          break;
-        case "接下来开始挑战吧":
-          gonextExercise();
-          break;
-        case "提交作业":
+        } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_VIDEO)) {
           if (NetworkUtil.isNetworkConnected(this)) {
-            //TODO 提交作业
-            submitWork();
-          } else {
-            toast("您的网络状况较差，请检查网络连接。");
-          }
-          break;
-        case "下一步":
-          if (mStep == 1) {
-            intent = new Intent(this, VocabularyActivity.class);
-          } else if (mStep == 2) {
             intent = new Intent(this, VideoActivity.class);
-          } else if (mStep == 3) {
-            gonextExercise();
+          } else {
+            toast(getString(R.string.common_check_network_tips));
+            return;
           }
-          break;
-        case "完成":
-          finish();
-          break;
-        default:
-          break;
+        } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_MUSIC)) {
+          intent = new Intent(this, MusicPicActivity.class);
+        }
+      } else if (TextUtils.equals(text, getString(R.string.book_stepbeginchallenge_title))) {
+        gonextExercise();
+      } else if (TextUtils.equals(text, "提交作业")) {
+        if (NetworkUtil.isNetworkConnected(this)) {
+          //TODO 提交作业
+          submitWork();
+        } else {
+          toast(getString(R.string.common_check_network_tips));
+        }
+      } else if (TextUtils.equals(text, "下一步")) {
+        if (mStep == 1) {
+          intent = new Intent(this, VocabularyActivity.class);
+        } else if (mStep == 2) {
+          intent = new Intent(this, VideoActivity.class);
+        } else if (mStep == 3) {
+          gonextExercise();
+        }
+      } else if (TextUtils.equals(text, "完成")) {
+        finish();
       }
+
       if (intent != null) {
         startActivity(intent);
         finish();
@@ -732,7 +723,7 @@ public class ResultActivity extends BaseActivity {
         finish();
       }
     } else {
-      toast("您的网络状况较差，请检查网络连接。");
+      toast(getString(R.string.common_check_network_tips));
     }
   }
 
@@ -784,7 +775,7 @@ public class ResultActivity extends BaseActivity {
         super.onAnimationEnd(animation);
         animTimer();
         baoxiangCanClick = true;
-        first_text.setVisibility(View.VISIBLE);
+        first_text.setVisibility(View.GONE);
       }
     });
 
@@ -796,13 +787,14 @@ public class ResultActivity extends BaseActivity {
       if (timerDis != null && !timerDis.isDisposed()) {
         timerDis.dispose();
       }
-      first_text.setVisibility(View.VISIBLE);
+      first_text.setVisibility(View.GONE);
       aniLayout.setVisibility(View.GONE);
     });
   }
 
   Disposable timerDis;
-  private void animTimer(){
+
+  private void animTimer() {
     tv_timer.setVisibility(View.VISIBLE);
 
     Observable.interval(1, TimeUnit.SECONDS)
@@ -818,7 +810,7 @@ public class ResultActivity extends BaseActivity {
 
           @Override
           public void onNext(@NonNull Long s) {
-            tv_timer.setText((2-s)+"s");
+            tv_timer.setText((2 - s) + "s");
             if (s == 2) {
               aniLayout.setVisibility(View.GONE);
               tv_timer.setVisibility(View.GONE);

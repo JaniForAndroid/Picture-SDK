@@ -197,7 +197,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
         }
         mActivity.request();
       } else
-        toast("您的网络状况较差，请检查网络连接。");
+        toast(getString(R.string.common_check_network_tips));
     });
 
     if (isHomeworkSubmit) {
@@ -230,7 +230,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
 
         mActivity.enterNextChallenge();
       } else
-        toast("您的网络状况较差，请检查网络连接。");
+        toast(getString(R.string.common_check_network_tips));
     });
 
 //    if (getActivity().getPackageName().equals("com.jinxin.appstudent")) {
@@ -355,8 +355,9 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
   }
 
   private void showNoInternetDialog() {
-    mActivity.showDialog("提示", "您的网络状况较差，请检查网络连接。若选择退出，将无法保存答题成绩。",
-        "退出", view -> getActivity().finish(), "重新连接", v -> syncUpData());
+    String msg = getString(R.string.book_dubnonereturnalert_title);
+    mActivity.showDialog("提示", msg,
+        "退出", view -> getActivity().finish(), getString(R.string.common_network_reconnect), v -> syncUpData());
   }
 
   private void syncUp() {
@@ -504,7 +505,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
         super.onAnimationEnd(animation);
         animTimer();
         baoxiangCanClick = true;
-        first_text.setVisibility(View.VISIBLE);
+        first_text.setVisibility(View.GONE);
 //          first_text2.setVisibility(View.VISIBLE);
       }
     });
@@ -516,7 +517,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
       if (timerDis != null && !timerDis.isDisposed()) {
         timerDis.dispose();
       }
-      first_text.setVisibility(View.VISIBLE);
+      first_text.setVisibility(View.GONE);
 //      first_text2.setVisibility(View.VISIBLE);
       loadingAnimView.cancelAnimation();
       aniLayout.setVisibility(View.GONE);

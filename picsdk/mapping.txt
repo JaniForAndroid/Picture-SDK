@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: cce512a
+# pg_map_id: 2b790cd
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -2921,7 +2921,7 @@ com.example.picsdk.ExerciseChallengeResultFragment -> com.example.picsdk.c:
     int failedID -> r
     int clickID -> p
     1:1:void <init>():81:81 -> <init>
-    2:415:void <init>():68:481 -> <init>
+    2:416:void <init>():68:482 -> <init>
     1:1:int access$000(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> a
     2:2:void access$100(com.example.picsdk.ExerciseChallengeResultFragment,int):51:51 -> a
     3:3:void playSound(int):141:141 -> a
@@ -2932,33 +2932,34 @@ com.example.picsdk.ExerciseChallengeResultFragment -> com.example.picsdk.c:
     178:178:void lambda$submitWork$5(java.lang.Throwable):343:343 -> a
     1:1:int access$200(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> b
     2:2:void lambda$initView$0(android.view.View):168:168 -> b
-    3:24:void lambda$syncUp$9(com.google.gson.JsonElement):385:406 -> b
-    25:25:void lambda$syncUp$10(java.lang.Throwable):409:409 -> b
+    3:24:void lambda$syncUp$9(com.google.gson.JsonElement):386:407 -> b
+    25:25:void lambda$syncUp$10(java.lang.Throwable):410:410 -> b
     1:1:void access$300(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> c
     2:9:void lambda$initView$1(android.view.View):170:177 -> c
-    10:14:void animTimer():528:532 -> c
+    10:14:void animTimer():529:533 -> c
     1:1:android.widget.TextView access$400(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> d
     2:27:void lambda$initView$3(android.view.View):208:233 -> d
-    28:65:com.google.gson.JsonObject getSyncBody():416:453 -> d
-    66:88:com.google.gson.JsonObject getSyncBody():450:472 -> d
-    89:102:com.google.gson.JsonObject getSyncBody():422:435 -> d
+    28:65:com.google.gson.JsonObject getSyncBody():417:454 -> d
+    66:88:com.google.gson.JsonObject getSyncBody():451:473 -> d
+    89:102:com.google.gson.JsonObject getSyncBody():423:436 -> d
     1:1:android.widget.TextView access$500(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> e
     2:6:void initSound():132:136 -> e
-    7:16:void lambda$showAnimation$11(android.view.View):513:522 -> e
+    7:16:void lambda$showAnimation$11(android.view.View):514:523 -> e
     1:1:android.support.constraint.ConstraintLayout access$600(com.example.picsdk.ExerciseChallengeResultFragment):51:51 -> f
-    2:2:void lambda$showNoInternetDialog$6(android.view.View):359:359 -> f
-    3:3:void lambda$null$8():400:400 -> f
+    2:2:void lambda$showNoInternetDialog$6(android.view.View):360:360 -> f
+    3:3:void lambda$null$8():401:401 -> f
     1:3:com.example.picsdk.ExerciseChallengeResultFragment newInstance():86:88 -> g
-    4:4:void lambda$showNoInternetDialog$7(android.view.View):359:359 -> g
-    1:29:void showAnimation():484:512 -> h
-    1:1:void showNoInternetDialog():358:358 -> i
+    4:4:void lambda$showNoInternetDialog$7(android.view.View):360:360 -> g
+    1:29:void showAnimation():485:513 -> h
+    1:3:void showNoInternetDialog():358:360 -> i
+    4:4:void showNoInternetDialog():359:359 -> i
     1:22:void submitWork():325:346 -> j
-    1:15:void syncUp():363:377 -> k
-    16:57:void syncUp():371:412 -> k
+    1:15:void syncUp():364:378 -> k
+    16:57:void syncUp():372:413 -> k
     1:4:void syncUpData():350:353 -> l
     1:12:void onCreate(android.os.Bundle):94:105 -> onCreate
     1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):113:113 -> onCreateView
-    1:3:void onDestroy():567:569 -> onDestroy
+    1:3:void onDestroy():568:570 -> onDestroy
     1:10:void onViewCreated(android.view.View,android.os.Bundle):118:127 -> onViewCreated
 com.example.picsdk.ExerciseChallengeResultFragment$1 -> com.example.picsdk.c$a:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
@@ -2970,14 +2971,14 @@ com.example.picsdk.ExerciseChallengeResultFragment$2 -> com.example.picsdk.c$b:
     1:1:void run():318:318 -> run
 com.example.picsdk.ExerciseChallengeResultFragment$3 -> com.example.picsdk.c$c:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):501:501 -> <init>
-    1:4:void onAnimationEnd(android.animation.Animator):504:507 -> onAnimationEnd
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):502:502 -> <init>
+    1:4:void onAnimationEnd(android.animation.Animator):505:508 -> onAnimationEnd
 com.example.picsdk.ExerciseChallengeResultFragment$4 -> com.example.picsdk.c$d:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):532:532 -> <init>
-    1:6:void onNext(java.lang.Long):543:548 -> a
-    1:1:void onNext(java.lang.Object):532:532 -> onNext
-    1:4:void onSubscribe(io.reactivex.disposables.Disposable):535:538 -> onSubscribe
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):533:533 -> <init>
+    1:6:void onNext(java.lang.Long):544:549 -> a
+    1:1:void onNext(java.lang.Object):533:533 -> onNext
+    1:4:void onSubscribe(io.reactivex.disposables.Disposable):536:539 -> onSubscribe
 com.example.picsdk.ExerciseChallengeWelcomeFragment -> com.example.picsdk.d:
     android.os.Handler handler -> g
     android.widget.ProgressBar progressBar -> f
@@ -3201,9 +3202,9 @@ com.example.picsdk.PicVideoAdapter -> com.example.picsdk.e:
     1:1:void setOnItemClickListener(com.example.picsdk.PicVideoAdapter$OnItemClickListener):26:26 -> a
     2:3:void setItems(java.util.List):30:31 -> a
     4:6:com.example.picsdk.PicVideoAdapter$ViewImageHolder onCreateViewHolder(android.view.ViewGroup,int):41:43 -> a
-    7:22:void onBindViewHolder(com.example.picsdk.PicVideoAdapter$ViewImageHolder,int):48:63 -> a
-    23:24:void lambda$onBindViewHolder$0(int,android.view.View):55:56 -> a
-    1:1:int getItemCount():69:69 -> getItemCount
+    7:23:void onBindViewHolder(com.example.picsdk.PicVideoAdapter$ViewImageHolder,int):48:64 -> a
+    24:25:void lambda$onBindViewHolder$0(int,android.view.View):56:57 -> a
+    1:1:int getItemCount():70:70 -> getItemCount
     1:1:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):19:19 -> onBindViewHolder
     1:1:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):19:19 -> onCreateViewHolder
 com.example.picsdk.PicVideoAdapter$OnItemClickListener -> com.example.picsdk.e$a:
@@ -3213,7 +3214,7 @@ com.example.picsdk.PicVideoAdapter$ViewImageHolder -> com.example.picsdk.e$b:
     android.widget.TextView tv_duration -> c
     android.widget.TextView tv_title -> b
     android.view.View isPlayView -> d
-    1:5:void <init>(android.view.View):78:82 -> <init>
+    1:5:void <init>(android.view.View):79:83 -> <init>
 com.example.picsdk.ReadBookActivity -> com.example.picsdk.ReadBookActivity:
     android.view.View title_bg -> x
     int mPlaybackState -> O
@@ -3395,106 +3396,105 @@ com.example.picsdk.ResultActivity -> com.example.picsdk.ResultActivity:
     android.media.SoundPool soundPool -> S
     android.widget.TextView first_text -> J
     long milesson_id -> M
-    1:714:void <init>():59:772 -> <init>
-    1:48:void getOsstoken():374:421 -> A
-    1:7:com.google.gson.JsonObject getOsstokenBody():450:456 -> B
-    8:15:com.google.gson.JsonObject getOsstokenBody():454:461 -> B
-    1:24:void gonextExercise():712:735 -> C
-    1:36:void initData():156:191 -> D
-    1:3:void initSound():197:199 -> E
-    1:23:void initView():130:152 -> F
-    1:13:void nextLink():647:659 -> G
-    14:44:void nextLink():656:686 -> G
-    45:91:void nextLink():653:699 -> G
-    92:136:void nextLink():662:706 -> G
-    1:17:void showAnimation():775:791 -> H
-    1:1:void showNoInternetDialogOSToken():492:492 -> I
-    1:22:void submitWork():740:761 -> J
-    1:5:void updateLatter():844:848 -> K
-    1:1:int access$000(com.example.picsdk.ResultActivity):59:59 -> a
-    2:2:void access$100(com.example.picsdk.ResultActivity,int):59:59 -> a
-    3:3:java.util.ArrayList access$502(com.example.picsdk.ResultActivity,java.util.ArrayList):59:59 -> a
-    4:4:void lambda$initView$0(android.view.View):150:150 -> a
+    1:707:void <init>():57:763 -> <init>
+    1:48:void getOsstoken():372:419 -> A
+    1:7:com.google.gson.JsonObject getOsstokenBody():448:454 -> B
+    8:15:com.google.gson.JsonObject getOsstokenBody():452:459 -> B
+    1:24:void gonextExercise():703:726 -> C
+    1:36:void initData():154:189 -> D
+    1:3:void initSound():195:197 -> E
+    1:23:void initView():128:150 -> F
+    1:50:void nextLink():648:697 -> G
+    1:17:void showAnimation():766:782 -> H
+    1:7:void showNoInternetDialogOSToken():491:497 -> I
+    8:8:void showNoInternetDialogOSToken():492:492 -> I
+    1:22:void submitWork():731:752 -> J
+    1:5:void updateLatter():836:840 -> K
+    1:1:int access$000(com.example.picsdk.ResultActivity):57:57 -> a
+    2:2:void access$100(com.example.picsdk.ResultActivity,int):57:57 -> a
+    3:3:java.util.ArrayList access$502(com.example.picsdk.ResultActivity,java.util.ArrayList):57:57 -> a
+    4:4:void lambda$initView$0(android.view.View):148:148 -> a
     5:27:void lambda$syncUp$3(int,com.google.gson.JsonElement):532:554 -> a
     28:29:void lambda$syncUp$4(int,java.lang.Throwable):557:558 -> a
-    30:35:void lambda$submitWork$5(com.google.gson.JsonElement):748:753 -> a
-    36:36:void lambda$submitWork$6(java.lang.Throwable):758:758 -> a
-    1:1:int access$200(com.example.picsdk.ResultActivity):59:59 -> b
-    2:2:void access$300(com.example.picsdk.ResultActivity,int):59:59 -> b
-    3:3:void lambda$initView$1(android.view.View):151:151 -> b
-    4:142:void initView(java.util.List):222:360 -> b
-    143:175:void initView(java.util.List):300:332 -> b
-    176:204:void initView(java.util.List):268:296 -> b
-    205:328:void initView(java.util.List):246:369 -> b
-    329:363:com.google.gson.JsonObject getSyncBody(int):572:606 -> b
-    364:382:com.google.gson.JsonObject getSyncBody(int):583:601 -> b
-    383:384:com.google.gson.JsonObject getSyncBody(int):578:579 -> b
-    1:1:void access$400(com.example.picsdk.ResultActivity):59:59 -> c
-    2:2:void lambda$initView$2(android.view.View):152:152 -> c
-    3:3:void playSound(int):211:211 -> c
-    1:1:java.util.ArrayList access$500(com.example.picsdk.ResultActivity):59:59 -> d
-    2:2:void showNoInternetDialog(int):478:478 -> d
-    3:11:void lambda$showAnimation$7(android.view.View):792:800 -> d
-    1:1:void access$600(com.example.picsdk.ResultActivity):59:59 -> e
+    30:35:void lambda$submitWork$5(com.google.gson.JsonElement):739:744 -> a
+    36:36:void lambda$submitWork$6(java.lang.Throwable):749:749 -> a
+    1:1:int access$200(com.example.picsdk.ResultActivity):57:57 -> b
+    2:2:void access$300(com.example.picsdk.ResultActivity,int):57:57 -> b
+    3:3:void lambda$initView$1(android.view.View):149:149 -> b
+    4:142:void initView(java.util.List):220:358 -> b
+    143:175:void initView(java.util.List):298:330 -> b
+    176:204:void initView(java.util.List):266:294 -> b
+    205:328:void initView(java.util.List):244:367 -> b
+    329:363:com.google.gson.JsonObject getSyncBody(int):573:607 -> b
+    364:382:com.google.gson.JsonObject getSyncBody(int):584:602 -> b
+    383:384:com.google.gson.JsonObject getSyncBody(int):579:580 -> b
+    1:1:void access$400(com.example.picsdk.ResultActivity):57:57 -> c
+    2:2:void lambda$initView$2(android.view.View):150:150 -> c
+    3:3:void playSound(int):209:209 -> c
+    1:1:java.util.ArrayList access$500(com.example.picsdk.ResultActivity):57:57 -> d
+    2:8:void showNoInternetDialog(int):476:482 -> d
+    9:9:void showNoInternetDialog(int):477:477 -> d
+    10:18:void lambda$showAnimation$7(android.view.View):783:791 -> d
+    1:1:void access$600(com.example.picsdk.ResultActivity):57:57 -> e
     2:20:void syncUp(int):506:524 -> e
     21:21:void syncUp(int):521:521 -> e
     22:22:void syncUp(int):518:518 -> e
     23:69:void syncUp(int):515:561 -> e
-    1:1:void access$700(com.example.picsdk.ResultActivity):59:59 -> f
-    2:9:void syncUpData(int):466:473 -> f
-    1:3:java.lang.String btnConvert(java.lang.String):637:639 -> j
-    1:5:java.lang.String linkConvert(java.lang.String):613:617 -> k
-    1:4:void showStudyTime(java.lang.String):565:568 -> l
-    1:5:java.lang.String tipConvert(java.lang.String):625:629 -> m
-    1:2:void onBackPressed():766:767 -> onBackPressed
-    1:19:void onCreate(android.os.Bundle):108:126 -> onCreate
-    1:3:void onDestroy():204:206 -> onDestroy
-    1:5:void animTimer():806:810 -> z
+    1:1:void access$700(com.example.picsdk.ResultActivity):57:57 -> f
+    2:9:void syncUpData(int):464:471 -> f
+    1:3:java.lang.String btnConvert(java.lang.String):638:640 -> j
+    1:5:java.lang.String linkConvert(java.lang.String):614:618 -> k
+    1:5:void showStudyTime(java.lang.String):565:569 -> l
+    1:8:java.lang.String tipConvert(java.lang.String):626:633 -> m
+    1:2:void onBackPressed():757:758 -> onBackPressed
+    1:19:void onCreate(android.os.Bundle):106:124 -> onCreate
+    1:3:void onDestroy():202:204 -> onDestroy
+    1:5:void animTimer():798:802 -> z
 com.example.picsdk.ResultActivity$1 -> com.example.picsdk.ResultActivity$c:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):222:222 -> <init>
-    1:1:void run():225:225 -> run
+    1:1:void <init>(com.example.picsdk.ResultActivity):220:220 -> <init>
+    1:1:void run():223:223 -> run
 com.example.picsdk.ResultActivity$10 -> com.example.picsdk.ResultActivity$a:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):781:781 -> <init>
-    1:4:void onAnimationEnd(android.animation.Animator):784:787 -> onAnimationEnd
+    1:1:void <init>(com.example.picsdk.ResultActivity):772:772 -> <init>
+    1:4:void onAnimationEnd(android.animation.Animator):775:778 -> onAnimationEnd
 com.example.picsdk.ResultActivity$11 -> com.example.picsdk.ResultActivity$b:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):810:810 -> <init>
-    1:6:void onNext(java.lang.Long):821:826 -> a
-    1:1:void onNext(java.lang.Object):810:810 -> onNext
-    1:4:void onSubscribe(io.reactivex.disposables.Disposable):813:816 -> onSubscribe
+    1:1:void <init>(com.example.picsdk.ResultActivity):802:802 -> <init>
+    1:6:void onNext(java.lang.Long):813:818 -> a
+    1:1:void onNext(java.lang.Object):802:802 -> onNext
+    1:4:void onSubscribe(io.reactivex.disposables.Disposable):805:808 -> onSubscribe
 com.example.picsdk.ResultActivity$2 -> com.example.picsdk.ResultActivity$d:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):421:421 -> <init>
-    1:2:void onSuccess(java.util.List):430:431 -> a
-    1:2:void onError(java.lang.Throwable):440:441 -> onError
-    1:1:void onSubscribe(io.reactivex.disposables.Disposable):424:424 -> onSubscribe
-    1:1:void onSuccess(java.lang.Object):421:421 -> onSuccess
+    1:1:void <init>(com.example.picsdk.ResultActivity):419:419 -> <init>
+    1:2:void onSuccess(java.util.List):428:429 -> a
+    1:2:void onError(java.lang.Throwable):438:439 -> onError
+    1:1:void onSubscribe(io.reactivex.disposables.Disposable):422:422 -> onSubscribe
+    1:1:void onSuccess(java.lang.Object):419:419 -> onSuccess
 com.example.picsdk.ResultActivity$3 -> com.example.picsdk.ResultActivity$e:
-    1:1:void <init>(com.example.picsdk.ResultActivity):409:409 -> <init>
-    1:4:io.reactivex.Flowable apply(com.namibox.commonlib.event.OssEvent):412:415 -> a
-    1:1:java.lang.Object apply(java.lang.Object):409:409 -> apply
+    1:1:void <init>(com.example.picsdk.ResultActivity):407:407 -> <init>
+    1:4:io.reactivex.Flowable apply(com.namibox.commonlib.event.OssEvent):410:413 -> a
+    1:1:java.lang.Object apply(java.lang.Object):407:407 -> apply
 com.example.picsdk.ResultActivity$4 -> com.example.picsdk.ResultActivity$f:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):403:403 -> <init>
-    1:1:org.reactivestreams.Publisher apply(com.namibox.commonlib.model.OssToken):406:406 -> a
-    1:1:java.lang.Object apply(java.lang.Object):403:403 -> apply
+    1:1:void <init>(com.example.picsdk.ResultActivity):401:401 -> <init>
+    1:1:org.reactivestreams.Publisher apply(com.namibox.commonlib.model.OssToken):404:404 -> a
+    1:1:java.lang.Object apply(java.lang.Object):401:401 -> apply
 com.example.picsdk.ResultActivity$5 -> com.example.picsdk.ResultActivity$g:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):379:379 -> <init>
-    1:3:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):382:384 -> a
-    4:21:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):383:400 -> a
-    1:1:java.lang.Object apply(java.lang.Object):379:379 -> apply
+    1:1:void <init>(com.example.picsdk.ResultActivity):377:377 -> <init>
+    1:3:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):380:382 -> a
+    4:21:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):381:398 -> a
+    1:1:java.lang.Object apply(java.lang.Object):377:377 -> apply
 com.example.picsdk.ResultActivity$6 -> com.example.picsdk.ResultActivity$h:
     com.example.picsdk.ResultActivity this$0 -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity):478:478 -> <init>
-    1:1:void onClick(android.view.View):481:481 -> onClick
+    1:1:void <init>(com.example.picsdk.ResultActivity):477:477 -> <init>
+    1:1:void onClick(android.view.View):480:480 -> onClick
 com.example.picsdk.ResultActivity$7 -> com.example.picsdk.ResultActivity$i:
     com.example.picsdk.ResultActivity this$0 -> b
     int val$type -> a
-    1:1:void <init>(com.example.picsdk.ResultActivity,int):483:483 -> <init>
-    1:1:void onClick(android.view.View):486:486 -> onClick
+    1:1:void <init>(com.example.picsdk.ResultActivity,int):482:482 -> <init>
+    1:1:void onClick(android.view.View):485:485 -> onClick
 com.example.picsdk.ResultActivity$8 -> com.example.picsdk.ResultActivity$j:
     com.example.picsdk.ResultActivity this$0 -> a
     1:1:void <init>(com.example.picsdk.ResultActivity):492:492 -> <init>
@@ -4431,30 +4431,30 @@ com.google.android.exoplayer.lib.PlayerView -> com.google.android.exoplayer.lib.
     1:1:int access$900(com.google.android.exoplayer.lib.PlayerView):44:44 -> access$900
     1:1:int access$902(com.google.android.exoplayer.lib.PlayerView,int):44:44 -> access$902
     1:2:android.graphics.Bitmap captureVideoShot():292:293 -> captureVideoShot
-    1:1:boolean dispatchKeyEvent(android.view.KeyEvent):504:504 -> dispatchKeyEvent
+    1:1:boolean dispatchKeyEvent(android.view.KeyEvent):506:506 -> dispatchKeyEvent
     1:14:void doScroll(android.view.MotionEvent,float):377:390 -> doScroll
     1:1:com.google.android.exoplayer.lib.PlayControlView getController():168:168 -> getController
     1:1:com.google.android.exoplayer2.SimpleExoPlayer getPlayer():186:186 -> getPlayer
     1:1:android.widget.ImageView getShutterView():225:225 -> getShutterView
-    1:3:int getSystemBrightness():463:465 -> getSystemBrightness
+    1:3:int getSystemBrightness():465:467 -> getSystemBrightness
     1:1:android.view.View getVideoSurfaceView():288:288 -> getVideoSurfaceView
     1:1:boolean isLocked():164:164 -> isLocked
-    1:7:boolean onTouchEvent(android.view.MotionEvent):493:499 -> onTouchEvent
-    1:25:void scrollBrightness(boolean):420:444 -> scrollBrightness
-    1:7:void scrollProgress(boolean):396:402 -> scrollProgress
-    1:11:void scrollVolume(boolean):406:416 -> scrollVolume
-    1:1:void setLockViewVisibility(int):587:587 -> setLockViewVisibility
+    1:7:boolean onTouchEvent(android.view.MotionEvent):495:501 -> onTouchEvent
+    1:25:void scrollBrightness(boolean):422:446 -> scrollBrightness
+    1:9:void scrollProgress(boolean):396:404 -> scrollProgress
+    1:11:void scrollVolume(boolean):408:418 -> scrollVolume
+    1:1:void setLockViewVisibility(int):589:589 -> setLockViewVisibility
     1:3:void setLocked(boolean):157:159 -> setLocked
     1:24:void setPlayer(com.google.android.exoplayer2.SimpleExoPlayer):197:220 -> setPlayer
     1:1:void setResizeMode(int):256:256 -> setResizeMode
-    1:6:void setScreenBrightness(int):451:456 -> setScreenBrightness
+    1:6:void setScreenBrightness(int):453:458 -> setScreenBrightness
     1:9:void setUseController(boolean):236:244 -> setUseController
     1:1:void setVideoListener(com.google.android.exoplayer.lib.PlayerView$OnVideoListener):267:267 -> setVideoListener
     1:1:void setVisibilityListener(com.google.android.exoplayer.lib.PlayerView$VisibilityListener):278:278 -> setVisibilityListener
     1:1:void showLockLayout(boolean):300:300 -> showLockLayout
     1:6:void showLockView():311:316 -> showLockView
     1:2:void startScroll():372:373 -> startScroll
-    1:17:void stopScroll():471:487 -> stopScroll
+    1:17:void stopScroll():473:489 -> stopScroll
     1:7:void toggleFullScreen(boolean):172:178 -> toggleFullScreen
 com.google.android.exoplayer.lib.PlayerView$1 -> com.google.android.exoplayer.lib.PlayerView$1:
     1:1:void <init>(com.google.android.exoplayer.lib.PlayerView):111:111 -> <init>
@@ -4470,11 +4470,11 @@ com.google.android.exoplayer.lib.PlayerView$4 -> com.google.android.exoplayer.li
     1:14:boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float):352:365 -> onScroll
     1:12:boolean onSingleTapUp(android.view.MotionEvent):334:345 -> onSingleTapUp
 com.google.android.exoplayer.lib.PlayerView$ComponentListener -> com.google.android.exoplayer.lib.PlayerView$ComponentListener:
-    1:1:void <init>(com.google.android.exoplayer.lib.PlayerView):507:507 -> <init>
-    2:2:void <init>(com.google.android.exoplayer.lib.PlayerView,com.google.android.exoplayer.lib.PlayerView$1):507:507 -> <init>
-    1:4:void onPlayerStateChanged(boolean,int):547:550 -> onPlayerStateChanged
-    1:1:void onRenderedFirstFrame():530:530 -> onRenderedFirstFrame
-    1:3:void onVideoSizeChanged(int,int,int,float):522:524 -> onVideoSizeChanged
+    1:1:void <init>(com.google.android.exoplayer.lib.PlayerView):509:509 -> <init>
+    2:2:void <init>(com.google.android.exoplayer.lib.PlayerView,com.google.android.exoplayer.lib.PlayerView$1):509:509 -> <init>
+    1:4:void onPlayerStateChanged(boolean,int):549:552 -> onPlayerStateChanged
+    1:1:void onRenderedFirstFrame():532:532 -> onRenderedFirstFrame
+    1:3:void onVideoSizeChanged(int,int,int,float):524:526 -> onVideoSizeChanged
 com.google.android.exoplayer.lib.ProgressView -> com.google.android.exoplayer.lib.ProgressView:
     1:1:void <init>(android.content.Context,android.util.AttributeSet,int):34:34 -> <init>
     2:11:void <init>(android.content.Context,android.util.AttributeSet,int):26:35 -> <init>
@@ -4603,45 +4603,45 @@ com.namibox.commonlib.activity.AbsFunctionActivity -> a.b.a.a.b:
     android.net.Uri videoPlayUri -> m
     com.uraroji.garage.android.lame.AudioUtil recorder -> g
     com.namibox.commonlib.activity.AbsFunctionActivity$ScannerCallback scannerCallback -> n
-    1:13:void <init>():53:65 -> <init>
-    1:2:void startEngine(java.lang.String,long,java.lang.String):163:164 -> a
-    3:3:void initEngineNoUI(com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback):200:200 -> a
-    4:18:void initEngineNoUI(java.lang.String,java.lang.String,java.lang.String,com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback,boolean):205:219 -> a
-    19:20:void initEngineNoUI(java.lang.String,java.lang.String,java.lang.String,com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback,boolean):215:216 -> a
-    21:22:void initAudioUtil(com.uraroji.garage.android.lame.AudioUtil$VolumeCallBack):241:242 -> a
-    23:23:void cutRecordFile(double):253:253 -> a
-    24:24:void startMp3(java.io.File,boolean):271:271 -> a
-    25:25:void startPcm(java.io.File,boolean,boolean,java.io.File):279:279 -> a
-    26:29:void startMediaRecorder(java.io.File):287:290 -> a
-    30:38:void reportVideoComplete(java.lang.String,float,java.lang.String):420:428 -> a
+    1:13:void <init>():54:66 -> <init>
+    1:2:void startEngine(java.lang.String,long,java.lang.String):164:165 -> a
+    3:3:void initEngineNoUI(com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback):201:201 -> a
+    4:18:void initEngineNoUI(java.lang.String,java.lang.String,java.lang.String,com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback,boolean):206:220 -> a
+    19:20:void initEngineNoUI(java.lang.String,java.lang.String,java.lang.String,com.namibox.voice_engine_interface.VoiceEngineContext$VoiceEngineCallback,boolean):216:217 -> a
+    21:22:void initAudioUtil(com.uraroji.garage.android.lame.AudioUtil$VolumeCallBack):242:243 -> a
+    23:23:void cutRecordFile(double):254:254 -> a
+    24:24:void startMp3(java.io.File,boolean):272:272 -> a
+    25:25:void startPcm(java.io.File,boolean,boolean,java.io.File):280:280 -> a
+    26:29:void startMediaRecorder(java.io.File):288:291 -> a
+    30:38:void reportVideoComplete(java.lang.String,float,java.lang.String):421:429 -> a
     void onVideoPlay(java.lang.String,java.lang.String) -> c
-    1:4:void openPlayLocalAudio(java.lang.String):501:504 -> d
-    1:4:void openPlayOnlineAudio(java.lang.String):513:516 -> e
-    1:1:void exit(com.namibox.commonlib.event.ExitEvent):118:118 -> exit
-    1:1:void openView(java.lang.String):236:236 -> f
-    1:2:void finish():96:97 -> finish
-    1:1:void setEvalType(java.lang.String):169:169 -> g
-    1:1:int getMsPerBuffer():257:257 -> i
-    1:4:okhttp3.OkHttpClient getOkHttpClient():126:129 -> j
-    1:1:int getSampleRate():261:261 -> k
-    1:1:java.lang.String getUserAgent():122:122 -> l
-    1:2:double getVolume():300:301 -> m
-    1:2:void initAudioUtilWith16k():247:248 -> n
-    1:1:void login():232:232 -> o
-    1:41:void onActivityResult(int,int,android.content.Intent):365:405 -> onActivityResult
-    1:2:void onCreate(android.os.Bundle):102:103 -> onCreate
-    1:5:void onDestroy():108:112 -> onDestroy
-    1:6:boolean onOptionsItemSelected(android.view.MenuItem):86:91 -> onOptionsItemSelected
-    1:2:void releaseEngine():225:226 -> p
-    1:2:void releaseRecorder():265:266 -> q
-    1:2:void stopAudioRecord():294:295 -> r
-    1:3:void stopEngine():173:175 -> s
-    1:1:int testAudio():283:283 -> t
+    1:4:void openPlayLocalAudio(java.lang.String):502:505 -> d
+    1:4:void openPlayOnlineAudio(java.lang.String):514:517 -> e
+    1:1:void exit(com.namibox.commonlib.event.ExitEvent):119:119 -> exit
+    1:1:void openView(java.lang.String):237:237 -> f
+    1:2:void finish():97:98 -> finish
+    1:1:void setEvalType(java.lang.String):170:170 -> g
+    1:1:int getMsPerBuffer():258:258 -> i
+    1:4:okhttp3.OkHttpClient getOkHttpClient():127:130 -> j
+    1:1:int getSampleRate():262:262 -> k
+    1:1:java.lang.String getUserAgent():123:123 -> l
+    1:2:double getVolume():301:302 -> m
+    1:2:void initAudioUtilWith16k():248:249 -> n
+    1:1:void login():233:233 -> o
+    1:41:void onActivityResult(int,int,android.content.Intent):366:406 -> onActivityResult
+    1:2:void onCreate(android.os.Bundle):103:104 -> onCreate
+    1:5:void onDestroy():109:113 -> onDestroy
+    1:6:boolean onOptionsItemSelected(android.view.MenuItem):87:92 -> onOptionsItemSelected
+    1:2:void releaseEngine():226:227 -> p
+    1:2:void releaseRecorder():266:267 -> q
+    1:2:void stopAudioRecord():295:296 -> r
+    1:3:void stopEngine():174:176 -> s
+    1:1:int testAudio():284:284 -> t
 com.namibox.commonlib.activity.AbsFunctionActivity$1 -> a.b.a.a.b$a:
-    1:1:void <init>(com.namibox.commonlib.activity.AbsFunctionActivity):428:428 -> <init>
-    1:11:void onNext(com.google.gson.JsonObject):435:445 -> a
-    1:2:void onError(java.lang.Throwable):450:451 -> onError
-    1:1:void onNext(java.lang.Object):428:428 -> onNext
+    1:1:void <init>(com.namibox.commonlib.activity.AbsFunctionActivity):429:429 -> <init>
+    1:11:void onNext(com.google.gson.JsonObject):436:446 -> a
+    1:2:void onError(java.lang.Throwable):451:452 -> onError
+    1:1:void onNext(java.lang.Object):429:429 -> onNext
 com.namibox.commonlib.activity.AbsFunctionActivity$ScannerCallback -> a.b.a.a.b$b:
     void onScannerResult(java.lang.String,java.lang.String) -> a
 com.namibox.commonlib.activity.AbsFunctionActivity$VideoPlayCallback -> a.b.a.a.b$c:
@@ -7110,9 +7110,10 @@ com.namibox.dub.DubSaveVideoNewActivity -> com.namibox.dub.DubSaveVideoNewActivi
     1:22:void initView():243:264 -> C
     1:9:void portScreenAnim():579:587 -> D
     1:1:boolean requestFocus():144:144 -> E
-    1:1:void showNoInternetDialog():783:783 -> F
+    1:6:void showNoInternetDialog():783:788 -> F
+    7:7:void showNoInternetDialog():784:784 -> F
     1:4:void syncUpData():775:778 -> G
-    1:4:void uploadFail():791:794 -> H
+    1:4:void uploadFail():792:795 -> H
     1:1:com.example.exoaudioplayer.video.fragment.VideoFragment access$000(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> a
     2:2:void access$700(com.namibox.dub.DubSaveVideoNewActivity,java.lang.String):81:81 -> a
     3:27:void openLocalVideo(android.content.Context,java.io.File,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,int,int,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,long,java.lang.String,long,java.lang.String):162:186 -> a
@@ -7122,10 +7123,10 @@ com.namibox.dub.DubSaveVideoNewActivity -> com.namibox.dub.DubSaveVideoNewActivi
     2:2:void playSound(int,int):348:348 -> b
     1:1:int access$300(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> c
     2:2:void lambda$new$0(int):103:103 -> c
-    3:4:void lambda$showNoInternetDialog$4(android.view.View):785:786 -> c
+    3:4:void lambda$showNoInternetDialog$4(android.view.View):786:787 -> c
     1:1:int access$400(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> d
     2:2:void lambda$playSound$1(int):348:348 -> d
-    3:3:void lambda$showNoInternetDialog$5(android.view.View):787:787 -> d
+    3:3:void lambda$showNoInternetDialog$5(android.view.View):788:788 -> d
     1:1:int access$500(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> e
     1:1:void access$600(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> f
     1:1:java.io.File access$800(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> g
@@ -7141,7 +7142,7 @@ com.namibox.dub.DubSaveVideoNewActivity -> com.namibox.dub.DubSaveVideoNewActivi
     1:1:void onPause():634:634 -> onPause
     1:2:void onResume():628:629 -> onResume
     1:39:void onViewClick(android.view.View):647:685 -> onViewClick
-    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):799:799 -> refreshStoreInfo
+    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):800:800 -> refreshStoreInfo
     1:1:int abandonFocus():153:153 -> w
     1:40:void getOsstoken():485:524 -> x
     1:7:com.google.gson.JsonObject getOsstokenBody():541:547 -> y
@@ -7239,40 +7240,40 @@ com.namibox.dub.DubVideoActivity -> com.namibox.dub.DubVideoActivity:
     1:1:boolean access$500(com.namibox.dub.DubVideoActivity):96:96 -> C
     1:1:boolean access$5100(com.namibox.dub.DubVideoActivity):96:96 -> D
     1:1:int access$5200(com.namibox.dub.DubVideoActivity):96:96 -> E
-    2:3:void releasePlayer():935:936 -> E
+    2:3:void releasePlayer():939:940 -> E
     1:1:long access$5300(com.namibox.dub.DubVideoActivity):96:96 -> F
     1:1:android.view.animation.Interpolator access$3400():96:96 -> G
     2:2:long access$5400(com.namibox.dub.DubVideoActivity):96:96 -> G
     1:1:void access$600(com.namibox.dub.DubVideoActivity):96:96 -> H
-    2:11:boolean checkRecordFile():1208:1217 -> H
+    2:11:boolean checkRecordFile():1212:1221 -> H
     1:1:void access$700(com.namibox.dub.DubVideoActivity):96:96 -> I
-    2:7:void exit():1512:1517 -> I
+    2:7:void exit():1516:1521 -> I
     1:1:int access$900(com.namibox.dub.DubVideoActivity):96:96 -> J
-    2:2:io.reactivex.Observable getJsonObservable():443:443 -> J
+    2:2:io.reactivex.Observable getJsonObservable():447:447 -> J
     1:1:int access$908(com.namibox.dub.DubVideoActivity):96:96 -> K
-    2:49:void init():190:237 -> K
-    1:18:void initResource():333:350 -> L
-    1:8:void initVideoRatio():805:812 -> M
-    1:6:void initView():737:742 -> N
-    7:67:void initView():741:801 -> N
-    1:19:void mixVideo():1098:1116 -> O
-    1:10:void mixVideoNow():1124:1133 -> P
-    11:18:void mixVideoNow():1132:1139 -> P
-    19:19:void mixVideoNow():1137:1137 -> P
-    20:28:void mixVideoNow():1136:1144 -> P
-    29:29:void mixVideoNow():1142:1142 -> P
-    30:37:void mixVideoNow():1141:1148 -> P
-    1:11:void regTelManager():829:839 -> Q
-    1:3:long setVideoProgress():855:857 -> R
-    1:23:void showPlayGuide():285:307 -> S
-    1:22:void showPlayPauseGuide():241:262 -> T
-    1:14:void showRecordGuide():267:280 -> U
-    1:14:void showScoreGuide():313:326 -> V
-    1:8:void stopAudioPlayer():1467:1474 -> W
-    1:16:void stopAudioRecorder():1178:1193 -> X
-    1:7:void stopVideo():845:851 -> Y
-    1:4:void transcodeToPcm():405:408 -> Z
-    5:11:void transcodeToPcm():406:412 -> Z
+    2:53:void init():190:241 -> K
+    1:18:void initResource():337:354 -> L
+    1:8:void initVideoRatio():809:816 -> M
+    1:6:void initView():741:746 -> N
+    7:67:void initView():745:805 -> N
+    1:19:void mixVideo():1102:1120 -> O
+    1:10:void mixVideoNow():1128:1137 -> P
+    11:18:void mixVideoNow():1136:1143 -> P
+    19:19:void mixVideoNow():1141:1141 -> P
+    20:28:void mixVideoNow():1140:1148 -> P
+    29:29:void mixVideoNow():1146:1146 -> P
+    30:37:void mixVideoNow():1145:1152 -> P
+    1:11:void regTelManager():833:843 -> Q
+    1:3:long setVideoProgress():859:861 -> R
+    1:23:void showPlayGuide():289:311 -> S
+    1:22:void showPlayPauseGuide():245:266 -> T
+    1:14:void showRecordGuide():271:284 -> U
+    1:14:void showScoreGuide():317:330 -> V
+    1:8:void stopAudioPlayer():1471:1478 -> W
+    1:16:void stopAudioRecorder():1182:1197 -> X
+    1:7:void stopVideo():849:855 -> Y
+    1:4:void transcodeToPcm():409:412 -> Z
+    5:11:void transcodeToPcm():410:416 -> Z
     1:1:void access$000(com.namibox.dub.DubVideoActivity):96:96 -> a
     2:2:boolean access$1102(com.namibox.dub.DubVideoActivity,boolean):96:96 -> a
     3:3:io.reactivex.Observable access$1700(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes):96:96 -> a
@@ -7283,69 +7284,69 @@ com.namibox.dub.DubVideoActivity -> com.namibox.dub.DubVideoActivity:
     8:8:void access$4000(com.namibox.dub.DubVideoActivity,int,int):96:96 -> a
     9:9:long access$4502(com.namibox.dub.DubVideoActivity,long):96:96 -> a
     10:10:void access$800(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.RxEvent):96:96 -> a
-    11:23:void updateDubProgressDialog(com.namibox.hfx.bean.RxEvent):387:399 -> a
-    24:29:io.reactivex.Observable getResHandleObservable(com.namibox.hfx.bean.DubVideoRes):457:462 -> a
-    30:62:void downLoadMp3(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):526:558 -> a
-    63:73:boolean checkFile(java.lang.String,java.io.File,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):566:576 -> a
-    74:134:boolean downloadFile(java.io.File,java.lang.String,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):585:645 -> a
-    135:175:void getJson(io.reactivex.ObservableEmitter):655:695 -> a
-    176:190:void updateAudioScore(com.chivox.EvalResult):718:732 -> a
-    191:199:void seekAndPlayVideo(int,boolean):910:918 -> a
-    200:208:void notifyAdapterStateChange(int,int,boolean):1023:1031 -> a
-    209:212:void recordSuccess(int,float):1037:1040 -> a
-    1:4:void updatePausePlay():863:866 -> a0
+    11:23:void updateDubProgressDialog(com.namibox.hfx.bean.RxEvent):391:403 -> a
+    24:29:io.reactivex.Observable getResHandleObservable(com.namibox.hfx.bean.DubVideoRes):461:466 -> a
+    30:62:void downLoadMp3(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):530:562 -> a
+    63:73:boolean checkFile(java.lang.String,java.io.File,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):570:580 -> a
+    74:134:boolean downloadFile(java.io.File,java.lang.String,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):589:649 -> a
+    135:175:void getJson(io.reactivex.ObservableEmitter):659:699 -> a
+    176:190:void updateAudioScore(com.chivox.EvalResult):722:736 -> a
+    191:199:void seekAndPlayVideo(int,boolean):914:922 -> a
+    200:208:void notifyAdapterStateChange(int,int,boolean):1027:1035 -> a
+    209:212:void recordSuccess(int,float):1041:1044 -> a
+    1:4:void updatePausePlay():867:870 -> a0
     1:1:void access$100(com.namibox.dub.DubVideoActivity):96:96 -> b
     2:2:boolean access$1402(com.namibox.dub.DubVideoActivity,boolean):96:96 -> b
     3:3:void access$2400(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):96:96 -> b
     4:4:void access$2900(com.namibox.dub.DubVideoActivity,int):96:96 -> b
     5:5:void access$4700(com.namibox.dub.DubVideoActivity,int,int):96:96 -> b
-    6:51:void downLoadMp4(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):473:518 -> b
-    52:52:void notifyAdapterProgress(int,int):1013:1013 -> b
+    6:51:void downLoadMp4(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):477:522 -> b
+    52:52:void notifyAdapterProgress(int,int):1017:1017 -> b
     1:5:void viewInit():182:186 -> b0
     1:1:void access$1000(com.namibox.dub.DubVideoActivity):96:96 -> c
     2:2:boolean access$1502(com.namibox.dub.DubVideoActivity,boolean):96:96 -> c
     3:3:void access$3100(com.namibox.dub.DubVideoActivity,int):96:96 -> c
-    4:10:void onPageChanged(int):816:822 -> c
-    11:11:void notifyAdapterStateChange(int,int):1017:1017 -> c
+    4:10:void onPageChanged(int):820:826 -> c
+    11:11:void notifyAdapterStateChange(int,int):1021:1021 -> c
     1:1:boolean access$1200(com.namibox.dub.DubVideoActivity):96:96 -> d
     2:2:boolean access$1802(com.namibox.dub.DubVideoActivity,boolean):96:96 -> d
     3:3:void access$4100(com.namibox.dub.DubVideoActivity,int):96:96 -> d
-    4:10:void pauseAndSeek(int):923:929 -> d
-    11:30:void playAudio(int,int):1054:1073 -> d
+    4:10:void pauseAndSeek(int):927:933 -> d
+    11:30:void playAudio(int,int):1058:1077 -> d
     1:1:void access$1300(com.namibox.dub.DubVideoActivity):96:96 -> e
     2:2:void access$200(com.namibox.dub.DubVideoActivity,boolean):96:96 -> e
     3:3:int access$4602(com.namibox.dub.DubVideoActivity,int):96:96 -> e
-    4:21:void prepareRecord(int):985:1002 -> e
-    1:1:void exitEvent(com.namibox.hfx.event.DubExitEvent):1227:1227 -> exitEvent
+    4:21:void prepareRecord(int):989:1006 -> e
+    1:1:void exitEvent(com.namibox.hfx.event.DubExitEvent):1231:1231 -> exitEvent
     1:1:void access$1600(com.namibox.dub.DubVideoActivity):96:96 -> f
     2:2:boolean access$2002(com.namibox.dub.DubVideoActivity,boolean):96:96 -> f
     3:3:void access$5000(com.namibox.dub.DubVideoActivity,int):96:96 -> f
-    4:5:void queueNextRefresh(int):1008:1009 -> f
+    4:5:void queueNextRefresh(int):1012:1013 -> f
     1:1:java.lang.String access$1900(com.namibox.dub.DubVideoActivity):96:96 -> g
     2:2:boolean access$2602(com.namibox.dub.DubVideoActivity,boolean):96:96 -> g
     3:4:void setThemeColor():154:155 -> g
-    5:15:void initEngineResult(boolean):702:712 -> g
-    16:25:void seekAndPlay(int):894:903 -> g
+    5:15:void initEngineResult(boolean):706:716 -> g
+    16:25:void seekAndPlay(int):898:907 -> g
     1:1:boolean access$2000(com.namibox.dub.DubVideoActivity):96:96 -> h
     2:2:boolean access$3202(com.namibox.dub.DubVideoActivity,boolean):96:96 -> h
-    3:9:void startRecordImmediately(int):1602:1608 -> h
-    10:14:void startRecordImmediately(int):1607:1611 -> h
-    15:15:void startRecordImmediately(int):1610:1610 -> h
+    3:9:void startRecordImmediately(int):1606:1612 -> h
+    10:14:void startRecordImmediately(int):1611:1615 -> h
+    15:15:void startRecordImmediately(int):1614:1614 -> h
     1:1:void access$2100(com.namibox.dub.DubVideoActivity):96:96 -> i
-    2:22:void startRecorder(int):956:976 -> i
+    2:22:void startRecorder(int):960:980 -> i
     1:1:boolean access$2500(com.namibox.dub.DubVideoActivity):96:96 -> j
     1:1:boolean access$2600(com.namibox.dub.DubVideoActivity):96:96 -> k
     1:1:android.support.v7.widget.LinearLayoutManager access$2700(com.namibox.dub.DubVideoActivity):96:96 -> l
     1:1:int access$3000(com.namibox.dub.DubVideoActivity):96:96 -> m
     1:1:boolean access$3200(com.namibox.dub.DubVideoActivity):96:96 -> n
     1:1:com.namibox.hfx.bean.DubVideoRes access$3300(com.namibox.dub.DubVideoActivity):96:96 -> o
-    1:11:void onBackPressed():1492:1502 -> onBackPressed
-    1:4:void onCompletion(android.media.MediaPlayer):1199:1202 -> onCompletion
+    1:11:void onBackPressed():1496:1506 -> onBackPressed
+    1:4:void onCompletion(android.media.MediaPlayer):1203:1206 -> onCompletion
     1:19:void onCreate(android.os.Bundle):160:178 -> onCreate
-    1:2:boolean onCreateOptionsMenu(android.view.Menu):1080:1081 -> onCreateOptionsMenu
-    1:11:void onDestroy():1617:1627 -> onDestroy
-    1:5:boolean onOptionsItemSelected(android.view.MenuItem):1086:1090 -> onOptionsItemSelected
-    1:8:void onPlayerStateChanged(boolean,int):943:950 -> onPlayerStateChanged
+    1:2:boolean onCreateOptionsMenu(android.view.Menu):1084:1085 -> onCreateOptionsMenu
+    1:11:void onDestroy():1621:1631 -> onDestroy
+    1:5:boolean onOptionsItemSelected(android.view.MenuItem):1090:1094 -> onOptionsItemSelected
+    1:8:void onPlayerStateChanged(boolean,int):947:954 -> onPlayerStateChanged
     1:1:int access$3500(com.namibox.dub.DubVideoActivity):96:96 -> p
     1:1:int access$3600(com.namibox.dub.DubVideoActivity):96:96 -> q
     1:1:android.media.MediaPlayer access$3700(com.namibox.dub.DubVideoActivity):96:96 -> r
@@ -7355,7 +7356,7 @@ com.namibox.dub.DubVideoActivity -> com.namibox.dub.DubVideoActivity:
     1:1:void access$4200(com.namibox.dub.DubVideoActivity):96:96 -> v
     1:1:void access$4300(com.namibox.dub.DubVideoActivity):96:96 -> w
     1:1:void access$4400(com.namibox.dub.DubVideoActivity):96:96 -> x
-    2:19:void doPauseResume():873:890 -> x
+    2:19:void doPauseResume():877:894 -> x
     1:1:long access$4500(com.namibox.dub.DubVideoActivity):96:96 -> y
     1:1:int access$4600(com.namibox.dub.DubVideoActivity):96:96 -> z
 com.namibox.dub.DubVideoActivity$1 -> com.namibox.dub.DubVideoActivity$k:
@@ -7364,51 +7365,51 @@ com.namibox.dub.DubVideoActivity$1 -> com.namibox.dub.DubVideoActivity$k:
     1:2:void action():172:173 -> a
 com.namibox.dub.DubVideoActivity$10 -> com.namibox.dub.DubVideoActivity$a:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):412:412 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):416:416 -> <init>
     void onNext(com.namibox.hfx.bean.RxEvent) -> a
-    1:7:void onComplete():424:430 -> onComplete
-    1:2:void onError(java.lang.Throwable):417:418 -> onError
-    1:1:void onNext(java.lang.Object):412:412 -> onNext
+    1:7:void onComplete():428:434 -> onComplete
+    1:2:void onError(java.lang.Throwable):421:422 -> onError
+    1:1:void onNext(java.lang.Object):416:416 -> onNext
 com.namibox.dub.DubVideoActivity$11 -> com.namibox.dub.DubVideoActivity$b:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):443:443 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):446:446 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):447:447 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):450:450 -> subscribe
 com.namibox.dub.DubVideoActivity$12 -> com.namibox.dub.DubVideoActivity$c:
     com.namibox.dub.DubVideoActivity this$0 -> b
     com.namibox.hfx.bean.DubVideoRes val$res -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes):457:457 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):460:460 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes):461:461 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):464:464 -> subscribe
 com.namibox.dub.DubVideoActivity$13 -> com.namibox.dub.DubVideoActivity$d:
     com.namibox.dub.DubVideoActivity this$0 -> b
     com.namibox.hfx.bean.DubVideoRes val$res -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes):462:462 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):465:465 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoActivity,com.namibox.hfx.bean.DubVideoRes):466:466 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):469:469 -> subscribe
 com.namibox.dub.DubVideoActivity$14 -> com.namibox.dub.DubVideoActivity$e:
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):665:665 -> <init>
-    1:1:int compare(com.namibox.hfx.bean.DubVideoRes$Audio,com.namibox.hfx.bean.DubVideoRes$Audio):668:668 -> a
-    1:1:int compare(java.lang.Object,java.lang.Object):665:665 -> compare
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):669:669 -> <init>
+    1:1:int compare(com.namibox.hfx.bean.DubVideoRes$Audio,com.namibox.hfx.bean.DubVideoRes$Audio):672:672 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object):669:669 -> compare
 com.namibox.dub.DubVideoActivity$15 -> com.namibox.dub.DubVideoActivity$f:
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):741:741 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):745:745 -> <init>
 com.namibox.dub.DubVideoActivity$16 -> com.namibox.dub.DubVideoActivity$g:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):751:751 -> <init>
-    1:1:void onClick(android.view.View):754:754 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):755:755 -> <init>
+    1:1:void onClick(android.view.View):758:758 -> onClick
 com.namibox.dub.DubVideoActivity$17 -> com.namibox.dub.DubVideoActivity$h:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity,android.content.Context,int,boolean):758:758 -> <init>
-    1:1:boolean canScrollVertically():761:761 -> canScrollVertically
+    1:1:void <init>(com.namibox.dub.DubVideoActivity,android.content.Context,int,boolean):762:762 -> <init>
+    1:1:boolean canScrollVertically():765:765 -> canScrollVertically
 com.namibox.dub.DubVideoActivity$18 -> com.namibox.dub.DubVideoActivity$i:
     com.namibox.dub.DubVideoActivity this$0 -> b
     int currentPosition -> a
-    1:2:void <init>(com.namibox.dub.DubVideoActivity):765:766 -> <init>
-    1:15:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):775:789 -> onScrollStateChanged
-    16:23:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):778:785 -> onScrollStateChanged
-    1:1:void onScrolled(android.support.v7.widget.RecyclerView,int,int):770:770 -> onScrolled
+    1:2:void <init>(com.namibox.dub.DubVideoActivity):769:770 -> <init>
+    1:15:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):779:793 -> onScrollStateChanged
+    16:23:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):782:789 -> onScrollStateChanged
+    1:1:void onScrolled(android.support.v7.widget.RecyclerView,int,int):774:774 -> onScrolled
 com.namibox.dub.DubVideoActivity$19 -> com.namibox.dub.DubVideoActivity$j:
     com.namibox.dub.DubVideoActivity this$0 -> b
     int val$index -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity,int):969:969 -> <init>
-    1:1:void onClick(android.view.View):972:972 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity,int):973:973 -> <init>
+    1:1:void onClick(android.view.View):976:976 -> onClick
 com.namibox.dub.DubVideoActivity$2 -> com.namibox.dub.DubVideoActivity$o:
     com.namibox.dub.DubVideoActivity this$0 -> a
     1:1:void <init>(com.namibox.dub.DubVideoActivity):190:190 -> <init>
@@ -7420,65 +7421,65 @@ com.namibox.dub.DubVideoActivity$2 -> com.namibox.dub.DubVideoActivity$o:
     void onEvalTimeout() -> b
 com.namibox.dub.DubVideoActivity$20 -> com.namibox.dub.DubVideoActivity$l:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):992:992 -> <init>
-    1:1:void run():996:996 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):996:996 -> <init>
+    1:1:void run():1000:1000 -> run
 com.namibox.dub.DubVideoActivity$21 -> com.namibox.dub.DubVideoActivity$m:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):1148:1148 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):1152:1152 -> <init>
     void onNext(java.lang.Integer) -> a
-    1:7:void onComplete():1161:1167 -> onComplete
-    8:8:void onComplete():1164:1164 -> onComplete
-    1:4:void onError(java.lang.Throwable):1152:1155 -> onError
-    1:1:void onNext(java.lang.Object):1148:1148 -> onNext
+    1:7:void onComplete():1165:1171 -> onComplete
+    8:8:void onComplete():1168:1168 -> onComplete
+    1:4:void onError(java.lang.Throwable):1156:1159 -> onError
+    1:1:void onNext(java.lang.Object):1152:1152 -> onNext
 com.namibox.dub.DubVideoActivity$22 -> com.namibox.dub.DubVideoActivity$n:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):1502:1502 -> <init>
-    1:1:void onClick(android.view.View):1505:1505 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):1506:1506 -> <init>
+    1:1:void onClick(android.view.View):1509:1509 -> onClick
 com.namibox.dub.DubVideoActivity$3 -> com.namibox.dub.DubVideoActivity$p:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):226:226 -> <init>
-    1:5:void onClick(android.view.View):229:233 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):230:230 -> <init>
+    1:5:void onClick(android.view.View):233:237 -> onClick
 com.namibox.dub.DubVideoActivity$4 -> com.namibox.dub.DubVideoActivity$q:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):256:256 -> <init>
-    1:1:void onUserClicked(java.lang.String):259:259 -> onUserClicked
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):260:260 -> <init>
+    1:1:void onUserClicked(java.lang.String):263:263 -> onUserClicked
 com.namibox.dub.DubVideoActivity$5 -> com.namibox.dub.DubVideoActivity$r:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):301:301 -> <init>
-    1:1:void onUserClicked(java.lang.String):304:304 -> onUserClicked
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):305:305 -> <init>
+    1:1:void onUserClicked(java.lang.String):308:308 -> onUserClicked
 com.namibox.dub.DubVideoActivity$6 -> com.namibox.dub.DubVideoActivity$s:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):350:350 -> <init>
-    1:1:void accept(com.namibox.hfx.bean.RxEvent):353:353 -> a
-    1:1:void accept(java.lang.Object):350:350 -> accept
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):354:354 -> <init>
+    1:1:void accept(com.namibox.hfx.bean.RxEvent):357:357 -> a
+    1:1:void accept(java.lang.Object):354:354 -> accept
 com.namibox.dub.DubVideoActivity$7 -> com.namibox.dub.DubVideoActivity$t:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):355:355 -> <init>
-    1:7:void accept(java.lang.Throwable):358:364 -> a
-    1:1:void accept(java.lang.Object):355:355 -> accept
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):359:359 -> <init>
+    1:7:void accept(java.lang.Throwable):362:368 -> a
+    1:1:void accept(java.lang.Object):359:359 -> accept
 com.namibox.dub.DubVideoActivity$8 -> com.namibox.dub.DubVideoActivity$u:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):369:369 -> <init>
-    1:9:void run():372:380 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):373:373 -> <init>
+    1:9:void run():376:384 -> run
 com.namibox.dub.DubVideoActivity$9 -> com.namibox.dub.DubVideoActivity$v:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):338:338 -> <init>
-    1:1:io.reactivex.Observable apply(com.namibox.hfx.bean.DubVideoRes):343:343 -> a
-    1:1:java.lang.Object apply(java.lang.Object):338:338 -> apply
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):342:342 -> <init>
+    1:1:io.reactivex.Observable apply(com.namibox.hfx.bean.DubVideoRes):347:347 -> a
+    1:1:java.lang.Object apply(java.lang.Object):342:342 -> apply
 com.namibox.dub.DubVideoActivity$CardAdapter -> com.namibox.dub.DubVideoActivity$w:
     com.namibox.dub.DubVideoActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity):1230:1230 -> <init>
-    1:1:int getItemCount():1335:1335 -> getItemCount
-    1:1:int getItemViewType(int):1340:1340 -> getItemViewType
-    1:32:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1251:1282 -> onBindViewHolder
-    33:33:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1281:1281 -> onBindViewHolder
-    34:38:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1271:1275 -> onBindViewHolder
-    39:39:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1274:1274 -> onBindViewHolder
-    40:43:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1265:1268 -> onBindViewHolder
-    44:85:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1267:1308 -> onBindViewHolder
-    86:96:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1317:1327 -> onBindViewHolder
-    97:97:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1318:1318 -> onBindViewHolder
-    1:7:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):1236:1242 -> onCreateViewHolder
+    1:1:void <init>(com.namibox.dub.DubVideoActivity):1234:1234 -> <init>
+    1:1:int getItemCount():1339:1339 -> getItemCount
+    1:1:int getItemViewType(int):1344:1344 -> getItemViewType
+    1:32:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1255:1286 -> onBindViewHolder
+    33:33:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1285:1285 -> onBindViewHolder
+    34:38:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1275:1279 -> onBindViewHolder
+    39:39:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1278:1278 -> onBindViewHolder
+    40:43:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1269:1272 -> onBindViewHolder
+    44:85:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1271:1312 -> onBindViewHolder
+    86:96:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1321:1331 -> onBindViewHolder
+    97:97:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1322:1322 -> onBindViewHolder
+    1:7:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):1240:1246 -> onCreateViewHolder
 com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder -> com.namibox.dub.DubVideoActivity$w$a:
     android.widget.ImageView score -> h
     android.widget.TextView cardIndex -> a
@@ -7489,37 +7490,37 @@ com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder -> com.namibox.dub.D
     android.widget.TextView duration -> d
     android.widget.ProgressBar progress -> e
     com.namibox.dub.DubVideoActivity$CardAdapter this$1 -> i
-    1:48:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter,android.view.View):1359:1406 -> <init>
+    1:48:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter,android.view.View):1363:1410 -> <init>
 com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder$1 -> com.namibox.dub.DubVideoActivity$w$a$a:
     com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1369:1369 -> <init>
-    1:23:void onClick(android.view.View):1372:1394 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1373:1373 -> <init>
+    1:23:void onClick(android.view.View):1376:1398 -> onClick
 com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder$2 -> com.namibox.dub.DubVideoActivity$w$a$b:
     com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1398:1398 -> <init>
-    1:2:void onClick(android.view.View):1401:1402 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1402:1402 -> <init>
+    1:2:void onClick(android.view.View):1405:1406 -> onClick
 com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder$3 -> com.namibox.dub.DubVideoActivity$w$a$c:
     com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1406:1406 -> <init>
-    1:15:void onClick(android.view.View):1409:1423 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1410:1410 -> <init>
+    1:15:void onClick(android.view.View):1413:1427 -> onClick
 com.namibox.dub.DubVideoActivity$CardAdapter$FooterViewHolder -> com.namibox.dub.DubVideoActivity$w$b:
     android.widget.Button submitBtn -> j
     com.namibox.dub.DubVideoActivity$CardAdapter this$1 -> k
-    1:4:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter,android.view.View):1437:1440 -> <init>
+    1:4:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter,android.view.View):1441:1444 -> <init>
 com.namibox.dub.DubVideoActivity$CardAdapter$FooterViewHolder$1 -> com.namibox.dub.DubVideoActivity$w$b$a:
     com.namibox.dub.DubVideoActivity$CardAdapter$FooterViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$FooterViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1440:1440 -> <init>
-    1:11:void onClick(android.view.View):1443:1453 -> onClick
-    12:17:void onClick(android.view.View):1450:1455 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoActivity$CardAdapter$FooterViewHolder,com.namibox.dub.DubVideoActivity$CardAdapter):1444:1444 -> <init>
+    1:11:void onClick(android.view.View):1447:1457 -> onClick
+    12:17:void onClick(android.view.View):1454:1459 -> onClick
 com.namibox.dub.DubVideoActivity$MyHandler -> com.namibox.dub.DubVideoActivity$x:
     java.lang.ref.WeakReference mActivity -> a
-    1:2:void <init>(com.namibox.dub.DubVideoActivity):1524:1525 -> <init>
-    1:55:void handleMessage(android.os.Message):1530:1584 -> handleMessage
-    56:60:void handleMessage(android.os.Message):1566:1570 -> handleMessage
-    61:87:void handleMessage(android.os.Message):1534:1560 -> handleMessage
+    1:2:void <init>(com.namibox.dub.DubVideoActivity):1528:1529 -> <init>
+    1:55:void handleMessage(android.os.Message):1534:1588 -> handleMessage
+    56:60:void handleMessage(android.os.Message):1570:1574 -> handleMessage
+    61:87:void handleMessage(android.os.Message):1538:1564 -> handleMessage
 com.namibox.dub.DubVideoActivity$ProgressEvent -> com.namibox.dub.DubVideoActivity$y:
     int time -> a
-    1:2:void <init>(com.namibox.dub.DubVideoActivity,int):1483:1484 -> <init>
+    1:2:void <init>(com.namibox.dub.DubVideoActivity,int):1487:1488 -> <init>
 com.namibox.dub.DubVideoNewActivity -> com.namibox.dub.DubVideoNewActivity:
     java.lang.String product_name -> j1
     boolean isVideoPlaying -> f0
@@ -7602,60 +7603,60 @@ com.namibox.dub.DubVideoNewActivity -> com.namibox.dub.DubVideoNewActivity:
     android.widget.ImageView playpause -> O
     boolean initVideoProgress -> i0
     1:1:void <clinit>():170:170 -> <clinit>
-    1:515:void <init>():116:630 -> <init>
+    1:519:void <init>():116:634 -> <init>
     1:1:java.lang.String access$4500(com.namibox.dub.DubVideoNewActivity):116:116 -> A
     1:1:long access$4600(com.namibox.dub.DubVideoNewActivity):116:116 -> B
     1:1:java.lang.String access$4700(com.namibox.dub.DubVideoNewActivity):116:116 -> C
     1:1:java.lang.String access$4800(com.namibox.dub.DubVideoNewActivity):116:116 -> D
     1:1:java.lang.String access$4900(com.namibox.dub.DubVideoNewActivity):116:116 -> E
-    2:3:void releasePlayer():1317:1318 -> E
+    2:3:void releasePlayer():1321:1322 -> E
     1:1:long access$5000(com.namibox.dub.DubVideoNewActivity):116:116 -> F
     1:1:java.lang.String access$5100(com.namibox.dub.DubVideoNewActivity):116:116 -> G
-    2:44:void calculateScore():1542:1584 -> G
+    2:44:void calculateScore():1546:1588 -> G
     1:1:long access$5200(com.namibox.dub.DubVideoNewActivity):116:116 -> H
-    2:16:boolean checkRecordFile():1726:1740 -> H
+    2:16:boolean checkRecordFile():1730:1744 -> H
     1:1:java.lang.String access$5300(com.namibox.dub.DubVideoNewActivity):116:116 -> I
-    2:7:void exit():2281:2286 -> I
+    2:7:void exit():2285:2290 -> I
     1:1:java.util.Map access$5500(com.namibox.dub.DubVideoNewActivity):116:116 -> J
-    2:2:io.reactivex.Observable getJsonObservable():707:707 -> J
+    2:2:io.reactivex.Observable getJsonObservable():711:711 -> J
     1:1:int access$5600(com.namibox.dub.DubVideoNewActivity):116:116 -> K
-    2:12:void hideFullScreenLoadingProgress():615:625 -> K
+    2:12:void hideFullScreenLoadingProgress():619:629 -> K
     1:1:boolean access$5700(com.namibox.dub.DubVideoNewActivity):116:116 -> L
-    2:50:void init():305:353 -> L
+    2:54:void init():305:357 -> L
     1:1:android.media.MediaPlayer access$5900(com.namibox.dub.DubVideoNewActivity):116:116 -> M
-    2:18:void initFullDialog():594:610 -> M
+    2:18:void initFullDialog():598:614 -> M
     1:1:int access$600(com.namibox.dub.DubVideoNewActivity):116:116 -> N
-    2:19:void initResource():460:477 -> N
+    2:19:void initResource():464:481 -> N
     1:1:int access$6000(com.namibox.dub.DubVideoNewActivity):116:116 -> O
     2:3:void initSound():276:277 -> O
     1:1:int access$608(com.namibox.dub.DubVideoNewActivity):116:116 -> P
-    2:9:void initVideoRatio():1168:1175 -> P
+    2:9:void initVideoRatio():1172:1179 -> P
     1:1:void access$6100(com.namibox.dub.DubVideoNewActivity):116:116 -> Q
-    2:7:void initView():1035:1040 -> Q
-    8:91:void initView():1039:1122 -> Q
+    2:7:void initView():1039:1044 -> Q
+    8:91:void initView():1043:1126 -> Q
     1:1:void access$6200(com.namibox.dub.DubVideoNewActivity):116:116 -> R
-    2:13:boolean isScrollHalf():1126:1137 -> R
+    2:13:boolean isScrollHalf():1130:1141 -> R
     1:1:int access$6400(com.namibox.dub.DubVideoNewActivity):116:116 -> S
-    2:22:void mixVideo():1516:1536 -> S
+    2:22:void mixVideo():1520:1540 -> S
     1:1:int access$6600(com.namibox.dub.DubVideoNewActivity):116:116 -> T
-    2:11:void mixVideoNow():1593:1602 -> T
-    12:19:void mixVideoNow():1601:1608 -> T
-    20:20:void mixVideoNow():1606:1606 -> T
-    21:29:void mixVideoNow():1605:1613 -> T
-    30:30:void mixVideoNow():1611:1611 -> T
-    31:38:void mixVideoNow():1610:1617 -> T
+    2:11:void mixVideoNow():1597:1606 -> T
+    12:19:void mixVideoNow():1605:1612 -> T
+    20:20:void mixVideoNow():1610:1610 -> T
+    21:29:void mixVideoNow():1609:1617 -> T
+    30:30:void mixVideoNow():1615:1615 -> T
+    31:38:void mixVideoNow():1614:1621 -> T
     1:1:void access$6900(com.namibox.dub.DubVideoNewActivity):116:116 -> U
-    2:12:void regTelManager():1201:1211 -> U
+    2:12:void regTelManager():1205:1215 -> U
     1:1:void access$700(com.namibox.dub.DubVideoNewActivity):116:116 -> V
-    2:4:void resetCurrentGif():1386:1388 -> V
+    2:4:void resetCurrentGif():1390:1392 -> V
     1:1:android.app.Dialog access$7000(com.namibox.dub.DubVideoNewActivity):116:116 -> W
-    2:4:long setVideoProgress():1227:1229 -> W
+    2:4:long setVideoProgress():1231:1233 -> W
     1:1:void access$7100(com.namibox.dub.DubVideoNewActivity):116:116 -> X
-    2:34:void showPlayGuide():403:435 -> X
+    2:34:void showPlayGuide():407:439 -> X
     1:1:void access$7200(com.namibox.dub.DubVideoNewActivity):116:116 -> Y
-    2:9:void stopAudioPlayer():2235:2242 -> Y
+    2:9:void stopAudioPlayer():2239:2246 -> Y
     1:1:long access$7300(com.namibox.dub.DubVideoNewActivity):116:116 -> Z
-    2:17:void stopAudioRecorder():1653:1668 -> Z
+    2:17:void stopAudioRecorder():1657:1672 -> Z
     1:1:void access$000(com.namibox.dub.DubVideoNewActivity):116:116 -> a
     2:2:boolean access$1202(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> a
     3:3:io.reactivex.Observable access$1600(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes):116:116 -> a
@@ -7670,46 +7671,46 @@ com.namibox.dub.DubVideoNewActivity -> com.namibox.dub.DubVideoNewActivity:
     12:12:void access$5800(com.namibox.dub.DubVideoNewActivity,android.support.v7.widget.RecyclerView,int):116:116 -> a
     13:13:long access$7302(com.namibox.dub.DubVideoNewActivity,long):116:116 -> a
     14:22:void TagEventEnterPush(boolean,java.lang.String,java.lang.String,java.lang.String):292:300 -> a
-    23:43:void updateDubProgressDialog(com.namibox.hfx.bean.RxEvent):515:535 -> a
-    44:49:io.reactivex.Observable getResHandleObservable(com.namibox.hfx.bean.DubVideoRes):721:726 -> a
-    50:84:void downLoadMp3(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):811:845 -> a
-    85:95:boolean checkFile(java.lang.String,java.io.File,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):853:863 -> a
-    96:156:boolean downloadFile(java.io.File,java.lang.String,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):872:932 -> a
-    157:207:void getJson(io.reactivex.ObservableEmitter):942:992 -> a
-    208:223:void updateAudioScore(com.chivox.EvalResult):1015:1030 -> a
-    224:232:void seekAndPlayVideo(int,boolean):1292:1300 -> a
-    233:255:void startRecorder(int,android.widget.ImageView):1343:1365 -> a
-    256:264:void initRecordingGif(android.widget.ImageView):1373:1381 -> a
-    265:278:void notifyAdapterStateChange(int,int,boolean):1434:1447 -> a
-    279:282:void recordSuccess(int,float):1453:1456 -> a
-    283:302:void smoothMoveToPosition(android.support.v7.widget.RecyclerView,int):1698:1717 -> a
+    23:43:void updateDubProgressDialog(com.namibox.hfx.bean.RxEvent):519:539 -> a
+    44:49:io.reactivex.Observable getResHandleObservable(com.namibox.hfx.bean.DubVideoRes):725:730 -> a
+    50:84:void downLoadMp3(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):815:849 -> a
+    85:95:boolean checkFile(java.lang.String,java.io.File,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):857:867 -> a
+    96:156:boolean downloadFile(java.io.File,java.lang.String,com.namibox.hfx.bean.RxEvent,io.reactivex.ObservableEmitter):876:936 -> a
+    157:207:void getJson(io.reactivex.ObservableEmitter):946:996 -> a
+    208:223:void updateAudioScore(com.chivox.EvalResult):1019:1034 -> a
+    224:232:void seekAndPlayVideo(int,boolean):1296:1304 -> a
+    233:255:void startRecorder(int,android.widget.ImageView):1347:1369 -> a
+    256:264:void initRecordingGif(android.widget.ImageView):1377:1385 -> a
+    265:278:void notifyAdapterStateChange(int,int,boolean):1438:1451 -> a
+    279:282:void recordSuccess(int,float):1457:1460 -> a
+    283:302:void smoothMoveToPosition(android.support.v7.widget.RecyclerView,int):1702:1721 -> a
     1:1:int access$7400(com.namibox.dub.DubVideoNewActivity):116:116 -> a0
-    2:8:void stopVideo():1217:1223 -> a0
+    2:8:void stopVideo():1221:1227 -> a0
     1:1:void access$100(com.namibox.dub.DubVideoNewActivity):116:116 -> b
     2:2:boolean access$1302(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> b
     3:3:int access$2202(com.namibox.dub.DubVideoNewActivity,int):116:116 -> b
     4:4:void access$3100(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):116:116 -> b
     5:5:void access$6500(com.namibox.dub.DubVideoNewActivity,int,int):116:116 -> b
-    6:27:void updateFullScreenDialog(java.lang.String,int):544:565 -> b
-    28:75:void downLoadMp4(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):737:784 -> b
-    76:76:void notifyAdapterProgress(int,int):1424:1424 -> b
+    6:27:void updateFullScreenDialog(java.lang.String,int):548:569 -> b
+    28:75:void downLoadMp4(com.namibox.hfx.bean.DubVideoRes,io.reactivex.ObservableEmitter):741:788 -> b
+    76:76:void notifyAdapterProgress(int,int):1428:1428 -> b
     1:1:void access$7600(com.namibox.dub.DubVideoNewActivity):116:116 -> b0
-    2:5:void transcodeToPcm():669:672 -> b0
-    6:12:void transcodeToPcm():670:676 -> b0
+    2:5:void transcodeToPcm():673:676 -> b0
+    6:12:void transcodeToPcm():674:680 -> b0
     1:1:boolean access$1000(com.namibox.dub.DubVideoNewActivity):116:116 -> c
     2:2:void access$200(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> c
     3:3:void access$2300(com.namibox.dub.DubVideoNewActivity,int):116:116 -> c
     4:4:void access$7500(com.namibox.dub.DubVideoNewActivity,int,int):116:116 -> c
-    5:19:void onPageChanged(int):1180:1194 -> c
-    20:20:void notifyAdapterStateChange(int,int):1428:1428 -> c
+    5:19:void onPageChanged(int):1184:1198 -> c
+    20:20:void notifyAdapterStateChange(int,int):1432:1432 -> c
     1:1:android.telephony.TelephonyManager access$7700(com.namibox.dub.DubVideoNewActivity):116:116 -> c0
-    2:5:void updatePausePlay():1235:1238 -> c0
+    2:5:void updatePausePlay():1239:1242 -> c0
     1:1:void access$1100(com.namibox.dub.DubVideoNewActivity):116:116 -> d
     2:2:boolean access$2502(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> d
     3:3:void access$3600(com.namibox.dub.DubVideoNewActivity,int):116:116 -> d
-    4:4:void showFullScreenDialog(java.lang.String,java.lang.String):540:540 -> d
-    5:11:void pauseAndSeek(int):1305:1311 -> d
-    12:34:void playAudio(int,int):1469:1491 -> d
+    4:4:void showFullScreenDialog(java.lang.String,java.lang.String):544:544 -> d
+    5:11:void pauseAndSeek(int):1309:1315 -> d
+    12:34:void playAudio(int,int):1473:1495 -> d
     1:1:boolean access$7900(com.namibox.dub.DubVideoNewActivity):116:116 -> d0
     2:7:void viewInit():266:271 -> d0
     1:1:boolean access$1400(com.namibox.dub.DubVideoNewActivity):116:116 -> e
@@ -7717,47 +7718,47 @@ com.namibox.dub.DubVideoNewActivity -> com.namibox.dub.DubVideoNewActivity:
     3:3:int access$6002(com.namibox.dub.DubVideoNewActivity,int):116:116 -> e
     4:4:void playSound(int):281:281 -> e
     1:1:void access$800(com.namibox.dub.DubVideoNewActivity):116:116 -> e0
-    1:1:void exitEvent(com.namibox.hfx.event.DubExitEvent):1750:1750 -> exitEvent
+    1:1:void exitEvent(com.namibox.hfx.event.DubExitEvent):1754:1754 -> exitEvent
     1:1:void access$1500(com.namibox.dub.DubVideoNewActivity):116:116 -> f
     2:2:boolean access$3302(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> f
     3:3:void access$6300(com.namibox.dub.DubVideoNewActivity,int):116:116 -> f
-    4:22:void prepareRecord(int):1395:1413 -> f
+    4:22:void prepareRecord(int):1399:1417 -> f
     1:1:long access$8000(com.namibox.dub.DubVideoNewActivity):116:116 -> f0
     1:1:android.widget.ProgressBar access$1700(com.namibox.dub.DubVideoNewActivity):116:116 -> g
     2:2:boolean access$3702(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> g
     3:3:void access$6700(com.namibox.dub.DubVideoNewActivity,int):116:116 -> g
     4:5:void setThemeColor():220:221 -> g
-    6:16:void initEngineResult(boolean):999:1009 -> g
-    17:18:void queueNextRefresh(int):1419:1420 -> g
+    6:16:void initEngineResult(boolean):1003:1013 -> g
+    17:18:void queueNextRefresh(int):1423:1424 -> g
     1:1:long access$8100(com.namibox.dub.DubVideoNewActivity):116:116 -> g0
     1:1:android.widget.TextView access$1800(com.namibox.dub.DubVideoNewActivity):116:116 -> h
     2:2:void access$6800(com.namibox.dub.DubVideoNewActivity,int):116:116 -> h
     3:3:boolean access$902(com.namibox.dub.DubVideoNewActivity,boolean):116:116 -> h
-    4:18:void seekAndPlay(int):1272:1286 -> h
+    4:18:void seekAndPlay(int):1276:1290 -> h
     1:1:android.os.Handler access$1900(com.namibox.dub.DubVideoNewActivity):116:116 -> i
     2:2:int access$7402(com.namibox.dub.DubVideoNewActivity,int):116:116 -> i
-    3:54:void showDetailDialog(int):2179:2230 -> i
+    3:54:void showDetailDialog(int):2183:2234 -> i
     1:1:android.app.Dialog access$2000(com.namibox.dub.DubVideoNewActivity):116:116 -> j
     2:2:void access$7800(com.namibox.dub.DubVideoNewActivity,int):116:116 -> j
-    3:9:void startRecordImmediately(int):2371:2377 -> j
-    10:14:void startRecordImmediately(int):2376:2380 -> j
-    15:15:void startRecordImmediately(int):2379:2379 -> j
+    3:9:void startRecordImmediately(int):2375:2381 -> j
+    10:14:void startRecordImmediately(int):2380:2384 -> j
+    15:15:void startRecordImmediately(int):2383:2383 -> j
     1:1:int access$2200(com.namibox.dub.DubVideoNewActivity):116:116 -> k
     1:1:java.lang.String access$2600(com.namibox.dub.DubVideoNewActivity):116:116 -> l
     1:1:boolean access$2700(com.namibox.dub.DubVideoNewActivity):116:116 -> m
     1:1:void access$2800(com.namibox.dub.DubVideoNewActivity):116:116 -> n
     1:1:boolean access$3200(com.namibox.dub.DubVideoNewActivity):116:116 -> o
-    1:11:void onBackPressed():2260:2270 -> onBackPressed
-    1:6:void onCompletion(android.media.MediaPlayer):1674:1679 -> onCompletion
+    1:11:void onBackPressed():2264:2274 -> onBackPressed
+    1:6:void onCompletion(android.media.MediaPlayer):1678:1683 -> onCompletion
     1:37:void onCreate(android.os.Bundle):226:262 -> onCreate
-    1:2:boolean onCreateOptionsMenu(android.view.Menu):1498:1499 -> onCreateOptionsMenu
-    1:13:void onDestroy():2386:2398 -> onDestroy
-    1:5:boolean onOptionsItemSelected(android.view.MenuItem):1504:1508 -> onOptionsItemSelected
-    1:13:void onPlayerStateChanged(boolean,int):1325:1337 -> onPlayerStateChanged
+    1:2:boolean onCreateOptionsMenu(android.view.Menu):1502:1503 -> onCreateOptionsMenu
+    1:13:void onDestroy():2390:2402 -> onDestroy
+    1:5:boolean onOptionsItemSelected(android.view.MenuItem):1508:1512 -> onOptionsItemSelected
+    1:13:void onPlayerStateChanged(boolean,int):1329:1341 -> onPlayerStateChanged
     1:1:boolean access$3300(com.namibox.dub.DubVideoNewActivity):116:116 -> p
     1:1:android.support.v7.widget.LinearLayoutManager access$3400(com.namibox.dub.DubVideoNewActivity):116:116 -> q
     1:1:int access$3500(com.namibox.dub.DubVideoNewActivity):116:116 -> r
-    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):2405:2405 -> refreshStoreInfo
+    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):2409:2409 -> refreshStoreInfo
     1:1:boolean access$3700(com.namibox.dub.DubVideoNewActivity):116:116 -> s
     1:1:com.namibox.hfx.bean.DubVideoRes access$3800(com.namibox.dub.DubVideoNewActivity):116:116 -> t
     1:1:java.lang.String access$3900(com.namibox.dub.DubVideoNewActivity):116:116 -> u
@@ -7774,51 +7775,51 @@ com.namibox.dub.DubVideoNewActivity$1 -> com.namibox.dub.DubVideoNewActivity$k:
 com.namibox.dub.DubVideoNewActivity$10 -> com.namibox.dub.DubVideoNewActivity$a:
     com.namibox.dub.DubVideoNewActivity this$0 -> b
     java.lang.String val$tips -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,java.lang.String):557:557 -> <init>
-    1:1:void run():560:560 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,java.lang.String):561:561 -> <init>
+    1:1:void run():564:564 -> run
 com.namibox.dub.DubVideoNewActivity$11 -> com.namibox.dub.DubVideoNewActivity$b:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):630:630 -> <init>
-    1:29:void handleMessage(android.os.Message):632:660 -> handleMessage
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):634:634 -> <init>
+    1:29:void handleMessage(android.os.Message):636:664 -> handleMessage
 com.namibox.dub.DubVideoNewActivity$12 -> com.namibox.dub.DubVideoNewActivity$c:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):676:676 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):680:680 -> <init>
     void onNext(com.namibox.hfx.bean.RxEvent) -> a
-    1:7:void onComplete():688:694 -> onComplete
-    1:2:void onError(java.lang.Throwable):681:682 -> onError
-    1:1:void onNext(java.lang.Object):676:676 -> onNext
+    1:7:void onComplete():692:698 -> onComplete
+    1:2:void onError(java.lang.Throwable):685:686 -> onError
+    1:1:void onNext(java.lang.Object):680:680 -> onNext
 com.namibox.dub.DubVideoNewActivity$13 -> com.namibox.dub.DubVideoNewActivity$d:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):707:707 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):710:710 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):711:711 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):714:714 -> subscribe
 com.namibox.dub.DubVideoNewActivity$14 -> com.namibox.dub.DubVideoNewActivity$e:
     com.namibox.hfx.bean.DubVideoRes val$res -> a
     com.namibox.dub.DubVideoNewActivity this$0 -> b
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes):721:721 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):724:724 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes):725:725 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):728:728 -> subscribe
 com.namibox.dub.DubVideoNewActivity$15 -> com.namibox.dub.DubVideoNewActivity$f:
     com.namibox.hfx.bean.DubVideoRes val$res -> a
     com.namibox.dub.DubVideoNewActivity this$0 -> b
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes):726:726 -> <init>
-    1:1:void subscribe(io.reactivex.ObservableEmitter):729:729 -> subscribe
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,com.namibox.hfx.bean.DubVideoRes):730:730 -> <init>
+    1:1:void subscribe(io.reactivex.ObservableEmitter):733:733 -> subscribe
 com.namibox.dub.DubVideoNewActivity$16 -> com.namibox.dub.DubVideoNewActivity$g:
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):962:962 -> <init>
-    1:1:int compare(com.namibox.hfx.bean.DubVideoRes$Audio,com.namibox.hfx.bean.DubVideoRes$Audio):965:965 -> a
-    1:1:int compare(java.lang.Object,java.lang.Object):962:962 -> compare
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):966:966 -> <init>
+    1:1:int compare(com.namibox.hfx.bean.DubVideoRes$Audio,com.namibox.hfx.bean.DubVideoRes$Audio):969:969 -> a
+    1:1:int compare(java.lang.Object,java.lang.Object):966:966 -> compare
 com.namibox.dub.DubVideoNewActivity$17 -> com.namibox.dub.DubVideoNewActivity$h:
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1039:1039 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1043:1043 -> <init>
 com.namibox.dub.DubVideoNewActivity$18 -> com.namibox.dub.DubVideoNewActivity$i:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1050:1050 -> <init>
-    1:1:void onClick(android.view.View):1053:1053 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1054:1054 -> <init>
+    1:1:void onClick(android.view.View):1057:1057 -> onClick
 com.namibox.dub.DubVideoNewActivity$19 -> com.namibox.dub.DubVideoNewActivity$j:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,android.content.Context,int,boolean):1057:1057 -> <init>
-    1:1:boolean canScrollVertically():1060:1060 -> canScrollVertically
-    1:11:void smoothScrollToPosition(android.support.v7.widget.RecyclerView,android.support.v7.widget.RecyclerView$State,int):1065:1075 -> smoothScrollToPosition
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,android.content.Context,int,boolean):1061:1061 -> <init>
+    1:1:boolean canScrollVertically():1064:1064 -> canScrollVertically
+    1:11:void smoothScrollToPosition(android.support.v7.widget.RecyclerView,android.support.v7.widget.RecyclerView$State,int):1069:1079 -> smoothScrollToPosition
 com.namibox.dub.DubVideoNewActivity$19$1 -> com.namibox.dub.DubVideoNewActivity$j$a:
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$19,android.content.Context):1066:1066 -> <init>
-    1:1:float calculateSpeedPerPixel(android.util.DisplayMetrics):1070:1070 -> calculateSpeedPerPixel
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$19,android.content.Context):1070:1070 -> <init>
+    1:1:float calculateSpeedPerPixel(android.util.DisplayMetrics):1074:1074 -> calculateSpeedPerPixel
 com.namibox.dub.DubVideoNewActivity$2 -> com.namibox.dub.DubVideoNewActivity$q:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
     1:1:void <init>(com.namibox.dub.DubVideoNewActivity):305:305 -> <init>
@@ -7831,76 +7832,76 @@ com.namibox.dub.DubVideoNewActivity$2 -> com.namibox.dub.DubVideoNewActivity$q:
 com.namibox.dub.DubVideoNewActivity$20 -> com.namibox.dub.DubVideoNewActivity$l:
     com.namibox.dub.DubVideoNewActivity this$0 -> b
     int currentPosition -> a
-    1:2:void <init>(com.namibox.dub.DubVideoNewActivity):1079:1080 -> <init>
-    1:22:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):1089:1110 -> onScrollStateChanged
-    23:38:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):1092:1107 -> onScrollStateChanged
-    1:1:void onScrolled(android.support.v7.widget.RecyclerView,int,int):1084:1084 -> onScrolled
+    1:2:void <init>(com.namibox.dub.DubVideoNewActivity):1083:1084 -> <init>
+    1:22:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):1093:1114 -> onScrollStateChanged
+    23:38:void onScrollStateChanged(android.support.v7.widget.RecyclerView,int):1096:1111 -> onScrollStateChanged
+    1:1:void onScrolled(android.support.v7.widget.RecyclerView,int,int):1088:1088 -> onScrolled
 com.namibox.dub.DubVideoNewActivity$21 -> com.namibox.dub.DubVideoNewActivity$m:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1403:1403 -> <init>
-    1:1:void run():1407:1407 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1407:1407 -> <init>
+    1:1:void run():1411:1411 -> run
 com.namibox.dub.DubVideoNewActivity$22 -> com.namibox.dub.DubVideoNewActivity$n:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1617:1617 -> <init>
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1621:1621 -> <init>
     void onNext(java.lang.Integer) -> a
-    1:10:void onComplete():1630:1639 -> onComplete
-    11:20:void onComplete():1633:1642 -> onComplete
-    21:21:void onComplete():1640:1640 -> onComplete
-    1:4:void onError(java.lang.Throwable):1621:1624 -> onError
-    1:1:void onNext(java.lang.Object):1617:1617 -> onNext
+    1:10:void onComplete():1634:1643 -> onComplete
+    11:20:void onComplete():1637:1646 -> onComplete
+    21:21:void onComplete():1644:1644 -> onComplete
+    1:4:void onError(java.lang.Throwable):1625:1628 -> onError
+    1:1:void onNext(java.lang.Object):1621:1621 -> onNext
 com.namibox.dub.DubVideoNewActivity$23 -> com.namibox.dub.DubVideoNewActivity$o:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):2190:2190 -> <init>
-    1:2:void onClick(android.view.View):2193:2194 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):2194:2194 -> <init>
+    1:2:void onClick(android.view.View):2197:2198 -> onClick
 com.namibox.dub.DubVideoNewActivity$24 -> com.namibox.dub.DubVideoNewActivity$p:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):2270:2270 -> <init>
-    1:1:void onClick(android.view.View):2273:2273 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):2274:2274 -> <init>
+    1:1:void onClick(android.view.View):2277:2277 -> onClick
 com.namibox.dub.DubVideoNewActivity$4 -> com.namibox.dub.DubVideoNewActivity$r:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):427:427 -> <init>
-    1:2:void onClick(android.view.View):430:431 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):431:431 -> <init>
+    1:2:void onClick(android.view.View):434:435 -> onClick
 com.namibox.dub.DubVideoNewActivity$5 -> com.namibox.dub.DubVideoNewActivity$s:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):477:477 -> <init>
-    1:1:void accept(com.namibox.hfx.bean.RxEvent):480:480 -> a
-    1:1:void accept(java.lang.Object):477:477 -> accept
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):481:481 -> <init>
+    1:1:void accept(com.namibox.hfx.bean.RxEvent):484:484 -> a
+    1:1:void accept(java.lang.Object):481:481 -> accept
 com.namibox.dub.DubVideoNewActivity$6 -> com.namibox.dub.DubVideoNewActivity$t:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):482:482 -> <init>
-    1:8:void accept(java.lang.Throwable):485:492 -> a
-    1:1:void accept(java.lang.Object):482:482 -> accept
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):486:486 -> <init>
+    1:8:void accept(java.lang.Throwable):489:496 -> a
+    1:1:void accept(java.lang.Object):486:486 -> accept
 com.namibox.dub.DubVideoNewActivity$7 -> com.namibox.dub.DubVideoNewActivity$u:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):497:497 -> <init>
-    1:9:void run():500:508 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):501:501 -> <init>
+    1:9:void run():504:512 -> run
 com.namibox.dub.DubVideoNewActivity$8 -> com.namibox.dub.DubVideoNewActivity$v:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):465:465 -> <init>
-    1:1:io.reactivex.Observable apply(com.namibox.hfx.bean.DubVideoRes):470:470 -> a
-    1:1:java.lang.Object apply(java.lang.Object):465:465 -> apply
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):469:469 -> <init>
+    1:1:io.reactivex.Observable apply(com.namibox.hfx.bean.DubVideoRes):474:474 -> a
+    1:1:java.lang.Object apply(java.lang.Object):469:469 -> apply
 com.namibox.dub.DubVideoNewActivity$9 -> com.namibox.dub.DubVideoNewActivity$w:
     com.namibox.dub.DubVideoNewActivity this$0 -> b
     int val$progress -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,int):551:551 -> <init>
-    1:1:void run():554:554 -> run
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity,int):555:555 -> <init>
+    1:1:void run():558:558 -> run
 com.namibox.dub.DubVideoNewActivity$CardAdapter -> com.namibox.dub.DubVideoNewActivity$x:
     com.namibox.dub.DubVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1753:1753 -> <init>
-    1:1:int getItemCount():1956:1956 -> getItemCount
-    1:1:int getItemViewType(int):1961:1961 -> getItemViewType
-    1:40:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1774:1813 -> onBindViewHolder
-    41:42:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1809:1810 -> onBindViewHolder
-    43:47:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1802:1806 -> onBindViewHolder
-    48:52:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1795:1799 -> onBindViewHolder
-    53:176:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1789:1912 -> onBindViewHolder
-    177:191:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1911:1925 -> onBindViewHolder
-    192:195:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1924:1927 -> onBindViewHolder
-    196:196:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1926:1926 -> onBindViewHolder
-    197:210:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1935:1948 -> onBindViewHolder
-    211:211:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1947:1947 -> onBindViewHolder
-    212:212:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1936:1936 -> onBindViewHolder
-    1:7:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):1759:1765 -> onCreateViewHolder
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity):1757:1757 -> <init>
+    1:1:int getItemCount():1960:1960 -> getItemCount
+    1:1:int getItemViewType(int):1965:1965 -> getItemViewType
+    1:40:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1778:1817 -> onBindViewHolder
+    41:42:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1813:1814 -> onBindViewHolder
+    43:47:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1806:1810 -> onBindViewHolder
+    48:52:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1799:1803 -> onBindViewHolder
+    53:176:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1793:1916 -> onBindViewHolder
+    177:191:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1915:1929 -> onBindViewHolder
+    192:195:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1928:1931 -> onBindViewHolder
+    196:196:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int):1930:1930 -> onBindViewHolder
+    197:210:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1939:1952 -> onBindViewHolder
+    211:211:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1951:1951 -> onBindViewHolder
+    212:212:void onBindViewHolder(android.support.v7.widget.RecyclerView$ViewHolder,int,java.util.List):1940:1940 -> onBindViewHolder
+    1:7:android.support.v7.widget.RecyclerView$ViewHolder onCreateViewHolder(android.view.ViewGroup,int):1763:1769 -> onCreateViewHolder
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder -> com.namibox.dub.DubVideoNewActivity$x$a:
     android.view.View diliver -> p
     android.widget.RelativeLayout recordingLayout -> o
@@ -7920,54 +7921,54 @@ com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder -> com.namibox.du
     android.widget.TextView english -> f
     com.namibox.dub.DubVideoNewActivity$CardAdapter this$1 -> r
     com.namibox.hfx.view.WordScrollView wordRecycler -> q
-    1:137:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter,android.view.View):1983:2119 -> <init>
+    1:137:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter,android.view.View):1987:2123 -> <init>
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$1 -> com.namibox.dub.DubVideoNewActivity$x$a$a:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2004:2004 -> <init>
-    1:22:void onClick(android.view.View):2007:2028 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2008:2008 -> <init>
+    1:22:void onClick(android.view.View):2011:2032 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$2 -> com.namibox.dub.DubVideoNewActivity$x$a$b:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2034:2034 -> <init>
-    1:16:void onClick(android.view.View):2037:2052 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2038:2038 -> <init>
+    1:16:void onClick(android.view.View):2041:2056 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$3 -> com.namibox.dub.DubVideoNewActivity$x$a$c:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2056:2056 -> <init>
-    1:2:void onClick(android.view.View):2059:2060 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2060:2060 -> <init>
+    1:2:void onClick(android.view.View):2063:2064 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$4 -> com.namibox.dub.DubVideoNewActivity$x$a$d:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2064:2064 -> <init>
-    1:1:void onClick(android.view.View):2067:2067 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2068:2068 -> <init>
+    1:1:void onClick(android.view.View):2071:2071 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$5 -> com.namibox.dub.DubVideoNewActivity$x$a$e:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2070:2070 -> <init>
-    1:17:void onClick(android.view.View):2073:2089 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2074:2074 -> <init>
+    1:17:void onClick(android.view.View):2077:2093 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$6 -> com.namibox.dub.DubVideoNewActivity$x$a$f:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2094:2094 -> <init>
-    1:17:void onClick(android.view.View):2097:2113 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2098:2098 -> <init>
+    1:17:void onClick(android.view.View):2101:2117 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder$7 -> com.namibox.dub.DubVideoNewActivity$x$a$g:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2119:2119 -> <init>
-    1:10:void onClick(android.view.View):2122:2131 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$CardViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2123:2123 -> <init>
+    1:10:void onClick(android.view.View):2126:2135 -> onClick
 com.namibox.dub.DubVideoNewActivity$CardAdapter$FooterViewHolder -> com.namibox.dub.DubVideoNewActivity$x$b:
     com.namibox.dub.DubVideoNewActivity$CardAdapter this$1 -> t
     android.widget.Button submitBtn -> s
-    1:4:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter,android.view.View):2144:2147 -> <init>
+    1:4:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter,android.view.View):2148:2151 -> <init>
 com.namibox.dub.DubVideoNewActivity$CardAdapter$FooterViewHolder$1 -> com.namibox.dub.DubVideoNewActivity$x$b$a:
     com.namibox.dub.DubVideoNewActivity$CardAdapter$FooterViewHolder this$2 -> a
-    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$FooterViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2147:2147 -> <init>
-    1:15:void onClick(android.view.View):2150:2164 -> onClick
-    16:25:void onClick(android.view.View):2158:2167 -> onClick
-    26:30:void onClick(android.view.View):2165:2169 -> onClick
+    1:1:void <init>(com.namibox.dub.DubVideoNewActivity$CardAdapter$FooterViewHolder,com.namibox.dub.DubVideoNewActivity$CardAdapter):2151:2151 -> <init>
+    1:15:void onClick(android.view.View):2154:2168 -> onClick
+    16:25:void onClick(android.view.View):2162:2171 -> onClick
+    26:30:void onClick(android.view.View):2169:2173 -> onClick
 com.namibox.dub.DubVideoNewActivity$MyHandler -> com.namibox.dub.DubVideoNewActivity$y:
     java.lang.ref.WeakReference mActivity -> a
-    1:2:void <init>(com.namibox.dub.DubVideoNewActivity):2293:2294 -> <init>
-    1:55:void handleMessage(android.os.Message):2299:2353 -> handleMessage
-    56:60:void handleMessage(android.os.Message):2335:2339 -> handleMessage
-    61:87:void handleMessage(android.os.Message):2303:2329 -> handleMessage
+    1:2:void <init>(com.namibox.dub.DubVideoNewActivity):2297:2298 -> <init>
+    1:55:void handleMessage(android.os.Message):2303:2357 -> handleMessage
+    56:60:void handleMessage(android.os.Message):2339:2343 -> handleMessage
+    61:87:void handleMessage(android.os.Message):2307:2333 -> handleMessage
 com.namibox.dub.DubVideoNewActivity$ProgressEvent -> com.namibox.dub.DubVideoNewActivity$z:
     int time -> a
-    1:2:void <init>(com.namibox.dub.DubVideoNewActivity,int):2251:2252 -> <init>
+    1:2:void <init>(com.namibox.dub.DubVideoNewActivity,int):2255:2256 -> <init>
 com.namibox.dub.WordAdapter -> com.namibox.dub.a:
     java.util.List words -> a
     android.content.Context context -> b
@@ -13483,20 +13484,20 @@ com.namibox.tools.RecyclerViewHelper -> com.namibox.tools.o:
     com.namibox.tools.RecyclerViewHelper$RefreshListener mRefreshListener -> l
     java.lang.String netWorkErrorTip -> d
     1:1:void <init>(android.content.Context,android.support.v7.widget.RecyclerView,android.view.ViewGroup):47:47 -> <init>
-    2:25:void <init>(android.content.Context,android.support.v7.widget.RecyclerView,android.view.ViewGroup):29:52 -> <init>
+    2:26:void <init>(android.content.Context,android.support.v7.widget.RecyclerView,android.view.ViewGroup):29:53 -> <init>
     1:1:com.namibox.tools.RecyclerViewHelper$RefreshListener access$000(com.namibox.tools.RecyclerViewHelper):24:24 -> a
-    2:7:void setAdapter(android.support.v7.widget.RecyclerView$Adapter):144:149 -> a
-    8:8:void setNoDataTip(java.lang.String):163:163 -> a
-    9:9:void setRefreshListener(com.namibox.tools.RecyclerViewHelper$RefreshListener):196:196 -> a
-    10:11:void hideProgress():206:207 -> a
+    2:7:void setAdapter(android.support.v7.widget.RecyclerView$Adapter):145:150 -> a
+    8:8:void setNoDataTip(java.lang.String):164:164 -> a
+    9:9:void setRefreshListener(com.namibox.tools.RecyclerViewHelper$RefreshListener):197:197 -> a
+    10:11:void hideProgress():207:208 -> a
     1:1:android.support.v7.widget.RecyclerView access$100(com.namibox.tools.RecyclerViewHelper):24:24 -> b
-    2:19:void init():66:83 -> b
+    2:19:void init():67:84 -> b
     1:1:int access$1000(com.namibox.tools.RecyclerViewHelper):24:24 -> c
-    2:3:void showProgress():201:202 -> c
+    2:3:void showProgress():202:203 -> c
     1:1:android.content.Context access$1100(com.namibox.tools.RecyclerViewHelper):24:24 -> d
-    2:3:void whenEmptyShowNoData():186:187 -> d
+    2:3:void whenEmptyShowNoData():187:188 -> d
     1:1:java.lang.String access$1200(com.namibox.tools.RecyclerViewHelper):24:24 -> e
-    2:3:void whenEmptyShowOfflineError():181:182 -> e
+    2:3:void whenEmptyShowOfflineError():182:183 -> e
     1:1:int access$1300(com.namibox.tools.RecyclerViewHelper):24:24 -> f
     1:1:boolean access$200(com.namibox.tools.RecyclerViewHelper):24:24 -> g
     1:1:boolean access$300(com.namibox.tools.RecyclerViewHelper):24:24 -> h
@@ -13508,17 +13509,17 @@ com.namibox.tools.RecyclerViewHelper -> com.namibox.tools.o:
     1:1:android.widget.ImageView access$900(com.namibox.tools.RecyclerViewHelper):24:24 -> n
 com.namibox.tools.RecyclerViewHelper$1 -> com.namibox.tools.o$a:
     com.namibox.tools.RecyclerViewHelper this$0 -> a
-    1:1:void <init>(com.namibox.tools.RecyclerViewHelper):75:75 -> <init>
-    1:2:void onClick(android.view.View):78:79 -> onClick
+    1:1:void <init>(com.namibox.tools.RecyclerViewHelper):76:76 -> <init>
+    1:2:void onClick(android.view.View):79:80 -> onClick
 com.namibox.tools.RecyclerViewHelper$2 -> com.namibox.tools.o$b:
     com.namibox.tools.RecyclerViewHelper this$0 -> a
-    1:1:void <init>(com.namibox.tools.RecyclerViewHelper):83:83 -> <init>
-    1:26:void onChanged():86:111 -> onChanged
-    1:1:void onItemRangeChanged(int,int):117:117 -> onItemRangeChanged
-    2:2:void onItemRangeChanged(int,int,java.lang.Object):137:137 -> onItemRangeChanged
-    1:1:void onItemRangeInserted(int,int):132:132 -> onItemRangeInserted
-    1:1:void onItemRangeMoved(int,int,int):122:122 -> onItemRangeMoved
-    1:1:void onItemRangeRemoved(int,int):127:127 -> onItemRangeRemoved
+    1:1:void <init>(com.namibox.tools.RecyclerViewHelper):84:84 -> <init>
+    1:26:void onChanged():87:112 -> onChanged
+    1:1:void onItemRangeChanged(int,int):118:118 -> onItemRangeChanged
+    2:2:void onItemRangeChanged(int,int,java.lang.Object):138:138 -> onItemRangeChanged
+    1:1:void onItemRangeInserted(int,int):133:133 -> onItemRangeInserted
+    1:1:void onItemRangeMoved(int,int,int):123:123 -> onItemRangeMoved
+    1:1:void onItemRangeRemoved(int,int):128:128 -> onItemRangeRemoved
 com.namibox.tools.RecyclerViewHelper$EmptyType -> com.namibox.tools.o$c:
     com.namibox.tools.RecyclerViewHelper$EmptyType[] $VALUES -> d
     com.namibox.tools.RecyclerViewHelper$EmptyType NETWORK_ERROR -> b
@@ -13787,17 +13788,17 @@ com.namibox.util.NToast$1$1 -> com.namibox.util.NToast$a$a:
     1:1:void <init>(com.namibox.util.NToast$1):105:105 -> <init>
     1:3:void onAnimationEnd(android.animation.Animator):108:110 -> onAnimationEnd
 com.namibox.util.NetworkUtil -> com.namibox.util.i:
-    1:6:void syncCookie(android.content.Context,java.lang.String):118:123 -> a
-    7:14:void syncCookie(android.content.Context,java.lang.String,java.lang.String,java.lang.String):127:134 -> a
-    15:27:void syncCookie(android.content.Context,java.lang.String,java.lang.String):138:150 -> a
-    28:30:java.lang.String getNbtzCookie():155:157 -> a
-    31:43:java.lang.String getDefaultUserAgent(android.content.Context):372:384 -> a
-    44:51:java.lang.String formatHeaderString(java.lang.String):390:397 -> a
-    52:74:boolean downloadFile(okhttp3.OkHttpClient,java.lang.String,java.io.File):661:683 -> a
-    1:3:java.lang.String getNblangCookie(android.content.Context):162:164 -> b
-    1:4:boolean isNetworkAvailable(android.content.Context):225:228 -> c
-    1:4:boolean isNetworkConnected(android.content.Context):197:200 -> d
-    1:4:boolean isWiFi(android.content.Context):208:211 -> e
+    1:10:void syncCookie(android.content.Context,java.lang.String):118:127 -> a
+    11:18:void syncCookie(android.content.Context,java.lang.String,java.lang.String,java.lang.String):131:138 -> a
+    19:31:void syncCookie(android.content.Context,java.lang.String,java.lang.String):142:154 -> a
+    32:34:java.lang.String getNbtzCookie():159:161 -> a
+    35:47:java.lang.String getDefaultUserAgent(android.content.Context):376:388 -> a
+    48:55:java.lang.String formatHeaderString(java.lang.String):394:401 -> a
+    56:78:boolean downloadFile(okhttp3.OkHttpClient,java.lang.String,java.io.File):665:687 -> a
+    1:3:java.lang.String getNblangCookie(android.content.Context):166:168 -> b
+    1:4:boolean isNetworkAvailable(android.content.Context):229:232 -> c
+    1:4:boolean isNetworkConnected(android.content.Context):201:204 -> d
+    1:4:boolean isWiFi(android.content.Context):212:215 -> e
 com.namibox.util.PreferenceUtil -> com.namibox.util.j:
     android.content.Context context -> a
     com.namibox.util.PreferenceUtil sInstance -> b
@@ -13879,19 +13880,21 @@ com.namibox.util.Utils -> com.namibox.util.l:
     1:1:int px2dip(android.content.Context,float):169:169 -> b
     2:9:java.lang.String secStringForTimeMs(long):376:383 -> b
     10:11:java.lang.String formatCurrentTime(java.lang.String):426:427 -> b
-    12:21:int getThemeColor(android.content.Context,int):688:697 -> b
-    22:22:java.lang.String getBaseHttpsUrl(android.content.Context):720:720 -> b
-    23:26:void showKeyboard(android.content.Context,android.view.View):766:769 -> b
-    27:36:void toast(android.content.Context,java.lang.String):893:902 -> b
-    37:45:boolean checkSupportV7a():1078:1086 -> b
+    12:18:long parseTimeString(java.lang.String,java.lang.String):461:467 -> b
+    19:28:int getThemeColor(android.content.Context,int):688:697 -> b
+    29:29:java.lang.String getBaseHttpsUrl(android.content.Context):720:720 -> b
+    30:33:void showKeyboard(android.content.Context,android.view.View):766:769 -> b
+    34:43:void toast(android.content.Context,java.lang.String):893:902 -> b
+    44:52:boolean checkSupportV7a():1078:1086 -> b
     1:12:java.lang.String timeStringForTimeMs(long):360:371 -> c
     13:13:java.lang.String formatCurrentTime():422:422 -> c
     14:28:java.lang.String getSystemProperty(java.lang.String):1056:1070 -> c
     29:37:java.lang.String getSystemProperty(java.lang.String):1065:1065 -> c
     42:42:java.lang.String getSystemProperty(java.lang.String):1070:1070 -> c
     43:52:android.content.Context getContext(android.content.Context):1254:1263 -> c
-    1:3:java.lang.String getLoginUserId(android.content.Context):758:760 -> d
-    4:9:java.lang.String getNavBarOverride():1403:1408 -> d
+    1:1:long parseTimeString(java.lang.String):452:452 -> d
+    2:4:java.lang.String getLoginUserId(android.content.Context):758:760 -> d
+    5:10:java.lang.String getNavBarOverride():1403:1408 -> d
     1:1:boolean isGIONEE():634:634 -> e
     2:2:long getLongLoginUserId(android.content.Context):754:754 -> e
     1:4:int getNavigationBarHeight(android.content.Context):561:564 -> f
@@ -15299,21 +15302,21 @@ sdk.NBPictureSDK -> sdk.NBPictureSDK:
     1:10:void cleanCache(android.content.Context,sdk.callback.CleanCacheCallback):254:263 -> cleanCache
     1:1:void enterPicture(android.app.Activity,sdk.model.RegisterModel):203:203 -> enterPicture
     1:4:void init(android.app.Application,boolean):80:83 -> init
-    1:2:void initExceptionHandler():398:399 -> initExceptionHandler
-    1:4:void initFileDownload(android.app.Application):372:375 -> initFileDownload
-    1:16:void initLog(android.app.Application):379:394 -> initLog
-    1:16:void initNetwork(android.app.Application):353:368 -> initNetwork
+    1:2:void initExceptionHandler():404:405 -> initExceptionHandler
+    1:4:void initFileDownload(android.app.Application):378:381 -> initFileDownload
+    1:16:void initLog(android.app.Application):385:400 -> initLog
+    1:16:void initNetwork(android.app.Application):359:374 -> initNetwork
     1:4:void lambda$authToken$0(io.reactivex.disposables.Disposable):134:137 -> lambda$authToken$0
     1:45:void lambda$authToken$1(android.app.Activity,sdk.model.RegisterModel,boolean,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):140:184 -> lambda$authToken$1
     1:2:void lambda$authToken$2(sdk.callback.RegisterSDKInterface,java.lang.Throwable):187:188 -> lambda$authToken$2
     1:2:java.lang.Boolean lambda$cleanCache$5(android.content.Context):257:258 -> lambda$cleanCache$5
     1:8:void lambda$enterPicture$3(sdk.model.RegisterModel,android.app.Activity):204:211 -> lambda$enterPicture$3
     1:1:void lambda$enterPicture$4():212:212 -> lambda$enterPicture$4
-    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):400:404 -> lambda$initExceptionHandler$10
+    1:5:void lambda$initExceptionHandler$10(java.lang.Thread$UncaughtExceptionHandler,java.lang.Thread,java.lang.Throwable):406:410 -> lambda$initExceptionHandler$10
     1:4:void lambda$login$6(io.reactivex.disposables.Disposable):300:303 -> lambda$login$6
-    1:39:void lambda$login$7(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):306:344 -> lambda$login$7
-    1:2:void lambda$login$8(sdk.callback.RegisterSDKInterface,java.lang.Throwable):347:348 -> lambda$login$8
-    1:63:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):287:349 -> login
+    1:45:void lambda$login$7(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface,com.google.gson.JsonElement):306:350 -> lambda$login$7
+    1:2:void lambda$login$8(sdk.callback.RegisterSDKInterface,java.lang.Throwable):353:354 -> lambda$login$8
+    1:69:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):287:355 -> login
     1:10:void onDestroy():63:72 -> onDestroy
     1:23:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):94:116 -> register
     24:26:void register(android.support.v7.app.AppCompatActivity,sdk.model.RegisterModel,sdk.callback.RegisterSDKInterface):95:97 -> register
@@ -15336,40 +15339,40 @@ sdk.NBPictureSDK$2 -> sdk.NBPictureSDK$b:
     1:3:void onError(java.lang.Throwable):273:275 -> onError
     1:1:void onNext(java.lang.Object):263:263 -> onNext
 sdk.NBPictureSDK$3 -> sdk.NBPictureSDK$c:
-    1:1:void <init>(com.orhanobut.logger.FormatStrategy):388:388 -> <init>
-    1:1:boolean isLoggable(int,java.lang.String):391:391 -> isLoggable
+    1:1:void <init>(com.orhanobut.logger.FormatStrategy):394:394 -> <init>
+    1:1:boolean isLoggable(int,java.lang.String):397:397 -> isLoggable
 sdk.SDKDemoHelper -> sdk.SDKDemoHelper:
-    1:1:void <init>():36:36 -> <init>
-    1:44:void getAccessToken(java.lang.String,java.lang.String,long,java.lang.String,sdk.callback.AccessTokenCallback):134:177 -> getAccessToken
-    1:61:void getPictureBookList(android.app.Activity,java.lang.String,sdk.callback.GetPictureInfoCallback):181:241 -> getPictureBookList
-    1:30:void getPictureDetail(android.app.Activity,java.lang.String,java.lang.String,sdk.callback.GetPictureInfoCallback):245:274 -> getPictureDetail
-    1:23:void lambda$getAccessToken$4(sdk.callback.AccessTokenCallback,com.google.gson.JsonElement):146:168 -> lambda$getAccessToken$4
-    1:3:void lambda$getAccessToken$5(sdk.callback.AccessTokenCallback,java.lang.Throwable):173:175 -> lambda$getAccessToken$5
-    1:11:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):188:198 -> lambda$getPictureBookList$6
-    12:22:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):197:207 -> lambda$getPictureBookList$6
-    23:33:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):206:216 -> lambda$getPictureBookList$6
-    34:44:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):215:225 -> lambda$getPictureBookList$6
-    45:58:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):224:237 -> lambda$getPictureBookList$6
-    1:1:void lambda$getPictureBookList$7(java.lang.Throwable):240:240 -> lambda$getPictureBookList$7
-    1:11:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):252:262 -> lambda$getPictureDetail$8
-    12:20:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):261:269 -> lambda$getPictureDetail$8
-    1:1:void lambda$getPictureDetail$9(java.lang.Throwable):272:272 -> lambda$getPictureDetail$9
-    1:47:void lambda$login$0(android.app.Activity,sdk.callback.FakeLoginCallback,com.google.gson.JsonElement):54:100 -> lambda$login$0
-    1:3:void lambda$login$1(sdk.callback.FakeLoginCallback,java.lang.Throwable):104:106 -> lambda$login$1
-    1:8:void lambda$logout$2(android.app.Activity,com.google.gson.JsonElement):117:124 -> lambda$logout$2
-    1:2:void lambda$logout$3(android.app.Activity,java.lang.Throwable):127:128 -> lambda$logout$3
-    1:68:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.FakeLoginCallback):41:108 -> login
-    1:18:void logout(android.app.Activity):112:129 -> logout
+    1:1:void <init>():38:38 -> <init>
+    1:44:void getAccessToken(java.lang.String,java.lang.String,long,java.lang.String,sdk.callback.AccessTokenCallback):141:184 -> getAccessToken
+    1:61:void getPictureBookList(android.app.Activity,java.lang.String,sdk.callback.GetPictureInfoCallback):188:248 -> getPictureBookList
+    1:30:void getPictureDetail(android.app.Activity,java.lang.String,java.lang.String,sdk.callback.GetPictureInfoCallback):252:281 -> getPictureDetail
+    1:23:void lambda$getAccessToken$4(sdk.callback.AccessTokenCallback,com.google.gson.JsonElement):153:175 -> lambda$getAccessToken$4
+    1:3:void lambda$getAccessToken$5(sdk.callback.AccessTokenCallback,java.lang.Throwable):180:182 -> lambda$getAccessToken$5
+    1:11:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):195:205 -> lambda$getPictureBookList$6
+    12:22:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):204:214 -> lambda$getPictureBookList$6
+    23:33:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):213:223 -> lambda$getPictureBookList$6
+    34:44:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):222:232 -> lambda$getPictureBookList$6
+    45:58:void lambda$getPictureBookList$6(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):231:244 -> lambda$getPictureBookList$6
+    1:1:void lambda$getPictureBookList$7(java.lang.Throwable):247:247 -> lambda$getPictureBookList$7
+    1:11:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):259:269 -> lambda$getPictureDetail$8
+    12:20:void lambda$getPictureDetail$8(sdk.callback.GetPictureInfoCallback,com.google.gson.JsonObject):268:276 -> lambda$getPictureDetail$8
+    1:1:void lambda$getPictureDetail$9(java.lang.Throwable):279:279 -> lambda$getPictureDetail$9
+    1:52:void lambda$login$0(android.app.Activity,sdk.callback.FakeLoginCallback,com.google.gson.JsonElement):56:107 -> lambda$login$0
+    1:3:void lambda$login$1(sdk.callback.FakeLoginCallback,java.lang.Throwable):111:113 -> lambda$login$1
+    1:8:void lambda$logout$2(android.app.Activity,com.google.gson.JsonElement):124:131 -> lambda$logout$2
+    1:2:void lambda$logout$3(android.app.Activity,java.lang.Throwable):134:135 -> lambda$logout$3
+    1:73:void login(android.app.Activity,sdk.model.RegisterModel,sdk.callback.FakeLoginCallback):43:115 -> login
+    1:18:void logout(android.app.Activity):119:136 -> logout
 sdk.SDKDemoHelper$1 -> sdk.SDKDemoHelper$a:
-    1:1:void <init>(sdk.SDKDemoHelper):197:197 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):204:204 -> <init>
 sdk.SDKDemoHelper$2 -> sdk.SDKDemoHelper$b:
-    1:1:void <init>(sdk.SDKDemoHelper):206:206 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):213:213 -> <init>
 sdk.SDKDemoHelper$3 -> sdk.SDKDemoHelper$c:
-    1:1:void <init>(sdk.SDKDemoHelper):215:215 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):222:222 -> <init>
 sdk.SDKDemoHelper$4 -> sdk.SDKDemoHelper$d:
-    1:1:void <init>(sdk.SDKDemoHelper):224:224 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):231:231 -> <init>
 sdk.SDKDemoHelper$5 -> sdk.SDKDemoHelper$e:
-    1:1:void <init>(sdk.SDKDemoHelper):261:261 -> <init>
+    1:1:void <init>(sdk.SDKDemoHelper):268:268 -> <init>
 sdk.model.DubbingResultBean -> sdk.model.DubbingResultBean:
     1:6:void <init>(int,int,int,int,java.lang.String):42:47 -> <init>
     1:1:int getAnswer_num():91:91 -> getAnswer_num

@@ -57,7 +57,7 @@
     android:layout_height="0dp"
     app:layout_constraintWidth_percent="0.7"
     app:layout_constraintHeight_percent="0.17"
-    android:text="为绘本完成配音"
+    android:text="@string/book_progress_cover_title3"
     android:textColor="@color/white"
     android:textSize="18sp"
     />

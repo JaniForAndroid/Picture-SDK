@@ -137,9 +137,9 @@ public class PicLoadingActivity extends BaseActivity implements OnClickListener 
 
       if (wifiNetInfo != null && !wifiNetInfo.isConnected() && mobNetInfo != null && mobNetInfo.isConnected() && loading && isShowDialog) {
         netWorkDialog = new CommonDialog(PicLoadingActivity.this);
-        netWorkDialog.setMessage("当前网络无Wi-Fi，继续使用可能会产生相关流量费用，确认使用流量下载？")
+        netWorkDialog.setMessage(getString(R.string.book_dubnotwifialert_title))
 //                .setImageResId(R.mipmap.ic_launcher)
-            .setTitle("网络提醒")
+            .setTitle(getString(R.string.common_network_title))
             .setPositive("确认")
             .setNegtive("取消")
 //                .setSingle(true)
@@ -294,7 +294,7 @@ public class PicLoadingActivity extends BaseActivity implements OnClickListener 
               if (jsonObject != null)
                 PicLoadingActivity.this.parseData(jsonObject);
             } else {
-              PicLoadingActivity.this.toast("您的网络状况较差，请检查网络连接。");
+              PicLoadingActivity.this.toast(getString(R.string.common_check_network_tips));
             }
           }
         });
@@ -364,7 +364,7 @@ public class PicLoadingActivity extends BaseActivity implements OnClickListener 
           if (urls != null && urls.size() != 0) {
             preDownload(urls);
           } else {
-            toast("您的网络状况较差，请检查网络连接。");
+            toast(getString(R.string.common_check_network_tips));
             finish();
           }
         });

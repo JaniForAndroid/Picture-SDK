@@ -128,7 +128,7 @@ public class SaveAudioActivity extends BaseCommitActivity implements
     if (!mp3File.exists()) {
       new Builder(this)
           .setTitle("错误")
-          .setMessage("未找到音频文件")
+          .setMessage(getString(R.string.book_wordevaplaynotfound_tips))
           .setCancelable(false)
           .setPositiveButton("确定", new DialogInterface.OnClickListener() {
             @Override

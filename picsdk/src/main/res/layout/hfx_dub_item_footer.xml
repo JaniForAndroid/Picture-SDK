@@ -130,7 +130,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="16dp"
     android:background="@drawable/hfx_btn_done"
-    android:text="预览配音作品"
+    android:text="@string/book_dubrecordpreview_title"
     android:textColor="@color/hfx_white" />
 
 </LinearLayout>

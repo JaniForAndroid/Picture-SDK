@@ -65,7 +65,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:gravity="center"
-    android:text="请开启通知权限，便于您了解"
+    android:text="@string/auth_opennotice_tips"
     android:textColor="@color/dialog_success_text_color"
     android:textSize="16sp"
     app:layout_constrainedWidth="true"
@@ -78,7 +78,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="10dp"
     android:gravity="center"
-    android:text="孩子学习情况、免费活动、最新课程提醒"
+    android:text="@string/auth_news_tips"
     android:textColor="@color/common_text_black"
     android:textSize="14sp"
     app:layout_constrainedWidth="true"
@@ -102,7 +102,7 @@
       android:layout_gravity="center"
       android:background="@drawable/permission_blue_open_bg"
       android:gravity="center"
-      android:text="现在开启"
+      android:text="@string/auth_opennow_title"
       android:textColor="@android:color/white"
       android:textSize="16sp"/>
   </LinearLayout>

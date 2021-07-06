@@ -117,7 +117,7 @@
           android:layout_height="wrap_content"
           android:layout_marginEnd="15dp"
           android:padding="10dp"
-          android:text="查询原文"
+          android:text="@string/book_understandoriginal_title"
           android:layout_alignParentEnd="true"
           android:background="@drawable/tranparent_round_corner"
           android:textColor="@color/common_text_black"
@@ -138,7 +138,7 @@
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="可以点击“查询原文”，查询正确答案哦"
+          android:text="@string/book_readoriginalguide_tips"
           android:textSize="15sp"
           android:textColor="@color/white"
           android:textStyle="bold"

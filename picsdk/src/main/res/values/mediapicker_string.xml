@@ -2,7 +2,6 @@
 <resources>
 
   <string name="picker_take_photo">Take photo</string>
-  <string name="picker_record_video">拍摄视频</string>
   <string name="picker_switch_media">Switch media</string>
   <string name="picker_no_items">未选择视频</string>
   <string name="picker_done_capital">下一步</string>

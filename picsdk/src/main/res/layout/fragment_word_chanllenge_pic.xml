@@ -114,7 +114,7 @@
       android:textColor="#333333"
       android:textSize="14sp"
       android:visibility="gone"
-      android:text="下一题" />
+      android:text="@string/book_readingtext_title" />
   </RelativeLayout>
 
   <ProgressBar

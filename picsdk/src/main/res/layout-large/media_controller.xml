@@ -190,7 +190,7 @@
       android:drawableStart="@drawable/ic_volume_up"
       android:drawablePadding="8dp"
       android:gravity="center_vertical"
-      android:text="音量"
+      android:text="@string/player_volume"
       android:textColor="#fff"
       android:textSize="15sp"
       tools:ignore="HardcodedText" />
@@ -225,7 +225,7 @@
       android:drawableStart="@drawable/ic_brightness_low"
       android:drawablePadding="8dp"
       android:gravity="center_vertical"
-      android:text="亮度"
+      android:text="@string/hfx_read_menu_brightness"
       android:textColor="#fff"
       android:textSize="15sp"
       tools:ignore="HardcodedText" />

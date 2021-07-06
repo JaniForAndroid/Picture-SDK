@@ -49,6 +49,7 @@ public class RecyclerViewHelper {
     this.recyclerView = recyclerView;
     this.context = context;
     multiStatusViewHelper = new MultiStatusViewHelper(recyclerView, parentView);
+    netWorkErrorTip = context.getString(R.string.common_network_none_tips);
     init();
   }
 

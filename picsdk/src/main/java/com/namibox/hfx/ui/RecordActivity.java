@@ -327,7 +327,7 @@ public class RecordActivity extends BaseCommitActivity {
                 NetResult result = response.body();
                 if (result == null) {
                   hideProgress();
-                  showErrorDialog("网络异常", true);
+                  showErrorDialog(getString(R.string.common_network_none_tips), true);
                 } else if (result.errcode != 0) {
                   if (result.errcode == 1001) {
                     login();

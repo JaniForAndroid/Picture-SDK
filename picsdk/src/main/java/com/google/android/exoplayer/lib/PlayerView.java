@@ -397,7 +397,9 @@ public final class PlayerView extends FrameLayout {
     if (!seekTitle.isShown()) {
       seekTitle.setVisibility(VISIBLE);
     }
-    seekTitle.setText(fastforward ? "快进" : "快退");
+    String text1 = seekTitle.getContext().getString(R.string.player_forward);
+    String text2 = seekTitle.getContext().getString(R.string.player_back);
+    seekTitle.setText(fastforward ? text1 : text2);
     int d = fastforward ? R.drawable.ic_fast_forward : R.drawable.ic_fast_rewind;
     seekTitle.setCompoundDrawablesWithIntrinsicBounds(d, 0, 0, 0);
   }

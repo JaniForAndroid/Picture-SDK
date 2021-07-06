@@ -349,7 +349,11 @@ public class DubVideoNewActivity extends AbsExoActivity implements
 //        }
 //      }
 //    });
-    showFullScreenDialog("请稍候", "视频加载中...");
+    String msg = getString(R.string.player_loading);
+    if (getResources() != null) {
+      msg = getResources().getString(R.string.player_loading);
+    }
+    showFullScreenDialog("请稍候", msg);
     initResource();
   }
 
@@ -1002,7 +1006,7 @@ public class DubVideoNewActivity extends AbsExoActivity implements
         initView();
       }
     } else {
-      toast("测评引擎初始化失败");
+      toast(getString(R.string.book_dubevainitfailed_tips));
       chishengInited = true;
       useChisheng = false;
       if (downLoadFinish) {
@@ -1018,7 +1022,7 @@ public class DubVideoNewActivity extends AbsExoActivity implements
       scoreResultMap.put(recordAudioIndex, result);
     } else {
       if (recordTimeMs <= 1000) {
-        toast("录音时间太短了");
+        toast(getString(R.string.base_recordtimeshort_tips));
       }
       if (DubFileUtil.getWavFileById(this, itemId, recordAudioIndex).exists()) {
         DubFileUtil.getWavFileById(this, itemId, recordAudioIndex).delete();
@@ -1659,7 +1663,7 @@ public class DubVideoNewActivity extends AbsExoActivity implements
         notifyAdapterStateChange(recordAudioIndex, STATUS_INIT_AUDIO);
       } else {
         if (recordTimeMs <= 1000) {
-          toast("录音时间太短了");
+          toast(getString(R.string.base_recordtimeshort_tips));
         }
         notifyAdapterStateChange(recordAudioIndex, STATUS_INIT);
       }
@@ -1924,7 +1928,7 @@ public class DubVideoNewActivity extends AbsExoActivity implements
         ((FooterViewHolder) viewHolder).submitBtn.setBackgroundResource(
             checkRecordFile() ? R.drawable.hfx_btn_done_new : R.drawable.hfx_btn_down_gray);
         ((FooterViewHolder) viewHolder).submitBtn.setText(
-            checkRecordFile() ? "预览配音作品" : "未完成全部配音");
+            checkRecordFile() ? getString(R.string.book_dubrecordpreview_title) : getString(R.string.book_dubrecordnotfinish_title));
       }
 
     }
@@ -2215,7 +2219,7 @@ public class DubVideoNewActivity extends AbsExoActivity implements
       if (result.detail != null && result.detail.size() > 0) {
         wordRecycler.setAdapter(new WordAdapter(result.detail, true));
       }
-      totalScore.setText("本次综合得分 " + (int) result.score + "分");
+      totalScore.setText(getString(R.string.book_dubscoreresult_title)+" " + (int) result.score + "分");
       TextStyleUtil.setTextStytle(totalScore, "#333333", "本次综合得分 ", "分");
       fluencyPro.setProgress((int) result.fluency);
       fluencyScore.setText((int) result.fluency + "分");

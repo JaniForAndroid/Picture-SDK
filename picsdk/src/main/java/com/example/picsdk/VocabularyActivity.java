@@ -185,7 +185,7 @@ public class VocabularyActivity extends BaseActivity implements OnClickListener 
           hideProgress();
         }
         if (!success) {
-          toast("引擎初始化失败");
+          toast(getString(R.string.book_dubevainitfailed_tips));
           finish();
         }
       }
@@ -294,7 +294,7 @@ public class VocabularyActivity extends BaseActivity implements OnClickListener 
           }
         }, throwable -> {
           Logger.e(throwable, throwable.toString());
-          toast("数据获取失败");
+          toast(getString(R.string.common_request_failed2));
         });
     compositeDisposable.add(disposable);
   }
@@ -323,7 +323,7 @@ public class VocabularyActivity extends BaseActivity implements OnClickListener 
       return;
     }
     if (exercises == null || exercises.size() == 0 || ratingRule == null) {
-      toast("数据加载失败");
+      toast(getString(R.string.data_loading_fail));
       finish();
       return;
     }
@@ -400,8 +400,8 @@ public class VocabularyActivity extends BaseActivity implements OnClickListener 
       ivAudio_watch.setVisibility(View.VISIBLE);
       ivEvaluate.setVisibility(View.INVISIBLE);
       ivAudio.setVisibility(View.INVISIBLE);
-      tv_evaluate.setText("播放");
-      tv_audio.setText("自动翻页");
+      tv_evaluate.setText(getString(R.string.hfx_play));
+      tv_audio.setText(getString(R.string.hfx_read_menu_auto));
       tv_record.setText("得分");
       ivEvaluate_watch.setOnClickListener(this);
       ivAudio_watch.setOnClickListener(this);
@@ -575,7 +575,7 @@ public class VocabularyActivity extends BaseActivity implements OnClickListener 
       voiceLine.setVisibility(View.GONE);
       voiceLine.setVolume(0);
       ivEvaluate.setImageResource(R.drawable.icon_evaluate_pic);
-      tv_evaluate.setText("点击开始录音");
+      tv_evaluate.setText(getString(R.string.book_wordevastart_title));
     }
   }
 

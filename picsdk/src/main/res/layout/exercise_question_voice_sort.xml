@@ -98,7 +98,7 @@
     android:background="@drawable/bg_submit"
     android:enabled="false"
     android:gravity="center"
-    android:text="下一题"
+    android:text="@string/book_readingtext_title"
     android:textColor="#fff"
     android:textStyle="bold"
     app:layout_constraintLeft_toLeftOf="parent"

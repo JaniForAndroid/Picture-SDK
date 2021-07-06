@@ -70,7 +70,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="播放"
+        android:text="@string/hfx_play"
         android:textColor="#ffffff"
         android:textSize="11sp"
         />
@@ -99,7 +99,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="跳转"
+        android:text="@string/hfx_read_menu_jump"
         android:textColor="#ffffff"
         android:textSize="11sp"
         />
@@ -128,7 +128,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:gravity="center_horizontal"
-        android:text="自动翻页"
+        android:text="@string/hfx_read_menu_auto"
         android:textColor="#ffffff"
         android:textSize="11sp"
         />

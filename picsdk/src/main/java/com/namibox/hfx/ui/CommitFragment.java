@@ -185,7 +185,7 @@ public class CommitFragment extends Fragment {
     }
     if (!NetworkUtil.isNetworkConnected(getActivity())) {
       if (activity != null && !activity.isFinishing()) {
-        activity.toast("当前无网络，请检查网络连接！");
+        activity.toast(getString(R.string.common_network_none_tips));
       }
       return;
     }

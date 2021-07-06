@@ -43,7 +43,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_centerInParent="true"
-    android:text="图片载入中..." />
+    android:text="@string/image_loading" />
 
   <RadioGroup
     android:id="@+id/navigation"

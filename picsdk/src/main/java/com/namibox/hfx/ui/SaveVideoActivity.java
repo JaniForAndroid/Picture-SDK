@@ -133,7 +133,7 @@ public class SaveVideoActivity extends BaseCommitActivity {
       upLoadFile = videoInfo.getUpLoadFile(this);
       if (!mp4File.exists()) {
         FileUtil.deleteDir(videoDir);
-        showErrorDialog("未找到视频文件", true);
+        showErrorDialog(getString(R.string.book_dubmixaudiopatherr_tips), true);
         return;
       } else {
         initData();
@@ -560,7 +560,7 @@ public class SaveVideoActivity extends BaseCommitActivity {
           });
     } else {
       FileUtil.deleteDir(videoDir);
-      showErrorDialog("视频文件丢失", true);
+      showErrorDialog(getString(R.string.book_dubmixaudiopatherr_tips), true);
     }
   }
 
@@ -605,14 +605,14 @@ public class SaveVideoActivity extends BaseCommitActivity {
             e.printStackTrace();
             setUploadEnable(false);
             hideDeterminateProgress();
-            showErrorDialog("作品提交失败,请重试", false);
+            showErrorDialog(getString(R.string.common_submitfaile_title), false);
           }
 
           @Override
           public void onNext(BaseNetResult result) {
             hideDeterminateProgress();
             if (result != null && result.errcode == 0) {
-              toast("提交成功！");
+              toast(getString(R.string.common_submitsucc_title));
               FileUtil.deleteDir(videoDir);
               openMyWorkAndFinish(MyWorkActivity.TAB_CHECKING);
             } else if (result != null && result.errcode == 1001) {
@@ -620,7 +620,7 @@ public class SaveVideoActivity extends BaseCommitActivity {
               login();
               finish();
             } else {
-              showErrorDialog("作品提交失败,请重试", false);
+              showErrorDialog(getString(R.string.common_submitfaile_title), false);
               setUploadEnable(false);
             }
           }

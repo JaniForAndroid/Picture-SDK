@@ -50,7 +50,8 @@ public class PicVideoAdapter extends RecyclerView.Adapter<PicVideoAdapter.ViewIm
         false, GlideUtil.DATA, holder.iv_pic);
 
     holder.tv_title.setText(item.video_name);
-    holder.tv_duration.setText("时长: " + PlayerUtils.stringForTime(item.duration * 1000));
+    String time = holder.tv_duration.getContext().getString(R.string.book_video_time);
+    holder.tv_duration.setText(time +": " + PlayerUtils.stringForTime(item.duration * 1000));
     holder.itemView.setOnClickListener(v -> {
       if (onItemClickListener != null) {
         onItemClickListener.onItemClick(position);

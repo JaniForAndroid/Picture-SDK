@@ -28,7 +28,7 @@
       app:layout_constraintTop_toTopOf="parent"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:text="评测详情"
+      android:text="@string/book_dubevadetail_title"
       android:textColor="#333"
       android:textSize="24sp"
       android:textStyle="bold"
@@ -69,7 +69,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="流畅度"
+    android:text="@string/book_dubfluency_title"
     android:layout_marginLeft="5dp"
     android:layout_marginTop="20dp"
     android:textSize="15sp"
@@ -106,7 +106,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="完整度"
+    android:text="@string/book_dubintegrity_title"
     android:layout_marginLeft="5dp"
     android:textSize="15sp"
     android:gravity="center"
@@ -142,7 +142,7 @@
   <TextView
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="准确度"
+    android:text="@string/book_dubaccuracy_title"
     android:layout_marginLeft="5dp"
     android:textSize="15sp"
     android:gravity="center"

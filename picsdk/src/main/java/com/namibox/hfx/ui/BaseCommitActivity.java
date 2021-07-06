@@ -146,7 +146,7 @@ public abstract class BaseCommitActivity extends BaseActivity {
         //提交成功，肯定不在制作中,如果会有矛盾的场景，已提交的作品肯定在审核未过中，所以状态设置为true
         HfxPreferenceUtil
             .setRecordBookInWork(BaseCommitActivity.this, user_id, workId, true);
-        toast("提交成功！");
+        toast(getString(R.string.common_submitsucc_title));
       } else if (HfxFileUtil.AUDIO_WORK.equals(workType)) {
         HfxUtil.deleteWork(BaseCommitActivity.this, workId);
       }

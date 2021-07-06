@@ -44,7 +44,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:gravity="center"
-              android:text="添加图片" />
+              android:text="@string/common_add_photo" />
 
             <com.namibox.commonlib.view.CircleImageView
               android:id="@+id/photo_view"
@@ -159,7 +159,7 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_margin="8dp"
-              android:text="故事简介"
+              android:text="@string/book_storydesc_title"
               android:textSize="14dp" />
 
             <View

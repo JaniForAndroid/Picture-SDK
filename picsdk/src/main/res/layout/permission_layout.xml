@@ -64,7 +64,7 @@
       android:paddingLeft="20dp"
       android:paddingRight="20dp"
       android:background="@drawable/permission_white_btn_bg"
-      android:text="马上设置"
+      android:text="@string/base_setnow_title"
       android:textColor="@android:color/white"
       android:textSize="16sp"/>
   </LinearLayout>

@@ -27,7 +27,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:layout_gravity="center"
-          android:text="视频加载中..."
+          android:text="@string/player_loading"
           android:textColor="#fff" />
 
         <FrameLayout
@@ -105,7 +105,7 @@
       android:layout_marginRight="8dp"
       android:layout_weight="1"
       android:background="@drawable/hfx_btn_done_border"
-      android:text="保存到相册"
+      android:text="@string/common_save_album"
       android:textColor="@color/theme_color"
       android:textSize="18dp" />
 
@@ -117,7 +117,7 @@
       android:layout_marginLeft="8dp"
       android:layout_weight="1"
       android:background="@drawable/hfx_btn_done"
-      android:text="提交"
+      android:text="@string/hfx_commit"
       android:textColor="@color/hfx_white"
       android:textSize="18dp" />
 

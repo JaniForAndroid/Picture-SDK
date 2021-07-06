@@ -142,7 +142,7 @@ public class DubSaveVideoActivity extends BaseActivity {
     if (!TextUtils.isEmpty(videoFilePath)) {
       videoFile = new File(videoFilePath);
     } else {
-      showErrorDialog("未找到视频文件", true);
+      showErrorDialog(getString(R.string.book_dubmixaudiopatherr_tips), true);
     }
     Point point = new Point();
     getWindowManager().getDefaultDisplay().getSize(point);
@@ -261,7 +261,7 @@ public class DubSaveVideoActivity extends BaseActivity {
             @Override
             public void onError(Throwable e) {
               hideProgress();
-              toast("保存失败");
+              toast(getString(R.string.download_fail));
               e.printStackTrace();
             }
 
@@ -388,7 +388,7 @@ public class DubSaveVideoActivity extends BaseActivity {
   private void uploadFail() {
     isSubmiting = false;
     hideDeterminateProgress();
-    showErrorDialog("提交失败,请重试!", false);
+    showErrorDialog(getString(R.string.common_submitfaile_title), false);
   }
 
 

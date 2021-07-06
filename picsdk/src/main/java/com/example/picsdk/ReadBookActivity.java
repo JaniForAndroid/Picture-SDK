@@ -101,8 +101,8 @@ public class ReadBookActivity extends BaseActivity implements AutoOrientationPic
   void actionPressed() {
     autoFlip = !autoFlip;
     action.setImageResource(autoFlip ? R.drawable.icon_auto : R.drawable.icon_hand);
-    action_text.setText(autoFlip ? "自动" : "手动");
-    toast(autoFlip ? "切换到自动翻页" : "切换到手动翻页");
+    action_text.setText(autoFlip ? getString(R.string.book_learnmanual_title) : getString(R.string.book_learnauto_title));
+    toast(autoFlip ? getString(R.string.book_changeautopage_tips) : getString(R.string.book_changemanualpage_tips));
     if (mPlaybackState == Player.STATE_IDLE || mPlaybackState == Player.STATE_ENDED
         || mCurrentTrackInfo == null || noMp3(mCurrentTrackInfo) || !exoAudioPlayer.getPlayer()
         .getPlayWhenReady()) {
@@ -315,7 +315,7 @@ public class ReadBookActivity extends BaseActivity implements AutoOrientationPic
 
   private void initView() {
     title.setText(book.bookaudio.bookname);
-    action_text.setText(autoFlip ? "自动" : "手动");
+    action_text.setText(autoFlip ? getString(R.string.book_learnmanual_title) : getString(R.string.book_learnauto_title));
 
     trackInfos = new ArrayList<>();
     bookPages = new ArrayList<>();

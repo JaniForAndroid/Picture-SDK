@@ -322,10 +322,10 @@ public class ExerciseChallengeFragment extends BaseExerciseFragment {
     int position = mExerciseList.indexOf(exercise);
     if (position == mExerciseList.size() - 1) {
       if (tvSubmit != null)
-        tvSubmit.setText("提交");
+        tvSubmit.setText(getString(R.string.hfx_commit));
     } else {
       if (tvSubmit != null)
-        tvSubmit.setText("下一题");
+        tvSubmit.setText(getString(R.string.book_readingtext_title));
     }
     tvSubmit.setOnClickListener(v -> {
       boolean isCorrect = true;
@@ -683,10 +683,10 @@ public class ExerciseChallengeFragment extends BaseExerciseFragment {
     int position = mExerciseList.indexOf(exercise);
     if (position == mExerciseList.size() - 1) {
       if (tvSubmit != null)
-        tvSubmit.setText("提交");
+        tvSubmit.setText(getString(R.string.hfx_commit));
     } else {
       if (tvSubmit != null)
-        tvSubmit.setText("下一题");
+        tvSubmit.setText(getString(R.string.book_readingtext_title));
     }
     tvSubmit.setOnClickListener(v -> {
       tvSubmit.setClickable(false);

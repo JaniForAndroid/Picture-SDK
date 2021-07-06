@@ -524,7 +524,7 @@ public class ImageEditActivity extends AppCompatActivity {
         }
 
       } else {
-        Utils.toast(ImageEditActivity.this, "保存失败");
+        Utils.toast(ImageEditActivity.this, getString(R.string.download_fail));
       }
       //如果是点击的保存按钮，那么销毁当前页面
       if (!isCurrentEdit) {

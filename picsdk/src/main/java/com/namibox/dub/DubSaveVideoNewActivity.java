@@ -222,7 +222,7 @@ public class DubSaveVideoNewActivity extends BaseActivity {
     if (!TextUtils.isEmpty(videoFilePath)) {
       videoFile = new File(videoFilePath);
     } else {
-      showErrorDialog("未找到视频文件", true);
+      showErrorDialog(getString(R.string.book_dubmixaudiopatherr_tips), true);
     }
     Point point = new Point();
     getWindowManager().getDefaultDisplay().getSize(point);
@@ -655,7 +655,7 @@ public class DubSaveVideoNewActivity extends BaseActivity {
         startActivity(intent);
         finish();
       } else {
-        toast("您的网络状况较差，请检查网络连接。");
+        toast(getString(R.string.common_network_none_tips));
       }
     } else if (i == R.id.submitBtn) {
       playSound(clickID, 0);
@@ -677,12 +677,12 @@ public class DubSaveVideoNewActivity extends BaseActivity {
           startActivity(intent);
         } else {
           if (NetworkUtil.isNetworkConnected(this)) {
-            showProgress("发布作品中...");
+            showProgress(getString(R.string.book_dubwordpublish_tips));
             isSubmiting = true;
             mVideoFragment.setPlayWhenReady(false);
             syncUpData();
           } else {
-            toast("您的网络状况较差，请检查网络连接。");
+            toast(getString(R.string.common_network_none_tips));
           }
         }
 //        upLoadDisposable = ApiHandler.getBaseApi().getFileUploadToken(itemId, "mp4")
@@ -780,18 +780,19 @@ public class DubSaveVideoNewActivity extends BaseActivity {
   }
 
   private void showNoInternetDialog() {
-    showDialog("提示", "您的网络状况较差，请检查网络连接。若选择退出，将无法保存答题成绩。",
+    String msg = getString(R.string.book_dubnonereturnalert_title);
+    showDialog("提示", msg,
         "退出", view -> {
           Intent intent = new Intent(DubSaveVideoNewActivity.this, PicGuideActivity.class);
           startActivity(intent);
-        }, "重新连接", v -> syncUpData());
+        }, getString(R.string.common_network_reconnect), v -> syncUpData());
   }
 
   private void uploadFail() {
     isSubmiting = false;
     hideDeterminateProgress();
     hideProgress();
-    showErrorDialog("提交失败,请重试!", false);
+    showErrorDialog(getString(R.string.common_submitfaile_title), false);
   }
 
   @Subscribe(threadMode = ThreadMode.MAIN)

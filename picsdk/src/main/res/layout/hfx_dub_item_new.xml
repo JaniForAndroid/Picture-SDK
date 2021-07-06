@@ -40,7 +40,7 @@
       android:layout_height="24dp"
       android:layout_alignParentRight="true"
       android:gravity="center_vertical"
-      android:text="评测详情"
+      android:text="@string/book_dubevadetail_title"
       android:paddingLeft="10dp"
       android:paddingRight="5dp"
       android:textStyle="bold"
@@ -113,7 +113,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:text="点击开始录音"
+        android:text="@string/book_wordevastart_title"
         android:textColor="#999"
         android:textSize="12sp"
         android:gravity="center_horizontal"/>

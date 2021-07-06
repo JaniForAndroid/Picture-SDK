@@ -128,12 +128,12 @@ public class CommonDialog extends Dialog {
         if (!TextUtils.isEmpty(positive)) {
             positiveBn.setText(positive);
         }else {
-            positiveBn.setText("确定");
+            positiveBn.setText(positiveBn.getContext().getString(R.string.picker_confirm));
         }
         if (!TextUtils.isEmpty(negtive)) {
             negtiveBn.setText(negtive);
         }else {
-            negtiveBn.setText("取消");
+            negtiveBn.setText(negtiveBn.getContext().getString(R.string.picker_cancel));
         }
 
         if (imageResId!=-1){

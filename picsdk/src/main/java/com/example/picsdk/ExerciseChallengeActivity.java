@@ -163,7 +163,7 @@ public class ExerciseChallengeActivity extends BaseActivity {
           }
         }, throwable -> {
           Logger.e(throwable, throwable.toString());
-          toast("数据获取失败");
+          toast(getString(R.string.common_request_failed2));
         });
     compositeDisposable.add(disposable);
   }
@@ -206,7 +206,7 @@ public class ExerciseChallengeActivity extends BaseActivity {
           }
         }, throwable -> {
           Logger.e(throwable, throwable.toString());
-          toast("数据获取失败");
+          toast(getString(R.string.common_request_failed2));
         });
     compositeDisposable.add(disposable);
   }
@@ -288,7 +288,7 @@ public class ExerciseChallengeActivity extends BaseActivity {
         super.onBackPressed();
         return;
       }
-      showDialog("温馨提示", "退出后再次进入需要重新开始挑战", "退出", v -> {
+      showDialog("温馨提示", getString(R.string.book_dubchallengereturn_title), "退出", v -> {
         EventBus.getDefault().post(new RefreshStoreInfo());
 //        EventBus.getDefault().post(new RefreshGuideInfo());
         super.onBackPressed();
@@ -320,7 +320,7 @@ public class ExerciseChallengeActivity extends BaseActivity {
     if (TextUtils.equals(mExerciseType, AppPicUtil.CHALLENGE_READ)) {
       mCurrentExercise = exercise;
       if (!exercise.cartoon.isEmpty()) {
-        setRightText("查询原文");
+        setRightText(getString(R.string.book_understandoriginal_title));
         if (PreferenceUtil.getSharePref(this, "guide_show_study", true)) {
           guideLayout.setVisibility(View.VISIBLE);
         }

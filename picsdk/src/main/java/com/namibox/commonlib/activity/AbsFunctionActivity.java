@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.support.annotation.Nullable;
+import com.example.picsdk.R;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.namibox.commonlib.common.ApiHandler;
@@ -478,7 +479,7 @@ public abstract class AbsFunctionActivity extends AbsFoundationActivity {
   public void connectKefu(String scene, String phoneNum, String order_url, OrderMessageEntity order,
       String robotMessage, String errorMessage, boolean directTransferKefu, boolean sendLog) {
     if (!NetworkUtil.isNetworkAvailable(this)) {
-      toast("当前无网络，请检查网络连接！");
+      toast(getString(R.string.common_network_none_tips));
     } else {
 //      ARouter.getInstance().build("/namibox/dispatchKefu")//跳转区分环信还是七陌客服的activity
 //          .withSerializable("kefu_order", order)

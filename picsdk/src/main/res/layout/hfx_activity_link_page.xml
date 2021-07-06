@@ -17,7 +17,7 @@
       android:layout_height="wrap_content"
       android:layout_marginTop="16dp"
       android:layout_centerInParent="true"
-      android:text="故事秀"
+      android:text="@string/hfx_book_type4"
       android:textColor="#35a4e6"
       android:textSize="50dp" />
 

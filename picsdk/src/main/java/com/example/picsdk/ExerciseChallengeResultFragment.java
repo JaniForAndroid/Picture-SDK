@@ -31,6 +31,7 @@ import com.google.gson.JsonObject;
 import com.namibox.commonlib.common.ApiHandler;
 import com.namibox.util.Logger;
 import com.namibox.util.NetworkUtil;
+import com.namibox.util.PreferenceUtil;
 import com.namibox.util.Utils;
 import io.reactivex.Observable;
 import io.reactivex.Observer;
@@ -235,7 +236,7 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
         toast(getString(R.string.common_check_network_tips));
       }
     });
-
+    saveData(score);
 //    if (getActivity().getPackageName().equals("com.jinxin.appstudent")) {
 //      tv_total.setVisibility(View.GONE);
 //      iv_total.setVisibility(View.GONE);
@@ -282,6 +283,28 @@ public class ExerciseChallengeResultFragment extends BaseFragment {
 
     if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L) {
       AppPicUtil.saveLoaclReading(BookManager.getInstance(), getActivity());
+    }
+  }
+
+  private void saveData(int score){
+    if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) != -1L) {
+      Logger.d(TAG, "已登录，不保存数据到本地");
+      return;
+    }
+    if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L && PreferenceUtil
+        .getSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 0) < 0)
+      PreferenceUtil.setSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 0);
+    if (score >= ratingRule.star.first_star.min) {
+      if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L && PreferenceUtil.getSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 0) < 1)
+        PreferenceUtil.setSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 1);
+    }
+    if (score >= ratingRule.star.second_star.min) {
+      if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L && PreferenceUtil.getSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 0) < 2)
+        PreferenceUtil.setSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 2);
+    }
+    if (score >= ratingRule.star.third_star.min) {
+      if (PicturePreferenceUtil.getLongLoginUserId(getActivity()) == -1L && PreferenceUtil.getSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 0) < 3)
+        PreferenceUtil.setSharePref(getContext(), BookManager.getInstance().getMilesson_item_id() + mActivity.mExerciseType + "star", 3);
     }
   }
 

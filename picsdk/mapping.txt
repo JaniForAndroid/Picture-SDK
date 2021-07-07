@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: 1f0d962
+# pg_map_id: 82797b0
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -2919,63 +2919,64 @@ com.example.picsdk.ExerciseChallengeResultFragment -> com.example.picsdk.c:
     android.widget.TextView tv_timer -> k
     int failedID -> r
     int clickID -> p
-    1:1:void <init>():77:77 -> <init>
-    2:492:void <init>():64:554 -> <init>
-    1:1:int access$000(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> a
-    2:2:void access$100(com.example.picsdk.ExerciseChallengeResultFragment,int):47:47 -> a
-    3:3:void playSound(int):141:141 -> a
-    4:135:void initView(android.view.View):153:284 -> a
-    136:143:void lambda$initView$2(java.util.List,android.view.View):194:201 -> a
-    144:174:void initScore(int,android.view.View):289:319 -> a
-    175:180:void lambda$submitWork$4(com.google.gson.JsonElement):337:342 -> a
-    181:181:void lambda$submitWork$5(java.lang.Throwable):347:347 -> a
-    1:1:int access$200(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> b
-    2:2:void lambda$initView$0(android.view.View):168:168 -> b
-    3:27:void lambda$syncUp$9(com.google.gson.JsonElement):399:423 -> b
-    28:28:void lambda$syncUp$10(java.lang.Throwable):426:426 -> b
-    1:1:void access$300(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> c
-    2:9:void lambda$initView$1(android.view.View):170:177 -> c
-    10:14:void animTimer():602:606 -> c
-    1:1:android.widget.TextView access$400(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> d
-    2:27:void lambda$initView$3(android.view.View):210:235 -> d
-    28:65:com.google.gson.JsonObject getSyncBody():433:470 -> d
-    66:88:com.google.gson.JsonObject getSyncBody():467:489 -> d
-    1:1:android.widget.TextView access$500(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> e
-    2:6:void initSound():132:136 -> e
-    7:16:void lambda$showAnimation$11(android.view.View):586:595 -> e
-    1:1:android.support.constraint.ConstraintLayout access$600(com.example.picsdk.ExerciseChallengeResultFragment):47:47 -> f
-    2:2:void lambda$showNoInternetDialog$6(android.view.View):364:364 -> f
-    3:3:void lambda$null$8():417:417 -> f
-    1:3:com.example.picsdk.ExerciseChallengeResultFragment newInstance():82:84 -> g
-    4:4:void lambda$showNoInternetDialog$7(android.view.View):365:365 -> g
-    1:29:void showAnimation():557:585 -> h
-    1:3:void showNoInternetDialog():362:364 -> i
-    4:4:void showNoInternetDialog():363:363 -> i
-    1:22:void submitWork():329:350 -> j
-    1:61:void syncUp():369:429 -> k
-    1:4:void syncUpData():354:357 -> l
-    1:16:void onCreate(android.os.Bundle):90:105 -> onCreate
-    1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):113:113 -> onCreateView
-    1:3:void onDestroy():641:643 -> onDestroy
-    1:10:void onViewCreated(android.view.View,android.os.Bundle):118:127 -> onViewCreated
+    1:1:void <init>():78:78 -> <init>
+    2:514:void <init>():65:577 -> <init>
+    1:1:int access$000(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> a
+    2:2:void access$100(com.example.picsdk.ExerciseChallengeResultFragment,int):48:48 -> a
+    3:3:void playSound(int):142:142 -> a
+    4:135:void initView(android.view.View):154:285 -> a
+    136:143:void lambda$initView$2(java.util.List,android.view.View):195:202 -> a
+    144:174:void initScore(int,android.view.View):312:342 -> a
+    175:180:void lambda$submitWork$4(com.google.gson.JsonElement):360:365 -> a
+    181:181:void lambda$submitWork$5(java.lang.Throwable):370:370 -> a
+    1:1:int access$200(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> b
+    2:2:void lambda$initView$0(android.view.View):169:169 -> b
+    3:20:void saveData(int):290:307 -> b
+    21:45:void lambda$syncUp$9(com.google.gson.JsonElement):422:446 -> b
+    46:46:void lambda$syncUp$10(java.lang.Throwable):449:449 -> b
+    1:1:void access$300(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> c
+    2:9:void lambda$initView$1(android.view.View):171:178 -> c
+    10:14:void animTimer():625:629 -> c
+    1:1:android.widget.TextView access$400(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> d
+    2:27:void lambda$initView$3(android.view.View):211:236 -> d
+    28:65:com.google.gson.JsonObject getSyncBody():456:493 -> d
+    66:88:com.google.gson.JsonObject getSyncBody():490:512 -> d
+    1:1:android.widget.TextView access$500(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> e
+    2:6:void initSound():133:137 -> e
+    7:16:void lambda$showAnimation$11(android.view.View):609:618 -> e
+    1:1:android.support.constraint.ConstraintLayout access$600(com.example.picsdk.ExerciseChallengeResultFragment):48:48 -> f
+    2:2:void lambda$showNoInternetDialog$6(android.view.View):387:387 -> f
+    3:3:void lambda$null$8():440:440 -> f
+    1:3:com.example.picsdk.ExerciseChallengeResultFragment newInstance():83:85 -> g
+    4:4:void lambda$showNoInternetDialog$7(android.view.View):388:388 -> g
+    1:29:void showAnimation():580:608 -> h
+    1:3:void showNoInternetDialog():385:387 -> i
+    4:4:void showNoInternetDialog():386:386 -> i
+    1:22:void submitWork():352:373 -> j
+    1:61:void syncUp():392:452 -> k
+    1:4:void syncUpData():377:380 -> l
+    1:16:void onCreate(android.os.Bundle):91:106 -> onCreate
+    1:1:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle):114:114 -> onCreateView
+    1:3:void onDestroy():664:666 -> onDestroy
+    1:10:void onViewCreated(android.view.View,android.os.Bundle):119:128 -> onViewCreated
 com.example.picsdk.ExerciseChallengeResultFragment$1 -> com.example.picsdk.c$a:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):312:312 -> <init>
-    1:1:void run():315:315 -> run
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):335:335 -> <init>
+    1:1:void run():338:338 -> run
 com.example.picsdk.ExerciseChallengeResultFragment$2 -> com.example.picsdk.c$b:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):319:319 -> <init>
-    1:1:void run():322:322 -> run
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):342:342 -> <init>
+    1:1:void run():345:345 -> run
 com.example.picsdk.ExerciseChallengeResultFragment$3 -> com.example.picsdk.c$c:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):574:574 -> <init>
-    1:4:void onAnimationEnd(android.animation.Animator):577:580 -> onAnimationEnd
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):597:597 -> <init>
+    1:4:void onAnimationEnd(android.animation.Animator):600:603 -> onAnimationEnd
 com.example.picsdk.ExerciseChallengeResultFragment$4 -> com.example.picsdk.c$d:
     com.example.picsdk.ExerciseChallengeResultFragment this$0 -> a
-    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):606:606 -> <init>
-    1:6:void onNext(java.lang.Long):617:622 -> a
-    1:1:void onNext(java.lang.Object):606:606 -> onNext
-    1:4:void onSubscribe(io.reactivex.disposables.Disposable):609:612 -> onSubscribe
+    1:1:void <init>(com.example.picsdk.ExerciseChallengeResultFragment):629:629 -> <init>
+    1:6:void onNext(java.lang.Long):640:645 -> a
+    1:1:void onNext(java.lang.Object):629:629 -> onNext
+    1:4:void onSubscribe(io.reactivex.disposables.Disposable):632:635 -> onSubscribe
 com.example.picsdk.ExerciseChallengeWelcomeFragment -> com.example.picsdk.d:
     android.os.Handler handler -> g
     android.widget.ProgressBar progressBar -> f
@@ -7750,7 +7751,8 @@ com.namibox.dub.DubVideoNewActivity -> com.namibox.dub.DubVideoNewActivity:
     1:1:boolean access$2700(com.namibox.dub.DubVideoNewActivity):116:116 -> m
     1:1:void access$2800(com.namibox.dub.DubVideoNewActivity):116:116 -> n
     1:1:boolean access$3200(com.namibox.dub.DubVideoNewActivity):116:116 -> o
-    1:11:void onBackPressed():2264:2274 -> onBackPressed
+    1:16:void onBackPressed():2264:2279 -> onBackPressed
+    17:17:void onBackPressed():2274:2274 -> onBackPressed
     1:6:void onCompletion(android.media.MediaPlayer):1678:1683 -> onCompletion
     1:37:void onCreate(android.os.Bundle):226:262 -> onCreate
     1:2:boolean onCreateOptionsMenu(android.view.Menu):1502:1503 -> onCreateOptionsMenu

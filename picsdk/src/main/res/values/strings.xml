@@ -354,5 +354,7 @@
   <string name="common_alert_tips1">温馨提示</string>
   <string name="title_read">阅读</string>
   <string name="title_learn_word">词汇学习</string>
+  <string name="confirm_quit">确认退出</string>
+  <string name="recording_tips">请先录完当前片段</string>
 
 </resources>

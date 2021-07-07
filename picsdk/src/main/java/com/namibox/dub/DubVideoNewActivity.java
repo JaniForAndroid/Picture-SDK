@@ -2262,21 +2262,21 @@ public class DubVideoNewActivity extends AbsExoActivity implements
   @Override
   public void onBackPressed() {
     if (isRecording) {
-      toast("请先录完当前片段");
+      toast(getString(R.string.recording_tips));
       return;
     }
-    String msg = "";
-    if (checkRecordFile()) {
-      msg = "你已经录完所有片段了,预览看看效果吧~";
-    } else {
-      msg = "你还没录完哦,确认退出吗?";
-    }
-    showDialog("确认退出", msg, "退出", new OnClickListener() {
+    String msg = getString(R.string.book_dubchallengereturn_title);
+//    if (checkRecordFile()) {
+//      msg = "你已经录完所有片段了,预览看看效果吧~";
+//    } else {
+//      msg = "你还没录完哦,确认退出吗?";
+//    }
+    showDialog(getString(R.string.common_alert_tips1), msg, getString(R.string.hfx_limit_quit), new OnClickListener() {
       @Override
       public void onClick(View v) {
         exit();
       }
-    }, "继续配音", null);
+    }, getString(R.string.cancel), null);
   }
 
   private void exit() {

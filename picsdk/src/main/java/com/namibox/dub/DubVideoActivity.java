@@ -1494,15 +1494,15 @@ public class DubVideoActivity extends AbsExoActivity implements MediaPlayer.OnCo
   @Override
   public void onBackPressed() {
     if (isRecording) {
-      toast("请先录完当前片段");
+      toast(getString(R.string.recording_tips));
       return;
     }
-    String msg = "";
-    if (checkRecordFile()) {
-      msg = getString(R.string.book_dubchallengereturn_title);
-    } else {
-      msg = "你还没录完哦,确认退出吗?";
-    }
+    String msg =  getString(R.string.book_dubchallengereturn_title);
+//    if (checkRecordFile()) {
+//      msg = getString(R.string.book_dubchallengereturn_title);
+//    } else {
+//      msg = "你还没录完哦,确认退出吗?";
+//    }
     showDialog("确认退出", msg, "继续配音", null, "退出", new OnClickListener() {
       @Override
       public void onClick(View v) {

@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    NBPictureSDK.init(getApplication(),BuildConfig.DEBUG);
 
     et_appcode = findViewById(R.id.et_appcode);
     et_phone = findViewById(R.id.et_phone);
@@ -129,6 +128,9 @@ public class MainActivity extends AppCompatActivity {
     registerModel.setPartner_id(partnerId);
     registerModel.setCellphone(cellphone);
 
+    /**
+     * 打开SDK内绘本使用页面，接入方可参照
+     */
     new NBPictureSDK().register(MainActivity.this, registerModel, new RegisterSDKInterface() {
       @Override
       public void onDubbingResult(DubbingResultBean result) {
@@ -143,6 +145,10 @@ public class MainActivity extends AppCompatActivity {
     });
   }
 
+  /**
+   * 模拟第三方登录，接入方需按照自己逻辑实现登录
+   * @param view
+   */
   public void login(View view) {
     if (registerModel == null) {
       toast("请先获取token");
@@ -205,6 +211,13 @@ public class MainActivity extends AppCompatActivity {
         });
   }
 
+  /**
+   * 清理缓存，删除如下文件夹：
+   * 1./data/user/0/{yours_package_name}/cache
+   * 2./storage/emulated/0/Android/data/{yours_package_name}/cache
+   * 3./data/user/0/{yours_package_name}/files/file_cache
+   * @param view
+   */
   public void clean(View view) {
     NBPictureSDK.cleanCache(this, new CleanCacheCallback() {
       @Override
@@ -225,6 +238,10 @@ public class MainActivity extends AppCompatActivity {
     });
   }
 
+  /**
+   * 模拟第三方获取accessToken，接入方需按照自己的逻辑获取
+   * @param view
+   */
   public void getAccessToken(View view) {
     String appCode = "424965437";// 418558986
     if (!TextUtils.isEmpty(et_appcode.getText())) {
@@ -292,6 +309,10 @@ public class MainActivity extends AppCompatActivity {
     });
   }
 
+  /**
+   * 模拟第三方获取绘本信息，接入方需按照自己的逻辑获取
+   * @param view
+   */
   public void select(View view) {
     if (registerModel == null) {
       toast("请先获取token");
@@ -321,6 +342,10 @@ public class MainActivity extends AppCompatActivity {
         });
   }
 
+  /**
+   * 模拟第三方退出登录，接入方需按照自己的逻辑实现
+   * @param view
+   */
   public void logout(View view) {
     new SDKDemoHelper().logout(this);
   }

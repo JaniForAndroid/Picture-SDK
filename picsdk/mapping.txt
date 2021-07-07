@@ -1,6 +1,6 @@
 # compiler: R8
 # compiler_version: 2.1.75
-# pg_map_id: e0d2b1c
+# pg_map_id: 1f0d962
 # common_typos_disable
 com.chivox.AIEngine -> com.chivox.AIEngine:
     1:14:void <clinit>():6:19 -> <clinit>
@@ -2607,7 +2607,8 @@ com.example.picsdk.ExerciseChallengeActivity -> com.example.picsdk.ExerciseChall
     1:17:void lambda$request$2(com.google.gson.JsonObject):189:205 -> c
     18:27:void lambda$request$2(com.google.gson.JsonObject):194:203 -> c
     1:3:void gotoReadChallenge(java.lang.String):257:259 -> j
-    1:14:void onBackPressed():293:306 -> onBackPressed
+    1:10:void onBackPressed():293:302 -> onBackPressed
+    11:19:void onBackPressed():298:306 -> onBackPressed
     1:22:void onCreate(android.os.Bundle):72:93 -> onCreate
     1:7:void onDestroy():60:66 -> onDestroy
     1:4:void onRightTextClick():312:315 -> y
@@ -3024,7 +3025,7 @@ com.example.picsdk.PicGuideActivity -> com.example.picsdk.PicGuideActivity:
     1:3:void gotoReadChallenge():543:545 -> B
     1:3:void gotoWordChallenge():537:539 -> C
     1:15:void initData():237:251 -> D
-    1:1:void initDialog():179:179 -> E
+    1:3:void initDialog():179:179 -> E
     1:3:void initExoAudioPlayer():145:147 -> F
     1:4:void initSound():161:164 -> G
     1:44:void initView():190:233 -> H
@@ -3440,7 +3441,7 @@ com.example.picsdk.ResultActivity -> com.example.picsdk.ResultActivity:
     23:69:void syncUp(int):515:561 -> e
     1:1:void access$700(com.example.picsdk.ResultActivity):57:57 -> f
     2:9:void syncUpData(int):464:471 -> f
-    1:3:java.lang.String btnConvert(java.lang.String):638:640 -> j
+    1:6:java.lang.String btnConvert(java.lang.String):638:643 -> j
     1:8:java.lang.String linkConvert(java.lang.String):614:621 -> k
     1:5:void showStudyTime(java.lang.String):565:569 -> l
     1:8:java.lang.String tipConvert(java.lang.String):626:633 -> m
@@ -7105,93 +7106,93 @@ com.namibox.dub.DubSaveVideoNewActivity -> com.namibox.dub.DubSaveVideoNewActivi
     android.net.Uri contentUri -> S
     android.widget.TextView integrityScore -> L
     android.media.AudioManager mAm -> P
-    1:278:void <init>():81:358 -> <init>
-    1:4:void initSound():269:272 -> A
-    1:10:void initVideoFragment():327:336 -> B
-    1:22:void initView():243:264 -> C
-    1:9:void portScreenAnim():579:587 -> D
-    1:1:boolean requestFocus():144:144 -> E
-    1:6:void showNoInternetDialog():783:788 -> F
-    7:7:void showNoInternetDialog():784:784 -> F
-    1:4:void syncUpData():775:778 -> G
-    1:4:void uploadFail():792:795 -> H
-    1:1:com.example.exoaudioplayer.video.fragment.VideoFragment access$000(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> a
-    2:2:void access$700(com.namibox.dub.DubSaveVideoNewActivity,java.lang.String):81:81 -> a
-    3:27:void openLocalVideo(android.content.Context,java.io.File,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,int,int,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,long,java.lang.String,long,java.lang.String):162:186 -> a
-    28:28:void lambda$onBackPressed$2(android.view.View):621:621 -> a
+    1:278:void <init>():82:359 -> <init>
+    1:4:void initSound():270:273 -> A
+    1:10:void initVideoFragment():328:337 -> B
+    1:22:void initView():244:265 -> C
+    1:9:void portScreenAnim():580:588 -> D
+    1:1:boolean requestFocus():145:145 -> E
+    1:6:void showNoInternetDialog():784:789 -> F
+    7:7:void showNoInternetDialog():785:785 -> F
+    1:4:void syncUpData():776:779 -> G
+    1:4:void uploadFail():793:796 -> H
+    1:1:com.example.exoaudioplayer.video.fragment.VideoFragment access$000(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> a
+    2:2:void access$700(com.namibox.dub.DubSaveVideoNewActivity,java.lang.String):82:82 -> a
+    3:27:void openLocalVideo(android.content.Context,java.io.File,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int,int,int,java.lang.String,long,java.lang.String,java.lang.String,java.lang.String,long,java.lang.String,long,java.lang.String):163:187 -> a
+    28:28:void lambda$onBackPressed$2(android.view.View):622:622 -> a
     void lambda$onBackPressed$3(android.view.View) -> b
-    1:1:int access$200(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> b
-    2:2:void playSound(int,int):348:348 -> b
-    1:1:int access$300(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> c
-    2:2:void lambda$new$0(int):103:103 -> c
-    3:4:void lambda$showNoInternetDialog$4(android.view.View):786:787 -> c
-    1:1:int access$400(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> d
-    2:2:void lambda$playSound$1(int):348:348 -> d
-    3:3:void lambda$showNoInternetDialog$5(android.view.View):788:788 -> d
-    1:1:int access$500(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> e
-    1:1:void access$600(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> f
-    1:1:java.io.File access$800(com.namibox.dub.DubSaveVideoNewActivity):81:81 -> g
-    2:8:void changeLayout(boolean):566:572 -> g
-    1:10:com.google.gson.JsonObject getSyncBody(java.lang.String):470:479 -> h
-    11:13:void fullScreenAnim(boolean):593:595 -> h
-    14:25:void fullScreenAnim(boolean):594:605 -> h
-    1:12:void reportData(java.lang.String):395:406 -> i
-    1:12:void onBackPressed():610:621 -> onBackPressed
-    1:3:void onConfigurationChanged(android.content.res.Configuration):558:560 -> onConfigurationChanged
-    1:49:void onCreate(android.os.Bundle):191:239 -> onCreate
-    1:4:void onDestroy():639:642 -> onDestroy
-    1:1:void onPause():634:634 -> onPause
-    1:2:void onResume():628:629 -> onResume
-    1:39:void onViewClick(android.view.View):647:685 -> onViewClick
-    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):800:800 -> refreshStoreInfo
-    1:1:int abandonFocus():153:153 -> w
-    1:40:void getOsstoken():485:524 -> x
-    1:7:com.google.gson.JsonObject getOsstokenBody():541:547 -> y
-    1:39:void initScore():276:314 -> z
-    40:44:void initScore():302:306 -> z
-    45:49:void initScore():294:298 -> z
-    50:86:void initScore():286:322 -> z
+    1:1:int access$200(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> b
+    2:2:void playSound(int,int):349:349 -> b
+    1:1:int access$300(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> c
+    2:2:void lambda$new$0(int):104:104 -> c
+    3:4:void lambda$showNoInternetDialog$4(android.view.View):787:788 -> c
+    1:1:int access$400(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> d
+    2:2:void lambda$playSound$1(int):349:349 -> d
+    3:3:void lambda$showNoInternetDialog$5(android.view.View):789:789 -> d
+    1:1:int access$500(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> e
+    1:1:void access$600(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> f
+    1:1:java.io.File access$800(com.namibox.dub.DubSaveVideoNewActivity):82:82 -> g
+    2:8:void changeLayout(boolean):567:573 -> g
+    1:10:com.google.gson.JsonObject getSyncBody(java.lang.String):471:480 -> h
+    11:13:void fullScreenAnim(boolean):594:596 -> h
+    14:25:void fullScreenAnim(boolean):595:606 -> h
+    1:12:void reportData(java.lang.String):396:407 -> i
+    1:12:void onBackPressed():611:622 -> onBackPressed
+    1:3:void onConfigurationChanged(android.content.res.Configuration):559:561 -> onConfigurationChanged
+    1:49:void onCreate(android.os.Bundle):192:240 -> onCreate
+    1:4:void onDestroy():640:643 -> onDestroy
+    1:1:void onPause():635:635 -> onPause
+    1:2:void onResume():629:630 -> onResume
+    1:39:void onViewClick(android.view.View):648:686 -> onViewClick
+    1:1:void refreshStoreInfo(com.namibox.commonlib.event.FinishVoiceActivity):801:801 -> refreshStoreInfo
+    1:1:int abandonFocus():154:154 -> w
+    1:40:void getOsstoken():486:525 -> x
+    1:7:com.google.gson.JsonObject getOsstokenBody():542:548 -> y
+    1:39:void initScore():277:315 -> z
+    40:44:void initScore():303:307 -> z
+    45:49:void initScore():295:299 -> z
+    50:86:void initScore():287:323 -> z
 com.namibox.dub.DubSaveVideoNewActivity$1 -> com.namibox.dub.DubSaveVideoNewActivity$b:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):337:337 -> <init>
-    1:1:void lambda$onFragmentViewCreated$0():342:342 -> a
-    1:2:void onFragmentViewCreated(android.support.v4.app.FragmentManager,android.support.v4.app.Fragment,android.view.View,android.os.Bundle):341:342 -> onFragmentViewCreated
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):338:338 -> <init>
+    1:1:void lambda$onFragmentViewCreated$0():343:343 -> a
+    1:2:void onFragmentViewCreated(android.support.v4.app.FragmentManager,android.support.v4.app.Fragment,android.view.View,android.os.Bundle):342:343 -> onFragmentViewCreated
 com.namibox.dub.DubSaveVideoNewActivity$10 -> com.namibox.dub.DubSaveVideoNewActivity$a:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):489:489 -> <init>
-    1:8:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):492:499 -> a
-    1:1:java.lang.Object apply(java.lang.Object):489:489 -> apply
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):490:490 -> <init>
+    1:8:io.reactivex.Flowable apply(com.namibox.commonlib.model.OssToken):493:500 -> a
+    1:1:java.lang.Object apply(java.lang.Object):490:490 -> apply
 com.namibox.dub.DubSaveVideoNewActivity$4 -> com.namibox.dub.DubSaveVideoNewActivity$c:
     java.lang.String val$video_key -> a
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> b
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity,java.lang.String):406:406 -> <init>
-    1:45:void onNext(com.google.gson.JsonElement):409:453 -> a
-    1:1:void onComplete():464:464 -> onComplete
-    1:2:void onError(java.lang.Throwable):458:459 -> onError
-    1:1:void onNext(java.lang.Object):406:406 -> onNext
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity,java.lang.String):407:407 -> <init>
+    1:45:void onNext(com.google.gson.JsonElement):410:454 -> a
+    1:1:void onComplete():465:465 -> onComplete
+    1:2:void onError(java.lang.Throwable):459:460 -> onError
+    1:1:void onNext(java.lang.Object):407:407 -> onNext
 com.namibox.dub.DubSaveVideoNewActivity$5 -> com.namibox.dub.DubSaveVideoNewActivity$d:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):400:400 -> <init>
-    1:1:void run():403:403 -> run
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):401:401 -> <init>
+    1:1:void run():404:404 -> run
 com.namibox.dub.DubSaveVideoNewActivity$6 -> com.namibox.dub.DubSaveVideoNewActivity$e:
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):524:524 -> <init>
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):525:525 -> <init>
     void accept(java.util.List) -> a
-    1:1:void accept(java.lang.Object):524:524 -> accept
+    1:1:void accept(java.lang.Object):525:525 -> accept
 com.namibox.dub.DubSaveVideoNewActivity$7 -> com.namibox.dub.DubSaveVideoNewActivity$f:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):530:530 -> <init>
-    1:2:void accept(java.lang.Throwable):533:534 -> a
-    1:1:void accept(java.lang.Object):530:530 -> accept
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):531:531 -> <init>
+    1:2:void accept(java.lang.Throwable):534:535 -> a
+    1:1:void accept(java.lang.Object):531:531 -> accept
 com.namibox.dub.DubSaveVideoNewActivity$8 -> com.namibox.dub.DubSaveVideoNewActivity$g:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):509:509 -> <init>
-    1:7:io.reactivex.Flowable apply(com.namibox.commonlib.event.OssEvent):512:518 -> a
-    1:1:java.lang.Object apply(java.lang.Object):509:509 -> apply
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):510:510 -> <init>
+    1:7:io.reactivex.Flowable apply(com.namibox.commonlib.event.OssEvent):513:519 -> a
+    1:1:java.lang.Object apply(java.lang.Object):510:510 -> apply
 com.namibox.dub.DubSaveVideoNewActivity$9 -> com.namibox.dub.DubSaveVideoNewActivity$h:
     com.namibox.dub.DubSaveVideoNewActivity this$0 -> a
-    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):502:502 -> <init>
-    1:2:org.reactivestreams.Publisher apply(com.namibox.commonlib.model.OssToken):505:506 -> a
-    1:1:java.lang.Object apply(java.lang.Object):502:502 -> apply
+    1:1:void <init>(com.namibox.dub.DubSaveVideoNewActivity):503:503 -> <init>
+    1:2:org.reactivestreams.Publisher apply(com.namibox.commonlib.model.OssToken):506:507 -> a
+    1:1:java.lang.Object apply(java.lang.Object):503:503 -> apply
 com.namibox.dub.DubVideoActivity -> com.namibox.dub.DubVideoActivity:
     boolean isRecording -> d0
     boolean isVideoPlaying -> e0

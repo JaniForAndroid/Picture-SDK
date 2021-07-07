@@ -1,6 +1,7 @@
 package com.namibox.dub;
 
 
+import static com.namibox.util.Utils.getSalt;
 import static com.namibox.util.Utils.isOldDevice;
 
 import android.annotation.TargetApi;
@@ -614,10 +615,10 @@ public class DubSaveVideoNewActivity extends BaseActivity {
       if (isSubmit) {
         EventBus.getDefault().post(new FinishVoiceActivity());
       } else {
-        String title = "温馨提示";
-        String text = "没有发布作品，是否退出？";
-        String confirm = "确认";
-        String cancel = "取消";
+        String title = getString(R.string.common_alert_tips1);//"温馨提示";
+        String text = getString(R.string.book_dubnotsavealertcontent_title);
+        String confirm = getString(R.string.common_sure);
+        String cancel = getString(R.string.common_cancel);
         showDialog(title, text, confirm, v -> finish(), cancel, v -> isBackPressed = false);
       }
     }

@@ -177,7 +177,7 @@ public class PicGuideActivity extends BaseActivity implements ChallengeAdapter.O
 
   public void initDialog() {
     showDialog("提示", getString(R.string.book_registeralertcontent_title),
-        "退出", v -> finish(), "继续使用", v -> {
+        "退出", v -> finish(), getString(R.string.continue_to_use), v -> {
         });
   }
 

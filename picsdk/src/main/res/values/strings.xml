@@ -346,5 +346,13 @@
   <string name="book_readunderstand_title">阅读理解</string>
   <string name="book_dubbing_title">趣味配音</string>
   <string name="book_pic_eval_title">评测绘本</string>
+  <string name="continue_to_use">继续使用</string>
+  <string name="begin_learn_word">开始词汇学习</string>
+  <string name="begin_read">开始阅读</string>
+  <string name="begin_watch_animation">开始看动画</string>
+  <string name="book_dubnotsavealertcontent_title">配音作品没有发布保存，退出后将会丢失，确认退出？</string>
+  <string name="common_alert_tips1">温馨提示</string>
+  <string name="title_read">阅读</string>
+  <string name="title_learn_word">词汇学习</string>
 
 </resources>

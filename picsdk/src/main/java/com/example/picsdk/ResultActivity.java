@@ -624,23 +624,23 @@ public class ResultActivity extends BaseActivity {
 
   private String tipConvert(String type) {
     if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
-      return getString(R.string.book_steplearnprogress_title) + "阅读";
+      return getString(R.string.book_steplearnprogress_title) + getString(R.string.title_read);
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
-      return getString(R.string.book_steplearnprogress_title) + "词汇学习";
+      return getString(R.string.book_steplearnprogress_title) + getString(R.string.title_learn_word);
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_MUSIC)) {
-      return getString(R.string.book_steplearnprogress_title) + "听音乐";
+      return getString(R.string.book_steplearnprogress_title) + getString(R.string.string_listen_music);
     } else {
-      return getString(R.string.book_steplearnprogress_title) + "看动画";
+      return getString(R.string.book_steplearnprogress_title) + getString(R.string.string_look_video);
     }
   }
 
   private String btnConvert(String type) {
     if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_READ)) {
-      return "开始阅读";
+      return getString(R.string.begin_read);
     } else if (TextUtils.equals(type, PicLoadingActivity.BOOK_LINKS_WORD)) {
-      return "开始词汇学习";
+      return getString(R.string.begin_learn_word);
     } else {
-      return "开始看动画";
+      return getString(R.string.begin_watch_animation);
     }
   }
 
@@ -649,11 +649,11 @@ public class ResultActivity extends BaseActivity {
     String text = btn.getText().toString();
     if (!TextUtils.isEmpty(text)) {
       Intent intent = null;
-      if (TextUtils.equals(text, "开始阅读")) {
+      if (TextUtils.equals(text, getString(R.string.begin_read))) {
         intent = new Intent(this, ReadBookActivity.class);
-      } else if (TextUtils.equals(text, "开始词汇学习")) {
+      } else if (TextUtils.equals(text, getString(R.string.begin_learn_word))) {
         intent = new Intent(this, VocabularyActivity.class);
-      } else if (TextUtils.equals(text, "开始看动画")) {
+      } else if (TextUtils.equals(text, getString(R.string.begin_watch_animation))) {
         intent = new Intent(this, VideoActivity.class);
       } else if (TextUtils.equals(text, getString(R.string.book_steplastprogress_title))) {
         String type = (String) btn.getTag();

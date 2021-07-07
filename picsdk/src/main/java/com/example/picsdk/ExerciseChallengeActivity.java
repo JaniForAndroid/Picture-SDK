@@ -295,11 +295,11 @@ public class ExerciseChallengeActivity extends BaseActivity {
         super.onBackPressed();
         return;
       }
-      showDialog("温馨提示", getString(R.string.book_dubchallengereturn_title), "退出", v -> {
+      showDialog(getString(R.string.common_alert_tips1), getString(R.string.book_dubchallengereturn_title), getString(R.string.hfx_limit_quit), v -> {
         EventBus.getDefault().post(new RefreshStoreInfo());
 //        EventBus.getDefault().post(new RefreshGuideInfo());
         super.onBackPressed();
-      }, "取消", null);
+      }, getString(R.string.common_cancel), null);
     } else {
       EventBus.getDefault().post(new RefreshStoreInfo());
 //      EventBus.getDefault().post(new RefreshGuideInfo());
